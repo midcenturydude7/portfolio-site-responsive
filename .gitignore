@@ -1,0 +1,9 @@
+# Ignores the .map file in the Sass compiler
+/styles/styles.css.map
+/styles/media.css.map
+
+# Ignores media.css and media.scss for now
+/styles/media*
+
+# Add img folder to .gitignore
+img/

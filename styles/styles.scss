@@ -1,0 +1,16 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --COLOR-PRIMARY: #0A192F;
+  --COLOR-SECONDARY: #64f0d4;
+}
+
+.container {
+  background: var(--COLOR-PRIMARY);
+  width: 100%;
+  min-height: 100vh;
+}
