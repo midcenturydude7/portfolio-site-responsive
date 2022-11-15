@@ -7,10 +7,28 @@
 :root {
   --COLOR-PRIMARY: #0A192F;
   --COLOR-SECONDARY: #64f0d4;
+  --COLOR-LIGHT-01: #cbebe4;
+  --COLOR-GRADIENT-01: linear-gradient(to top, var(--COLOR-SECONDARY), var(--COLOR-LIGHT-01));
+}
+
+img {
+  max-width: 100%;
 }
 
 .container {
   background: var(--COLOR-PRIMARY);
   width: 100%;
-  min-height: 90vh;
+  min-height: 100vh;
+}
+.container .h-shape {
+  transition: all 0.4s ease-in-out;
+  width: 45%;
+  height: 100%;
+  background: var(--COLOR-GRADIENT-01);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  -webkit-clip-path: polygon(0 0, 46% 0, 79% 100%, 0% 100%);
+          clip-path: polygon(0 0, 46% 0, 79% 100%, 0% 100%);
 }/*# sourceMappingURL=styles.css.map */
