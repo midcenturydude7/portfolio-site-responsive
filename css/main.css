@@ -4,9 +4,18 @@
 
 :root {
   --COLOR-PRIMARY: #050e1d;
-  --COLOR-SECONDARY: #37c7a8;
-  --COLOR-LIGHT-01: #96e0d0;
-  --COLOR-GRADIENT-01: linear-gradient(to top, var(--COLOR-SECONDARY), var(--COLOR-LIGHT-01));
+  --COLOR-SECONDARY: #37C7A8;
+  --COLOR-ACCENT-01: #96E0D0;
+  --COLOR-ACCENT-02: #85F1DA;
+  --COLOR-LIGHT-01: #F5F5F5;
+  --COLOR-LIGHT-02: #EBEBEB;
+  --COLOR-GRAY-01: #CCCCCC;
+  --COLOR-GRAY-02: #ADADAD;
+  --COLOR-GRAY-03: #7A7A7A;
+  --COLOR-GRAY-04: #474747;
+  --COLOR-GRAY-05: #141414;
+  
+  --COLOR-GRADIENT-01: linear-gradient(to top, var(--COLOR-SECONDARY), var(--COLOR-ACCENT-01));
 }
 
 body {
@@ -21,27 +30,41 @@ img {
   max-width: 100%;
 }
 
-.container {
-  position: relative;
-  margin: 0 auto;
-  width: 90%;
-  max-width: 1200px;
-}
-
 header {
-  background: var(--COLOR-LIGHT-01);
+  background: var(--COLOR-ACCENT-01);
   padding: 2em 0;
   text-align: center;
   box-shadow: 0px 2px 15px 20px #191d24;
 }
 
 h1 {
-  color: whitesmoke;
+  color: var(--COLOR-LIGHT-02);
+  margin: 0;
+  padding: 0;
 }
 
 p {
   color: whitesmoke;
+  margin: 0;
+  padding: 0;
 }
+
+/*======================
+    LAYOUT
+  ====================== */
+  .container {
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
 /*======================
     NAVIGATION
@@ -166,7 +189,40 @@ p {
   opacity: .75;
 }
 
+/*======================
+    MAIN BODY
+  ====================== */
+.main__title {
+  margin-top: 0.25em;
+  letter-spacing: 0.03em;
+  font-size: 4.5rem;
+}
 
+.main__title--accent {
+  color: var(--COLOR-ACCENT-02);
+}
+
+.main__sub-title {
+  color: var(--COLOR-GRAY-01);
+  font-size: 2rem;
+  letter-spacing: 0.0275em;
+}
+
+.main__article {
+  margin: 2em -1.75em;
+  padding: 1.25em 2em;
+  background: var(--COLOR-ACCENT-01);
+}
+
+.main__text {
+  color: var(--COLOR-PRIMARY);
+  font-weight: 900;
+  text-align: center;
+}
+
+/*======================
+    SPECIAL ELEMENTS
+  ====================== */
 .container-shape .theme-btn {
   visibility: visible;
   position: absolute;
@@ -181,6 +237,11 @@ p {
 .container-shape .theme-btn:hover,
 .container-shape .theme-btn:focus {
   opacity: 0.75;
+}
+
+.icon-border {
+  border: 3px solid #0ff1c0;
+  border-radius: 50%;
 }
 
 .container-image {
