@@ -1,7 +1,5 @@
 *, *::before, *::after {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 :root {
@@ -12,43 +10,39 @@
 }
 
 body {
+  margin: 0;
   background: var(--COLOR-PRIMARY);
   font-family: 'Poppins', sans-serif;
   font-size: 1.1rem;
-  transition: all .4s ease-in-out;
+  /* transition: all .4s ease-in-out; */
 }
 
 img {
   max-width: 100%;
 }
 
-header {
-  background: var(--COLOR-LIGHT-01);
-  padding: 1em 0;
-  text-align: center;
-  box-shadow: 0px 2px 15px 20px #191d24;
-}
-
-.container-main {
-  height: 100vh;
-  width: 100%;
-}
-
-/*======================
-    NAVIGATION
-  ====================== */
 .container {
   position: relative;
   margin: 0 auto;
   width: 90%;
 }
 
+header {
+  background: var(--COLOR-LIGHT-01);
+  padding: 2em 0;
+  text-align: center;
+  box-shadow: 0px 2px 15px 20px #191d24;
+}
+
+/*======================
+    NAVIGATION
+  ====================== */
 .nav {
   width: 100%;
-  visibility: hidden;
+  /* visibility: hidden;
   height: 0;
   position: absolute;
-  font-size: .9rem;
+  font-size: .9rem; */
 }
 
 .nav-toggle {
@@ -63,6 +57,7 @@ header {
   transition: opacity 250ms ease;
   
   position: absolute;
+  top: -1.75em;
   left: 0;
 }
 
@@ -97,6 +92,13 @@ header {
 
 .hamburger::after {
   transform: translateY(3px);
+}
+
+.nav {
+  visibility: hidden;
+  height: 0;
+  position: absolute;
+  font-size: .9rem;
 }
 
 .nav--visible {
@@ -147,7 +149,10 @@ header {
 }
 
 @media (min-width: 600px) {
-
+  header {
+    padding: 1em;
+  }
+  
   .container-shape {
     height: 100%;
     width: 100%;
@@ -169,8 +174,6 @@ header {
         
   .container-image {
     display: flex;
-    min-height: 100vh;
-    align-items: center;
   }
       
   .hero-image {
@@ -178,6 +181,7 @@ header {
     max-width: 25%;
     min-width: 20%;
     margin-left: 20%;
+    margin-top: 20vh;
     border: 10px double var(--COLOR-PRIMARY);
     box-shadow: 0px 0px 20px 12px rgba(0, 0, 0, 0.452);
     z-index: 0;
@@ -212,11 +216,6 @@ header {
   .nav__item + .nav__item {
     margin-left: 2em;
   }
-
-  // .row {
-  //     display: flex;
-  //     justify-content: space-between;
-  // }
 }
 
 @media (max-width: 640px) {
