@@ -209,14 +209,29 @@ p {
 }
 
 .main__article {
-  margin: 2em -1.75em;
+  position: relative;
+  margin: 3em -1.75em 2em;
   padding: 1.25em 2em;
-  background: var(--COLOR-ACCENT-01);
+  background-color: var(--COLOR-ACCENT-01);
 }
+
+.main__article::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("../img/luminous-circles.jpeg");
+  background-size: cover;
+  opacity: 0.15;
+}
+
 
 .main__text {
   color: var(--COLOR-PRIMARY);
   font-weight: 900;
+  font-size: .9rem;
   text-align: center;
 }
 
@@ -250,7 +265,7 @@ p {
 }
 
 .hero-image {
-  margin-top: 3em;
+  margin-top: 2em;
   border-radius: 50%;
   width: 45%;
   border: 10px double var(--COLOR-SECONDARY);
