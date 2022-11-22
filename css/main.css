@@ -24,6 +24,7 @@ body {
   font-family: 'Poppins', sans-serif;
   font-size: 1.1rem;
   transition: all .4s ease-in-out;
+  overflow-x: hidden;
 }
 
 img {
@@ -31,10 +32,24 @@ img {
 }
 
 header {
+  position: relative;
   background: var(--COLOR-ACCENT-01);
   padding: 2em 0;
   text-align: center;
   box-shadow: 0px 2px 15px 20px #191d24;
+}
+
+header::before {
+  visibility: visible;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("../img/luminous-circles.jpeg");
+  background-size: cover;
+  opacity: 0.15;
 }
 
 h1 {
@@ -193,7 +208,7 @@ p {
     MAIN BODY
   ====================== */
 .main__title {
-  margin-top: 0.25em;
+  margin-top: 0.5em;
   letter-spacing: 0.03em;
   font-size: 4.5rem;
 }
@@ -210,7 +225,7 @@ p {
 
 .main__article {
   position: relative;
-  margin: 3em -1.75em 2em;
+  margin: 2.75em -1.7em 2em;
   padding: 1.25em 2em;
   background-color: var(--COLOR-ACCENT-01);
 }
@@ -253,11 +268,11 @@ p {
 .container-shape .theme-btn:focus {
   opacity: 0.75;
 }
-
+/* 
 .icon-border {
   border: 3px solid #0ff1c0;
   border-radius: 50%;
-}
+} */
 
 .container-image {
   display: flex;
@@ -276,6 +291,10 @@ p {
 @media (min-width: 600px) {
   header {
     padding: 0.25em;
+  }
+  
+  header::before {
+    visibility: hidden;
   }
   
   .container-shape {
