@@ -4,9 +4,11 @@
 
 :root {
   --COLOR-PRIMARY: #050e1d;
+  --COLOR-PRIMAY-OFFSET: #050e1dab;
   --COLOR-SECONDARY: #37C7A8;
   --COLOR-ACCENT-01: #96E0D0;
   --COLOR-ACCENT-02: #85F1DA;
+  --COLOR-ACCENT-03: #33f3c9;
   --COLOR-LIGHT-01: #F5F5F5;
   --COLOR-LIGHT-02: #EBEBEB;
   --COLOR-GRAY-01: #CCCCCC;
@@ -53,7 +55,6 @@ header::before {
 }
 
 h1 {
-  color: var(--COLOR-LIGHT-02);
   margin: 0;
   padding: 0;
 }
@@ -176,7 +177,7 @@ p {
 
 .nav__item-hover:hover,
 .nav__item-hover:focus {
-  background-color: #30e6bf6c;
+  background-color: #ebebeb36;
 }
 
 .nav__link {
@@ -210,24 +211,34 @@ p {
 .main__title {
   margin-top: 0.5em;
   letter-spacing: 0.03em;
-  font-size: 4.5rem;
+  color: var(--COLOR-GRAY-01);
+  font-size: 4rem;
 }
 
 .main__title--accent {
-  color: var(--COLOR-ACCENT-02);
+  color: var(--COLOR-ACCENT-03);
 }
 
 .main__sub-title {
-  color: var(--COLOR-GRAY-01);
-  font-size: 2rem;
-  letter-spacing: 0.0275em;
+  color: var(--COLOR-GRAY-02);
+  font-size: 1.75rem;
+  letter-spacing: 0.04125em;
+}
+
+.main__hero-image--mobile {
+  visibility: visible;
+  margin: 2.75em 0 0.75em;
+  border-radius: 50%;
+  width: 45%;
+  border: 10px double var(--COLOR-SECONDARY);
+  box-shadow: 0px 0px 20px 12px rgba(85, 84, 84, 0.452);
 }
 
 .main__article {
   position: relative;
-  margin: 2.75em -1.7em 2em;
+  margin: 2.125em -1.7em 0;
   padding: 1.25em 2em;
-  background-color: var(--COLOR-ACCENT-01);
+  background-color: var(--COLOR-PRIMAY-OFFSET);
 }
 
 .main__article::before {
@@ -239,12 +250,11 @@ p {
   left: 0;
   background-image: url("../img/luminous-circles.jpeg");
   background-size: cover;
-  opacity: 0.15;
+  opacity: 0.0575;
 }
 
-
 .main__text {
-  color: var(--COLOR-PRIMARY);
+  color: var(--COLOR-GRAY-02);
   font-weight: 900;
   font-size: .9rem;
   text-align: center;
@@ -253,6 +263,14 @@ p {
 /*======================
     SPECIAL ELEMENTS
   ====================== */
+.container-shape {
+  visibility: visible;
+  margin: 0;
+  padding: 0;
+  height: 0vh;
+  width: 0vw;
+}
+
 .container-shape .theme-btn {
   visibility: visible;
   position: absolute;
@@ -268,26 +286,28 @@ p {
 .container-shape .theme-btn:focus {
   opacity: 0.75;
 }
+
 /* 
 .icon-border {
   border: 3px solid #0ff1c0;
   border-radius: 50%;
 } */
 
-.container-image {
+/* .container-image {
+  visibility: hidden;
   display: flex;
   justify-content: center;
 }
 
 .hero-image {
-  margin-top: 2em;
-  border-radius: 50%;
-  width: 45%;
-  border: 10px double var(--COLOR-SECONDARY);
-  box-shadow: 0px 0px 20px 12px rgba(85, 84, 84, 0.452);
-}
+  visibility: hidden;
+  margin: 0;
+  padding: 0;
+} */
 
-
+/*======================
+    MEDIA QUERIES
+  ====================== */
 @media (min-width: 600px) {
   header {
     padding: 0.25em;
@@ -296,8 +316,9 @@ p {
   header::before {
     visibility: hidden;
   }
-  
+
   .container-shape {
+    visibility: visible;
     height: 100%;
     width: 100%;
     position: relative;
@@ -321,10 +342,12 @@ p {
   }
 
   .container-image {
+    display: flex;
     justify-content: flex-start;
   }
       
   .hero-image {
+    visibility: visible;
     border-radius: 50%;
     max-width: 25%;
     min-width: 20%;
@@ -383,8 +406,14 @@ p {
   .nav__list .nav__link--theme-button {
     visibility: visible;
   }
-}
 
+  .main__hero-image--mobile {
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+  }
+}
+  
 @media (max-width: 640px) {
   .nav__list--primary {
     margin: 0;
