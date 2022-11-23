@@ -10,3 +10,6 @@ img/
 
 # Font awesome credentials
 .npmrc
+
+# Additional css file for draft purposes
+draft.css
