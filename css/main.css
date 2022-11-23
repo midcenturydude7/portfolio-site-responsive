@@ -20,6 +20,9 @@
   --COLOR-GRADIENT-01: linear-gradient(to top, var(--COLOR-SECONDARY), var(--COLOR-ACCENT-01));
 }
 
+/*===============================
+    GENERAL STYLES | TYPOGRAPHY
+  =============================== */
 body {
   margin: 0;
   background: var(--COLOR-PRIMARY);
@@ -33,25 +36,51 @@ img {
   max-width: 100%;
 }
 
-header {
+header,
+footer {
   position: relative;
   background: var(--COLOR-ACCENT-01);
-  padding: 2em 0;
   text-align: center;
   box-shadow: 0px 2px 15px 20px #191d24;
 }
 
-header::before {
+header::before,
+footer::before {
   visibility: visible;
   content: "";
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
+  background-color: transparent;
+}
+
+header {
+  padding: 2em 0;
+  box-shadow: 0px 2px 15px 20px #191d24;
+  border-radius: 0 0 25px 25px;
+}
+
+header::before {
+  bottom: -50px;
   left: 0;
-  background-image: url("../img/luminous-circles.jpeg");
-  background-size: cover;
-  opacity: 0.15;
+  right: 0;
+  height: 50px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  box-shadow: -20px -30px 0 30px var(--COLOR-ACCENT-01);
+}
+
+footer {
+  padding: 2.5em 0; 
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+footer::before {
+  top: -50px;
+  left: 0;
+  right: 0;
+  height: 50px;
+  border-radius: 0 0 25px 25px;
+  box-shadow: -20px 30px 0 30px var(--COLOR-ACCENT-01);
 }
 
 h1 {
@@ -65,6 +94,11 @@ p {
   padding: 0;
 }
 
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
 /*======================
     LAYOUT
   ====================== */
@@ -73,6 +107,24 @@ p {
     margin: 0 auto;
     width: 90%;
     max-width: 1200px;
+  }
+
+  .container__bg-image {
+    position: relative;
+    background: var(--COLOR-ACCENT-01);
+  }
+
+  .container__bg-image::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/luminous-circles.jpeg");
+    background-size: cover;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    margin: 0 -1.5em;
+    height: 100px;
+    opacity: .175;
   }
 
   .row {
@@ -208,6 +260,9 @@ p {
 /*======================
     MAIN BODY
   ====================== */
+main {
+  margin-bottom: 3em;
+}
 .main__title {
   margin-top: 0.5em;
   letter-spacing: 0.03em;
@@ -261,10 +316,76 @@ p {
 }
 
 /*======================
+    FOOTER
+  ====================== */
+.footer-btn {
+  /* position: absolute;
+  top: 25%;
+  left: 30%; */
+  display: flex;
+  align-self: flex-start;
+  justify-content: center;
+  white-space: no-wrap;
+  z-index: 1;
+}
+
+.footer__main-btn {
+  border-radius: 30px;
+  font-weight: 900;
+  position: relative;
+  border: 1px solid var(--COLOR-PRIMARY);
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.footer__btn-text {
+  color: var(--COLOR-PRIMARY);
+  padding: 0.5em 2em;
+}
+
+.footer__btn-text--hover {
+  color: var(--COLOR-GRAY-01);
+  transition: all .5s ease-out;
+}
+
+.footer__btn-icon {
+  background-color: var(--COLOR-PRIMARY);
+  color: var(--COLOR-GRAY-01);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 1em;
+  /* z-index: 1; */
+}
+
+.footer__btn-icon::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  transition: all .4s ease-out;
+  /* z-index: 1; */
+}
+
+.footer__btn-icon:hover::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--COLOR-PRIMARY);
+  transform: translateX(0);
+  transition: all 0.4s ease-out;
+  z-index: -1;
+}
+
+/*======================
     SPECIAL ELEMENTS
   ====================== */
 .container-shape {
-  visibility: visible;
   margin: 0;
   padding: 0;
   height: 0vh;
@@ -287,12 +408,6 @@ p {
   opacity: 0.75;
 }
 
-/* 
-.icon-border {
-  border: 3px solid #0ff1c0;
-  border-radius: 50%;
-} */
-
 /* .container-image {
   visibility: hidden;
   display: flex;
@@ -312,13 +427,16 @@ p {
   header {
     padding: 0.25em;
   }
-  
+
+  header {
+    border-radius: 0;
+  }
+
   header::before {
     visibility: hidden;
   }
 
   .container-shape {
-    visibility: visible;
     height: 100%;
     width: 100%;
     position: relative;
