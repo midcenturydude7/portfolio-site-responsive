@@ -11,7 +11,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://kit.fontawesome.com/b245f8ce7a.js" crossorigin="anonymous"></script>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
   <title>DRAFT: Portfolio Site</title>
 </head>
 <body>
@@ -20,7 +21,7 @@
   <header class="header__bg-image">
     <div class="container">
       <button class="nav-toggle" aria-label="open navigation">
-        <span class="hamburger"></span>
+        <span class="nav__menu"><i class="fas fa-bars"></i></span>
       </button>
       <nav class="nav">
         <ul class="nav__list nav__list--primary">
@@ -50,8 +51,8 @@
   <footer>
     <div class="footer-btn">
       <a href="#" class="footer__main-btn">
-      <span class="footer__btn-text">Learn more</span>
-      <span class="footer__btn-icon"><i class="fas fa-download"></i></span>
+      <span class="footer__btn-text footer__btn-text--hover">Learn more</span>
+      <span class="footer__btn-icon"><i class="fas fa-terminal"></i></span>
       </a>
     </div>
   </footer>
@@ -66,5 +67,5 @@
     </div>
   </div>
   <script src="app.js" type="module"></script>
-</body>
+  </body>
 </html>

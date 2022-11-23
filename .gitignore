@@ -7,3 +7,6 @@
 
 # Add img folder to .gitignore
 img/
+
+# Font awesome credentials
+.npmrc
