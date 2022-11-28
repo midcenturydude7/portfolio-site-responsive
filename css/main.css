@@ -32,6 +32,7 @@
   --COLOR-ACCENT-03: #46caae;
   --COLOR-LIGHT-01: #010101;
   --COLOR-LIGHT-02: #111111;
+  --COLOR-GRAY-01-UNIV: #CCCCCC;
   --COLOR-GRAY-01: #141414;
   --COLOR-GRAY-02: #474747;
   --COLOR-GRAY-03: #7A7A7A;
@@ -163,7 +164,19 @@ a {
 
   .bottom-row {
     visibility: hidden;
+    /* margin: 0;
+    padding: 0; */
   }
+
+  /* .col--left-bottom {
+    margin: 0;
+    padding: 0;
+  }
+
+  .col--right-bottom {
+    margin: 0;
+    padding: 0;
+  } */
 
 /*======================
     NAVIGATION
@@ -612,7 +625,7 @@ main {
   }
   
   .main__btn-text--hover {
-    color: var(--COLOR-GRAY-01-UNIV);
+    color: var(--COLOR-GRAY-01);
     transition: all .5s ease-out;
   }
   
