@@ -1,12 +1,8 @@
-const navToggleBtn = document.querySelector(".nav-toggle");
-const nav = document.querySelector(".nav");
-const footerBtnIcon = document.querySelector(".footer__btn-icon");
-const footerBtnText = document.querySelector(".footer__btn-text");
-const themeBtn = document.querySelector(".theme-btn");
-const navLinkThemeBtn = document.querySelector(".nav__link--theme-button");
-
 // Mobile Navigation Menu Toggle Btn
 function mobileNavBtn() {
+  const navToggleBtn = document.querySelector(".nav-toggle");
+  const nav = document.querySelector(".nav");
+
   navToggleBtn.addEventListener("click", function handleMouseClick() {
     nav.classList.toggle("nav--visible");
   });
@@ -19,8 +15,11 @@ function mobileNavBtn() {
 
 mobileNavBtn();
 
-// Learn More Btn
-function learnMoreBtn() {
+// Learn More Btn Mobile
+function learnMoreBtnMobile() {
+  const footerBtnIcon = document.querySelector(".footer__btn-icon");
+  const footerBtnText = document.querySelector(".footer__btn-text");
+
   window.onload = () => {
     footerBtnText.style.color = "#050e1d";
   };
@@ -34,10 +33,32 @@ function learnMoreBtn() {
   });
 }
 
-learnMoreBtn();
+// Learn More Btn Dark Mode / Media Query: min-width: 600px
+function learnMoreBtnQueryDark() {
+  const mainBtnIcon = document.querySelector(".main__btn-icon");
+  const mainBtnText = document.querySelector(".main__btn-text");
+
+  window.onload = () => {
+    mainBtnText.style.color = "#CCC";
+  };
+
+  mainBtnIcon.addEventListener("mouseover", function handleMouseOver() {
+    mainBtnText.style.color = "#050e1d";
+  });
+
+  mainBtnIcon.addEventListener("mouseout", function handleMouseOut() {
+    mainBtnText.style.color = "#CCC";
+  });
+}
+
+learnMoreBtnQueryDark();
+learnMoreBtnMobile();
 
 // Light/Dark Mode Btn
 function toggleLightMode() {
+  const themeBtn = document.querySelector(".theme-btn");
+  const navLinkThemeBtn = document.querySelector(".nav__link--theme-button");
+
   themeBtn.addEventListener("click", () => {
     let element = document.body;
     element.classList.toggle("light-mode");
@@ -46,7 +67,31 @@ function toggleLightMode() {
   navLinkThemeBtn.addEventListener("click", () => {
     let element = document.body;
     element.classList.toggle("light-mode");
+
+    if (element.classList === "light-mode") {
+      learnMoreBtnQueryLight();
+    } else {
+      learnMoreBtnQueryDark();
+    }
   });
 }
 
 toggleLightMode();
+
+// Learn More Btn Light Mode / Media Query: min-width: 600px
+function learnMoreBtnQueryLight() {
+  const mainBtnIcon = document.querySelector(".main__btn-icon");
+  const mainBtnText = document.querySelector(".main__btn-text");
+
+  window.onload = () => {
+    mainBtnText.style.color = "#050e1d";
+  };
+
+  mainBtnIcon.addEventListener("mouseover", function handleMouseOver() {
+    mainBtnText.style.color = "#CCC";
+  });
+
+  mainBtnIcon.addEventListener("mouseout", function handleMouseOut() {
+    mainBtnText.style.color = "#050e1d";
+  });
+}
