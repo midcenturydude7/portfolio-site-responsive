@@ -163,20 +163,8 @@ a {
   }
 
   .bottom-row {
-    visibility: hidden;
-    /* margin: 0;
-    padding: 0; */
+    display: none;
   }
-
-  /* .col--left-bottom {
-    margin: 0;
-    padding: 0;
-  }
-
-  .col--right-bottom {
-    margin: 0;
-    padding: 0;
-  } */
 
 /*======================
     NAVIGATION
@@ -467,8 +455,13 @@ main {
   }
 
   /* LAYOUT */
+  .row {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
   .bottom-row {
-    visibility: visible;
+    display: flex;
     padding: 1em 0 1em;
   }
 
@@ -551,11 +544,6 @@ main {
     /* height: 80vh; */
   }
 
-  .row {
-    flex-direction: row;
-    align-items: flex-start;
-  }
-
   .main__hero-image {
     margin: 2em 0 0 0;
     width: 75%;
@@ -620,7 +608,7 @@ main {
   }
   
   .main__btn-text {
-    color: var(--COLOR-GRAY-01);
+    color: var(--COLOR-PRIMARY);
     padding: 0.5em 2em;
   }
   
