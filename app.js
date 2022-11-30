@@ -48,10 +48,11 @@ function toggleLightModeDesktop() {
   const navLinkThemeBtn = document.querySelector(".nav__link--theme-button");
   const mainBtnIcon = document.querySelector(".main__btn-icon");
   const mainBtnText = document.querySelector(".main__btn-text");
-  mainBtnText.style.color = "#CCC";
+  // mainBtnText.style.color = "#CCC";
 
   navLinkThemeBtn.addEventListener("click", () => {
     let element = document.body;
+
     if (element.classList.toggle("light-mode")) {
       mainBtnText.style.color = "#050e1d";
 
@@ -64,9 +65,21 @@ function toggleLightModeDesktop() {
       });
     } else if (element.classList.toggle("root")) {
       mainBtnText.style.color = "#CCC";
-      learnMoreBtnQueryDark();
+
+      mainBtnIcon.addEventListener("mouseover", function handleMouseOver() {
+        mainBtnText.style.color = "#050e1d";
+      });
+      mainBtnIcon.addEventListener("mouseout", function handleMouseOut() {
+        mainBtnText.style.color = "#CCC";
+      });
     }
   });
+
+  if (navLinkThemeBtn.classList.toggle("root")) {
+    learnMoreBtnQueryDark();
+  } else {
+    learnMoreBtnQueryLight();
+  }
 }
 toggleLightModeDesktop();
 
@@ -90,6 +103,10 @@ function learnMoreBtnQueryDark() {
   const mainBtnIcon = document.querySelector(".main__btn-icon");
   const mainBtnText = document.querySelector(".main__btn-text");
 
+  window.onload = () => {
+    mainBtnText.style.color = "#CCC";
+  };
+
   mainBtnIcon.addEventListener("mouseover", function handleMouseOver() {
     mainBtnText.style.color = "#050e1d";
   });
@@ -100,19 +117,19 @@ function learnMoreBtnQueryDark() {
 }
 
 // Learn More Btn Light Mode / Media Query: min-width: 600px
-// function learnMoreBtnQueryLight() {
-//   const mainBtnIcon = document.querySelector(".main__btn-icon");
-//   const mainBtnText = document.querySelector(".main__btn-text");
+function learnMoreBtnQueryLight() {
+  const mainBtnIcon = document.querySelector(".main__btn-icon");
+  const mainBtnText = document.querySelector(".main__btn-text");
 
-//   window.onload = () => {
-//     mainBtnText.style.color = "#050e1d";
-//   };
+  window.onload = () => {
+    mainBtnText.style.color = "#050e1d";
+  };
 
-//   mainBtnIcon.addEventListener("mouseover", function handleMouseOver() {
-//     mainBtnText.style.color = "#CCC";
-//   });
+  mainBtnIcon.addEventListener("mouseover", function handleMouseOver() {
+    mainBtnText.style.color = "#CCC";
+  });
 
-//   mainBtnIcon.addEventListener("mouseout", function handleMouseOut() {
-//     mainBtnText.style.color = "#050e1d";
-//   });
-// }
+  mainBtnIcon.addEventListener("mouseout", function handleMouseOut() {
+    mainBtnText.style.color = "#050e1d";
+  });
+}
