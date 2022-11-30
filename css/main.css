@@ -608,12 +608,18 @@ main {
   }
   
   .main__btn-text {
-    color: var(--COLOR-PRIMARY);
+    color: var(--COLOR-GRAY-01);
     padding: 0.5em 2em;
   }
   
   .main__btn-text--hover {
-    color: var(--COLOR-GRAY-01);
+    color: var(--COLOR-PRIMARY);
+    transition: all .5s ease-out;
+  }
+
+  */ JS WORKAROUND */
+  .main__btn-text--hover-js {
+    color: #CCC;
     transition: all .5s ease-out;
   }
   
