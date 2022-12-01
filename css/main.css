@@ -617,12 +617,6 @@ main {
     transition: all .5s ease-out;
   }
 
-  */ JS WORKAROUND */
-  .main__btn-text--hover-js {
-    color: #CCC;
-    transition: all .5s ease-out;
-  }
-  
   .main__btn-icon {
     background-color: var(--COLOR-GRAY-01);
     color: var(--COLOR-PRIMARY);
