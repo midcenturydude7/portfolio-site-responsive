@@ -49,7 +49,6 @@ function toggleLightModeDesktop() {
   const mainBtnIcon = document.querySelector(".main__btn-icon");
   const mainBtnText = document.querySelector(".main__btn-text");
   const mainBtnTextHover = document.querySelector(".main__btn-text--hover");
-  // mainBtnText.style.color = "#CCC";
 
   navLinkThemeBtn.addEventListener("click", () => {
     let element = document.body;
@@ -62,7 +61,7 @@ function toggleLightModeDesktop() {
       });
 
       mainBtnIcon.addEventListener("mouseout", function handleMouseOut() {
-        mainBtnTextHover.style.color = "#050e1d";
+        mainBtnText.style.color = "#050e1d";
       });
     } else if (element.classList.toggle("root")) {
       mainBtnText.style.color = "#CCC";
@@ -71,7 +70,7 @@ function toggleLightModeDesktop() {
         mainBtnTextHover.style.color = "#050e1d";
       });
       mainBtnIcon.addEventListener("mouseout", function handleMouseOut() {
-        mainBtnTextHover.style.color = "#CCC";
+        mainBtnText.style.color = "#CCC";
       });
     }
   });
@@ -99,7 +98,7 @@ function learnMoreBtnQueryDark() {
   });
 
   mainBtnIcon.addEventListener("mouseout", function handleMouseOut() {
-    mainBtnTextHover.style.color = "#CCC";
+    mainBtnText.style.color = "#CCC";
   });
 }
 
@@ -118,6 +117,6 @@ function learnMoreBtnQueryLight() {
   });
 
   mainBtnIcon.addEventListener("mouseout", function handleMouseOut() {
-    mainBtnTextHover.style.color = "#050e1d";
+    mainBtnText.style.color = "#050e1d";
   });
 }
