@@ -7,7 +7,7 @@
 :root {
   --COLOR-PRIMARY-UNIV: #050e1d;
   --COLOR-PRIMARY: #050e1d;
-  --COLOR-SECONDARY: #37C7A8;
+  --COLOR-SECONDARY: #30b699;
   --COLOR-ACCENT-01: #96E0D0;
   --COLOR-ACCENT-02: #85F1DA;
   --COLOR-ACCENT-03: #33f3c9;
@@ -26,10 +26,10 @@
 .light-mode {
   --COLOR-PRIMARY-UNIV: #050e1d;
   --COLOR-PRIMARY: #DADADA;
-  --COLOR-SECONDARY: #37C7A8;
+  --COLOR-SECONDARY: #2ead92;
   --COLOR-ACCENT-01: #96E0D0;
   --COLOR-ACCENT-02: #85F1DA;
-  --COLOR-ACCENT-03: #46caae;
+  --COLOR-ACCENT-03: #3bc0a3;
   --COLOR-LIGHT-01: #010101;
   --COLOR-LIGHT-02: #111111;
   --COLOR-GRAY-01-UNIV: #CCCCCC;
@@ -427,11 +427,11 @@ main {
   }
 
   footer {
-    background: #3cc8aa;
+    background: #35b89b;
   }
 
   footer::before {
-    box-shadow: -20px 30px 0 30px #3cc8aa;
+    box-shadow: -20px 30px 0 30px #35b89b;
   }
 
   /* LAYOUT */
@@ -540,8 +540,14 @@ main {
     width: 90%;
   }
 
+  .col--left-bottom .main__title {
+    font-size: 3.125rem;
+    text-align: right;
+    margin-right: 2.5em;
+  }
+
   .chevron-text {
-    margin-left: 4em;
+    margin-left: 2em;
   }
 
   .chevron {
@@ -560,6 +566,10 @@ main {
 
   .chevron-margin {
     margin-right: -0.45em;
+  }
+
+  .chevron-terminal {
+    margin-left: 0.1215em;
   }
 
   .col--right-bottom {
@@ -588,6 +598,12 @@ main {
     opacity: 0.5;
     transform: scale(1.5, 1.5);
     transition: height transform .8s ease;
+  }
+
+  .col--right-bottom:hover .col--right-bottom--banner {
+    background-color: var(--COLOR-SECONDARY);
+    transition: all .4s ease-in-out;
+
   }
 
   .col--right-bottom:hover .col--right-bottom--text {
@@ -622,9 +638,9 @@ main {
     top: 20px;
     right: 20px;
     padding: 0.5rem 1rem;
-    color: var(--COLOR-GRAY-6);
+    color: var(--COLOR-PRIMARY-UNIV);
     text-transform: uppercase;
-    background-color: var(--COLOR-SECONDARY);
+    background-color: var(--COLOR-GRAY-03);
     border-right: 7px solid rgba(245, 245, 245, 0.5);
     border-radius: 5px;
     font-size: 0.8rem;
@@ -679,7 +695,7 @@ main {
   }
 
   .col--right-bottom--title:hover {
-    color: var(--COLOR-ACCENT-01);
+    color: var(--COLOR-ACCENT-03) !important;
     transition: all .4s ease-in-out;
   }
 
@@ -696,7 +712,7 @@ main {
   }
 
   .col--right-bottom--span:hover {
-    color: var(--COLOR-ACCENT-02);
+    color: var(--COLOR-ACCENT-03);
     transition: all .4s ease-in-out;
   }
 
