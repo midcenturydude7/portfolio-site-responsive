@@ -756,6 +756,7 @@ main {
   }
 
   .main-btn {
+    position: relative;
     margin-top: 4.4875em;
     justify-content: left;
   }
@@ -792,11 +793,6 @@ main {
   .main__btn-text--right {
     color: var(--COLOR-GRAY-01);
     padding: 0.5em 1.75em 0.5em 2em;
-  }
-
-  .main__btn-text--hover {
-    color: var(--COLOR-PRIMARY);
-    transition: all .5s ease-out;
   }
 
   .main__btn-icon, 
@@ -844,6 +840,11 @@ main {
 
   .main__btn-icon--right:hover::before {
     background-color: var(--COLOR-SECONDARY);
+  }
+
+  .main-btn:hover + .main__btn-text {
+    color: var(--COLOR-PRIMARY);
+    transition: all .5s ease-out;
   }
 
   /* FOOTER */
