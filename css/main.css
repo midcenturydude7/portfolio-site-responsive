@@ -415,8 +415,6 @@ main {
     overflow: auto;
   }
 
-
-
   /* LAYOUT */
   .row {
     align-items: center;
@@ -810,6 +808,7 @@ main {
   }
 }
 
+/* Big Screens */
 @media (min-width: 1200px) {
   /* GENERAL SYTLES */
   header {
@@ -934,6 +933,7 @@ main {
   }
 }
 
+/* Huge Screens | High-res */
 @media (min-width: 2500px) {
   .main__hero-image {
     margin: 2em 2em 0 0;
@@ -952,5 +952,4 @@ main {
   .col--right {
     width: 55%;
   }
-
 }
