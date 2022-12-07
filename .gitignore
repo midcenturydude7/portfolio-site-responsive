@@ -5,8 +5,8 @@
 # Ignores media.css and media.scss for now
 /styles/media*
 
-# Add img folder to .gitignore
-img/
+# # Add img folder to .gitignore
+# img/
 
 # Font awesome credentials
 .npmrc
