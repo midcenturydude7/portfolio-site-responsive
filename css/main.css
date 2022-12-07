@@ -861,14 +861,14 @@ main {
   }
   
   .main__hero-image {
-    margin: 2em 0 0 0;
-    width: 75%;
+    margin: 2em 2em 0 0;
+    width: 65%;
     z-index: 2;
   }
 
   .col--left {
     order: -1;
-    margin-left: -20em;
+    margin-left: -25em;
     justify-content: center;
   }
 
@@ -932,4 +932,25 @@ main {
   .chevron-terminal {
     margin-left: 0.15em;
   }
+}
+
+@media (min-width: 2500px) {
+  .main__hero-image {
+    margin: 2em 2em 0 0;
+    width: 75%;
+  }
+
+  .col--left {
+    margin-left: -40em;
+  }
+
+  .col--middle {
+    margin-left: 7em;
+    width: 38%;
+  }
+
+  .col--right {
+    width: 55%;
+  }
+
 }
