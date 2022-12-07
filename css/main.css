@@ -285,6 +285,7 @@ main {
 .col--middle {
   display: flex;
   flex-direction: column;
+  align-items: center;
   order: -1;
 }
 
@@ -874,13 +875,13 @@ main {
   .col--middle {
     display: flex;
     align-items: left;
-    width: 40%;
+    width: 45%;
     border-right: 1px dashed var(--COLOR-GRAY-04);
     padding-bottom: 4em;
   }
 
   .col--right {
-    width: 58%;
+    width: 50%;
   }
 
   .main__article {
@@ -941,15 +942,20 @@ main {
   }
 
   .col--left {
-    margin-left: -40em;
+    margin-left: -45em;
   }
 
   .col--middle {
-    margin-left: 7em;
-    width: 38%;
+    width: 45%;
   }
 
   .col--right {
-    width: 55%;
+    margin: 0;
+    padding: 0 0 0 2em;
+    width: 45%;
+  }
+
+  .chevron-text {
+    margin-left: 12em;
   }
 }
