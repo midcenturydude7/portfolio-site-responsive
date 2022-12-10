@@ -411,6 +411,12 @@ main {
 /*======================
     MEDIA QUERIES
   ====================== */
+@media (max-width: 640px) {
+  .nav__list--primary {
+    margin: 0;
+  }
+}
+
 @media (min-width: 800px) {
   body {
     overflow: auto;
@@ -421,6 +427,10 @@ main {
     align-items: center;
   }
 
+  .top-row {
+    padding-bottom: 1em;
+  }
+  
   .bottom-row {
     display: flex;
     padding: 1em 0 1em;
@@ -488,6 +498,7 @@ main {
   .col--left {
     justify-content: center;
     align-items: center;
+    margin-bottom: 3em;
   }
 
   .col--left-bottom {
@@ -673,10 +684,9 @@ main {
   }
 
   .col--middle {
+    align-items: center;
     padding: 0;
     margin: 0;
-    justify-content: flex-start;
-    align-items: center;
   }
 
   .main__sub-title {
@@ -685,23 +695,27 @@ main {
   }
 
   .col--right {
+    width: 95%;
     flex-direction: column;
-    justify-content: flex-start;
-    padding: 0 3em 1em;
+    padding: 0 0 1em 2.9em;
   }
 
   .main__article {
+    display: flex;
+    justify-content: center;
     margin: 0;
+    padding: 2em 0
   }
 
   .main__article:nth-child(2) {
     border-top: none;
-    display: block;
+    display: flex;
     margin-top: 0;
+    padding: 0;
   }
 
   .main__text {
-    width: 85%;
+    width: 75%;
     margin-left: 2em;
     text-align: justify;
   }
@@ -720,13 +734,13 @@ main {
 
   .main-btn {
     position: relative;
-    margin: 0;
+    margin: 3em 0 2em;
     padding: 0;
     justify-content: center;
   }
 
   .main-btn--right {
-    margin: 0 0 0.5em;
+    margin: 3em 0 0.725em;
     justify-content: center;
   }
 
@@ -817,12 +831,6 @@ main {
   }
 }
 
-@media (max-width: 640px) {
-  .nav__list--primary {
-    margin: 0;
-  }
-}
-
 /* Big Screens */
 @media (min-width: 1200px) {
   /* GENERAL SYTLES */
@@ -843,6 +851,9 @@ main {
     flex-direction: row;
   }
   
+  .bottom-row {
+    flex-direction: column;
+  }
   /* SPECIAL ELEMENTS */
   .container-shape {
     width: 100%;
@@ -871,7 +882,6 @@ main {
   /* MAIN CONTENT */
   main {
     padding: 5em 0 5% 30%;
-    /* height: 80vh; */
   }
   
   .main__hero-image {
@@ -891,7 +901,7 @@ main {
     align-items: left;
     width: 45%;
     border-right: 1px dashed var(--COLOR-GRAY-04);
-    padding-bottom: 1em;
+    padding: 1.5em 0 3em 0;
   }
 
   .col--right {
@@ -945,6 +955,12 @@ main {
 
   .chevron-terminal {
     margin-left: 0.15em;
+  }
+}
+
+@media (min-width: 1650px) {
+  .bottom-row {
+    flex-direction: row;
   }
 }
 
