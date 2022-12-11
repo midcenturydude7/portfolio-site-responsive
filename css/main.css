@@ -899,9 +899,9 @@ main {
   .col--middle {
     display: flex;
     justify-content: center;
-    width: 40%;
+    width: 43%;
     border-right: 1px dashed var(--COLOR-GRAY-04);
-    padding: 1.5em 2.2em 2.85em 0;
+    padding: 1.5em 0 2.85em 0;
   }
 
   .col--right {
