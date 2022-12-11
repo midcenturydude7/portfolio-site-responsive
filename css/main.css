@@ -898,10 +898,10 @@ main {
 
   .col--middle {
     display: flex;
-    align-items: left;
-    width: 45%;
+    justify-content: center;
+    width: 40%;
     border-right: 1px dashed var(--COLOR-GRAY-04);
-    padding: 1.5em 0 3em 0;
+    padding: 1.5em 2.2em 2.85em 0;
   }
 
   .col--right {
