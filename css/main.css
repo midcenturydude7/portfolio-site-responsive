@@ -901,7 +901,7 @@ main {
     justify-content: center;
     width: 43%;
     border-right: 1px dashed var(--COLOR-GRAY-04);
-    padding: 1.5em 0 2.85em 0;
+    padding: 1.5em 0 1.2em 0;
   }
 
   .col--right {
