@@ -33,7 +33,7 @@ function learnMoreBtnMobile() {
 }
 learnMoreBtnMobile();
 
-// Light/Dark Mode Btn
+// Light/Dark Mode Btn >> Responsive
 function toggleLightModeMobile() {
   const themeBtn = document.querySelector(".theme-btn");
 
@@ -44,79 +44,24 @@ function toggleLightModeMobile() {
 }
 toggleLightModeMobile();
 
+// Light/Dark Mode Btn & Learn More Btn >> Large Screens
 function toggleLightModeDesktop() {
   const navLinkThemeBtn = document.querySelector(".nav__link--theme-button");
   const mainBtnIcon = document.querySelector(".main__btn-icon");
-  const mainBtnText = document.querySelector(".main__btn-text");
-  const mainBtnTextHover = document.querySelector(".main__btn-text--hover");
 
   navLinkThemeBtn.addEventListener("click", () => {
     let element = document.body;
-
-    if (element.classList.toggle("light-mode")) {
-      mainBtnText.style.color = "#050e1d";
-
-      mainBtnIcon.addEventListener("mouseover", function handleMouseOver() {
-        mainBtnTextHover.style.color = "#CCC";
-      });
-
-      mainBtnIcon.addEventListener("mouseout", function handleMouseOut() {
-        mainBtnText.style.color = "#050e1d";
-      });
-    } else if (element.classList.toggle("root")) {
-      mainBtnText.style.color = "#CCC";
-
-      mainBtnIcon.addEventListener("mouseover", function handleMouseOver() {
-        mainBtnTextHover.style.color = "#050e1d";
-      });
-      mainBtnIcon.addEventListener("mouseout", function handleMouseOut() {
-        mainBtnText.style.color = "#CCC";
-      });
-    }
+    element.classList.toggle("light-mode");
   });
 
-  if (navLinkThemeBtn.classList.toggle("root")) {
-    learnMoreBtnQueryDark();
-  } else if (navLinkThemeBtn.classList.toggle("light-mode")) {
-    learnMoreBtnQueryLight();
-  }
+  mainBtnIcon.addEventListener("mouseover", () => {
+    let element = document.getElementById("main__btn-text");
+    element.classList.replace("main__btn-text", "main__btn-text--hover");
+  });
+
+  mainBtnIcon.addEventListener("mouseout", () => {
+    let element = document.getElementById("main__btn-text");
+    element.classList.replace("main__btn-text--hover", "main__btn-text");
+  });
 }
 toggleLightModeDesktop();
-
-// Learn More Btn Dark Mode / Media Query: min-width: 600px
-function learnMoreBtnQueryDark() {
-  const mainBtnIcon = document.querySelector(".main__btn-icon");
-  const mainBtnTextHover = document.querySelector(".main__btn-text--hover");
-  const mainBtnText = document.querySelector(".main__btn-text");
-
-  window.addEventListener("load", () => {
-    mainBtnText.style.color = "#CCC";
-  });
-
-  mainBtnIcon.addEventListener("mouseover", function handleMouseOver() {
-    mainBtnTextHover.style.color = "#050e1d";
-  });
-
-  mainBtnIcon.addEventListener("mouseout", function handleMouseOut() {
-    mainBtnText.style.color = "#CCC";
-  });
-}
-
-// Learn More Btn Light Mode / Media Query: min-width: 600px
-function learnMoreBtnQueryLight() {
-  const mainBtnIcon = document.querySelector(".main__btn-icon");
-  const mainBtnTextHover = document.querySelector(".main__btn-text--hover");
-  const mainBtnText = document.querySelector(".main__btn-text");
-
-  window.addEventListener("load", () => {
-    mainBtnText.style.color = "#050e1d";
-  });
-
-  mainBtnIcon.addEventListener("mouseover", function handleMouseOver() {
-    mainBtnTextHover.style.color = "#CCC";
-  });
-
-  mainBtnIcon.addEventListener("mouseout", function handleMouseOut() {
-    mainBtnText.style.color = "#050e1d";
-  });
-}
