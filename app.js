@@ -44,15 +44,20 @@ function toggleLightModeMobile() {
 }
 toggleLightModeMobile();
 
-// Light/Dark Mode Btn & Learn More Btn >> Large Screens
+// Light/Dark Mode Btn >> Large Screens
 function toggleLightModeDesktop() {
   const navLinkThemeBtn = document.querySelector(".nav__link--theme-button");
-  const mainBtnIcon = document.querySelector(".main__btn-icon");
 
   navLinkThemeBtn.addEventListener("click", () => {
     let element = document.body;
     element.classList.toggle("light-mode");
   });
+}
+toggleLightModeDesktop();
+
+// Learn More Btn >> Big Screens
+const learnMoreBtnBigScreen = () => {
+  const mainBtnIcon = document.querySelector(".main__btn-icon");
 
   mainBtnIcon.addEventListener("mouseover", () => {
     let element = document.getElementById("main__btn-text");
@@ -63,5 +68,26 @@ function toggleLightModeDesktop() {
     let element = document.getElementById("main__btn-text");
     element.classList.replace("main__btn-text--hover", "main__btn-text");
   });
-}
-toggleLightModeDesktop();
+};
+learnMoreBtnBigScreen();
+
+const downloadBtn = () => {
+  const mainBtnIconRight = document.querySelector(".main__btn-icon--right");
+
+  mainBtnIconRight.addEventListener("mouseover", () => {
+    let element = document.getElementById("main__btn-text--right");
+    element.classList.replace(
+      "main__btn-text--right",
+      "main__btn-text--right-hover"
+    );
+  });
+
+  mainBtnIconRight.addEventListener("mouseout", () => {
+    let element = document.getElementById("main__btn-text--right");
+    element.classList.replace(
+      "main__btn-text--right-hover",
+      "main__btn-text--right"
+    );
+  });
+};
+downloadBtn();

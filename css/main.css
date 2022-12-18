@@ -778,6 +778,11 @@ main {
     padding: 0.5em 1.75em 0.5em 2em;
   }
 
+  .main__btn-text--right-hover {
+    color: var(--COLOR-PRIMARY);
+    padding: 0.5em 1.75em 0.5em 2em;
+  }
+
   .main__btn-icon, 
   .main__btn-icon--right {
     display: flex;
@@ -794,7 +799,7 @@ main {
 
   .main__btn-icon--right {
     background-color: var(--COLOR-SECONDARY);
-    color: var(--COLOR-GRAY-01);
+    color: var(--COLOR-PRIMARY);
   }
 
   .main__btn-icon::before, 
