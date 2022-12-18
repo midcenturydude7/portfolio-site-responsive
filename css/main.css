@@ -951,17 +951,17 @@ main {
 
   .chevron-text {
     display: inline;
-    margin-left: 0.25em;
+    margin-left: 0.125em;
     text-align: center;
     opacity: 0.5;
   }
 
   .chevron {
-    font-size: 3rem;
+    font-size: 2.75rem;
   }
 
   .chevron-margin:nth-child(2) {
-    margin-left: -.04em;
+    margin-left: -.09em;
   }
 
   .chevron-margin {
