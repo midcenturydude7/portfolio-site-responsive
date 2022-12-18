@@ -151,6 +151,7 @@ a {
   height: 0;
   position: absolute;
   font-size: .9rem;
+  transition: all .4ms ease-in-out;
 }
 
 .nav-toggle {
@@ -163,17 +164,33 @@ a {
   background: var(--COLOR-PRIMARY-UNIV);
   color: var(--COLOR-GRAY-01-UNIV);
   transition: opacity 250ms ease;
-
   position: absolute;
   top: -1.75em;
   left: 0;
 }
 
-.nav-toggle:focus,
+/* .nav-toggle:focus,
 .nav-toggle:hover {
   background: var(--COLOR-GRAY-01-UNIV);
   color: var(--COLOR-PRIMARY-UNIV);
   opacity: 0.75;
+} */
+
+.nav-toggle-hover {
+  background: var(--COLOR-GRAY-01-UNIV);
+  color: var(--COLOR-PRIMARY-UNIV);
+  opacity: 0.75;
+  cursor: pointer;
+  border: 0;
+  width: 3.5em;
+  height: 3.5em;
+  padding: 0em;
+  border-radius: 50%;
+  transition: opacity 250ms ease;
+
+  position: absolute;
+  top: -1.75em;
+  left: 0;
 }
 
 .nav-toggle--base {
@@ -194,7 +211,7 @@ a {
 
 .nav__list {
   margin: 0;
-  padding: 0;
+  padding: 0 0 .6em 0;
   list-style: none;
 }
 
@@ -238,18 +255,6 @@ a {
 .nav__list .nav__link--theme-button {
   visibility: hidden;
 }
-
-/* .nav__link--theme-button:hover,
-.nav__link--theme-button:focus {
-  color: var(--COLOR-GRAY-01-UNIV);
-  opacity: 0.75
-}
-
-.nav__link--theme-button:not(.nav__link--theme-button:hover),
-.nav__link--theme-button:not(.nav__link--theme-button:focus) {
-  color: var(--COLOR-PRIMARY-UNIV);
-  opacity: 1;
-} */
 
 /*======================
     MAIN BODY
@@ -454,6 +459,7 @@ main {
   .nav__list {
     display: flex;
     margin: 0;
+    padding: 0;
   }
 
   .nav__list--primary {

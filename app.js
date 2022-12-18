@@ -1,5 +1,5 @@
 // Mobile Navigation Menu Toggle Btn
-function mobileNavBtn() {
+const mobileNavBtn = () => {
   const navToggleBtn = document.querySelector(".nav-toggle");
   const nav = document.querySelector(".nav");
 
@@ -7,15 +7,20 @@ function mobileNavBtn() {
     nav.classList.toggle("nav--visible");
   });
 
-  // Need to fix hamburger menu bug when drop down menu displays
-  // navToggleBtn.addEventListener("mouseout", function handleMouseOut() {
-  //   navToggleBtn.classList.toggle("nav-toggle--base");
-  // });
-}
+  navToggleBtn.addEventListener("mouseover", () => {
+    let element = document.getElementById("nav-toggle");
+    element.classList.replace("nav-toggle", "nav-toggle-hover");
+  });
+
+  navToggleBtn.addEventListener("mouseout", () => {
+    let element = document.getElementById("nav-toggle");
+    element.classList.replace("nav-toggle-hover", "nav-toggle");
+  });
+};
 mobileNavBtn();
 
 // Learn More Btn Mobile
-function learnMoreBtnMobile() {
+const learnMoreBtnMobile = () => {
   const footerBtnIcon = document.querySelector(".footer__btn-icon");
   const footerBtnText = document.querySelector(".footer__btn-text");
 
@@ -23,14 +28,14 @@ function learnMoreBtnMobile() {
     footerBtnText.style.color = "#050e1d";
   };
 
-  footerBtnIcon.addEventListener("mouseover", function handleMouseOver() {
+  footerBtnIcon.addEventListener("mouseover", () => {
     footerBtnText.style.color = "#CCC";
   });
 
-  footerBtnIcon.addEventListener("mouseout", function handleMouseOut() {
+  footerBtnIcon.addEventListener("mouseout", () => {
     footerBtnText.style.color = "#050e1d";
   });
-}
+};
 learnMoreBtnMobile();
 
 // Light/Dark Mode Btn >> Responsive
