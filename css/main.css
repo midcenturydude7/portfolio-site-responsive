@@ -864,6 +864,7 @@ main {
   .bottom-row {
     flex-direction: column;
   }
+
   /* SPECIAL ELEMENTS */
   .container-shape {
     width: 100%;
@@ -940,24 +941,23 @@ main {
   }
 
   .col--left-bottom {
-    width: 90%;
+    align-items: center;
   }
 
   .col--left-bottom .main__title {
-    display: block;
-    text-align: right;
-    margin-right: 2.5em;
+    display: inline;
+    text-align: center;
   }
 
   .chevron-text {
-    display: block;
-    margin-left: 4.25em;
-    text-align: left;
+    display: inline;
+    margin-left: 0.25em;
+    text-align: center;
     opacity: 0.5;
   }
 
   .chevron {
-    font-size: 14rem;
+    font-size: 3rem;
   }
 
   .chevron-margin:nth-child(2) {
@@ -976,6 +976,39 @@ main {
 @media (min-width: 1650px) {
   .bottom-row {
     flex-direction: row;
+  }
+
+  .col--left-bottom {
+    width: 90%;
+  }
+  
+  .col--left-bottom .main__title {
+    display: block;
+    text-align: right;
+    margin-right: 2.5em;
+  }
+  
+  .chevron-text {
+    display: block;
+    margin-left: 4.25em;
+    text-align: left;
+    opacity: 0.5;
+  }
+  
+  .chevron {
+    font-size: 14rem;
+  }
+
+  .chevron-margin:nth-child(2) {
+    margin-left: -.04em;
+  }
+  
+  .chevron-margin {
+    margin-right: -0.6175em;
+  }
+  
+  .chevron-terminal {
+    margin-left: 0.15em;
   }
 }
 
