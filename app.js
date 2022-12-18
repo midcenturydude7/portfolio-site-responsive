@@ -52,6 +52,22 @@ function toggleLightModeDesktop() {
     let element = document.body;
     element.classList.toggle("light-mode");
   });
+
+  navLinkThemeBtn.addEventListener("mouseover", () => {
+    let element = document.getElementById("nav__link");
+    element.classList.replace(
+      "nav__link--theme-button",
+      "nav__link--theme-button-hover"
+    );
+  });
+
+  navLinkThemeBtn.addEventListener("mouseout", () => {
+    let element = document.getElementById("nav__link");
+    element.classList.replace(
+      "nav__link--theme-button-hover",
+      "nav__link--theme-button"
+    );
+  });
 }
 toggleLightModeDesktop();
 

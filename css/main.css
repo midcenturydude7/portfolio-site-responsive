@@ -237,10 +237,9 @@ a {
 
 .nav__list .nav__link--theme-button {
   visibility: hidden;
-  font-size: 2.275rem;
 }
 
-.nav__link--theme-button:hover,
+/* .nav__link--theme-button:hover,
 .nav__link--theme-button:focus {
   color: var(--COLOR-GRAY-01-UNIV);
   opacity: 0.75
@@ -250,7 +249,7 @@ a {
 .nav__link--theme-button:not(.nav__link--theme-button:focus) {
   color: var(--COLOR-PRIMARY-UNIV);
   opacity: 1;
-}
+} */
 
 /*======================
     MAIN BODY
@@ -486,6 +485,14 @@ main {
 
   .nav__list .nav__link--theme-button {
     visibility: visible;
+    opacity: 1 !important;
+    font-size: 2.275rem;
+    color: var(--COLOR-PRIMARY-UNIV);
+  }
+
+  .nav__link--theme-button-hover {
+    font-size: 2.275rem;
+    opacity: .75;
   }
 
   /* MAIN CONTENT */
