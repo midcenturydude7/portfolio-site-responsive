@@ -273,7 +273,7 @@ main {
 .main__sub-title {
   color: var(--COLOR-GRAY-02);
   font-size: 1.75rem;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02777em;
   margin-left: 0.0775em;
 }
 
@@ -417,7 +417,7 @@ main {
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 875px) {
   body {
     overflow: auto;
   }
@@ -910,9 +910,9 @@ main {
   .col--middle {
     display: flex;
     justify-content: center;
-    width: 43%;
+    width: 55%;
     border-right: 1px dashed var(--COLOR-GRAY-04);
-    padding: 1.5em 0 1.2em 0;
+    padding: 1.5em 1em 0.35em 0;
   }
 
   .col--right {
@@ -974,6 +974,11 @@ main {
 }
 
 @media (min-width: 1650px) {
+  .col--middle {
+    width: 43%;
+    padding: 1.5em 0 1.2em 0;
+  }
+
   .bottom-row {
     flex-direction: row;
   }
