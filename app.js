@@ -76,7 +76,7 @@ function toggleLightModeDesktop() {
 }
 toggleLightModeDesktop();
 
-// Learn More Btn >> Big Screens
+// Learn More Btn >> Large Screens
 const learnMoreBtnBigScreen = () => {
   const mainBtnIcon = document.querySelector(".main__btn-icon");
 
@@ -112,3 +112,4 @@ const downloadBtn = () => {
   });
 };
 downloadBtn();
+
