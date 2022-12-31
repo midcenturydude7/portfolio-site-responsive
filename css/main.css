@@ -861,8 +861,13 @@ main {
   }
 }
 
-/* Big Screens */
+/* Between Medium & Big Screens */
 @media (min-width: 1200px) {
+  
+}
+
+/* Big Screens */
+@media (min-width: 1450px) {
   /* GENERAL SYTLES */
   header {
     padding: 0.25em;
@@ -912,7 +917,7 @@ main {
 
   /* MAIN CONTENT */
   main {
-    padding: 5em 0 5% 30%;
+    padding: 5em 0 2% 25%;
   }
   
   .main__hero-image {
@@ -930,7 +935,7 @@ main {
   .col--middle {
     display: flex;
     justify-content: center;
-    width: 35%;
+    width: 45%;
     padding: 1.5em 1em 0.35em 0;
   }
 
@@ -1015,30 +1020,48 @@ main {
 
   .clicked-right {
     display: block;
+    -webkit-animation: right-to-left .18s ease backwards;
+    -moz-animation: right-to-left .18s ease backwards;
+    -o-animation: right-to-left .18s ease backwards;
     animation: right-to-left .18s ease backwards;
   }
   
   @keyframes right-to-left {
     0% {
+      -webkit-transform: translateX(150%);
+      -moz-transform: translateX(150%);
+      -o-transform: translateX(150%);
       transform: translateX(150%);
     }
   
     100% {
+      -webkit-transform: translateX(0);
+      -moz-transform: translateX(0);
+      -o-transform: translateX(0);
       transform: translateX(0);
     } 
   }
   
   .clicked-left {
     display: block;
+    -webkit-animation: right-to-left .18s ease forwards;
+    -moz-animation: right-to-left .18s ease forwards;
+    -o-animation: right-to-left .18s ease forwards;
     animation: left-to-right .18s ease forwards;
   }
   
   @keyframes left-to-right {
     0% {
+      -webkit-transform: translateX(-150%);
+      -moz-transform: translateX(-150%);
+      -o-transform: translateX(-150%);
       transform: translateX(-150%);
     }
   
     100% {
+      -webkit-transform: translateX(0);
+      -moz-transform: translateX(0);
+      -o-transform: translateX(0);
       transform: translateX(0);
     } 
   }
@@ -1111,7 +1134,7 @@ main {
   
   .chevron-text {
     display: block;
-    margin-left: 4.25em;
+    margin-left: 3.75em;
     text-align: left;
     opacity: 0.5;
   }
@@ -1134,6 +1157,11 @@ main {
 }
 
 /* Huge Screens | High-res */
+@media (min-width: 2100px) {
+  .chevron-text {
+    margin-left: 8em;
+  }
+}
 @media (min-width: 2500px) {
   .main__hero-image {
     margin: 2em 2em 0 0;
@@ -1145,13 +1173,15 @@ main {
   }
 
   .col--middle {
+    margin-left: 2em;
+    padding: 0;
     width: 45%;
   }
 
   .col--right {
     margin: 0;
     padding: 0 0 0 2em;
-    width: 45%;
+    width: 60%;
   }
 
   .chevron-text {
