@@ -129,8 +129,11 @@ first.addEventListener(
   "click",
   (e) => {
     e.preventDefault;
-    colOne.style.borderBottom = "4px solid var(--COLOR-GRAY-02)";
-    colTwo.style.borderBottom = "none";
+    // Border-bottom toggle with time interval delay ti simulate slide
+    setTimeout(() => {
+      colOne.style.borderBottom = "4px solid var(--COLOR-GRAY-02)";
+      colTwo.style.borderBottom = "none";
+    }, 110);
 
     // Reset animation helper: hides graph #2
     paraTwo.classList.remove("para-two");
@@ -150,8 +153,11 @@ second.addEventListener(
   "click",
   (e) => {
     e.preventDefault;
-    colOne.style.borderBottom = "none";
-    colTwo.style.borderBottom = "4px solid var(--COLOR-GRAY-02)";
+    // Border-bottom toggle with time interval delay ti simulate slide
+    setTimeout(() => {
+      colOne.style.borderBottom = "none";
+      colTwo.style.borderBottom = "4px solid var(--COLOR-GRAY-02)";
+    }, 110);
 
     // Reset animation helper: hides graph #1
     paraOne.classList.remove("para-one");
@@ -165,3 +171,15 @@ second.addEventListener(
   },
   false
 );
+
+// Hover event for 4px border bottom color change
+// function borderBottomChange() {
+//   first.addEventListener("mouseover", () => {
+//     colOne.style.borderBottom = "4px solid var(--COLOR-SECONDARY)";
+//   });
+
+//   first.addEventListener("mouseout", () => {
+//     colOne.style.borderBottom = "4px solid var(--COLOR-GRAY-02)";
+//   });
+// }
+// borderBottomChange();

@@ -7,7 +7,7 @@
 :root {
   --COLOR-PRIMARY-UNIV: #050e1d;
   --COLOR-PRIMARY: #050e1d;
-  --COLOR-PRIMARY-LIGHT: #03021f3f;
+  --COLOR-PRIMARY-LIGHT: #03021f48;
   --COLOR-SECONDARY: #30b699;
   --COLOR-ACCENT-01: #96E0D0;
   --COLOR-ACCENT-02: #85F1DA;
@@ -985,6 +985,11 @@ main {
   a.box-animation {
     text-decoration: none;
     color: var(--COLOR-GRAY-02);
+  }
+
+  a.box-animation:hover,
+  a.bog-animation:focus {
+    color: var(--COLOR-SECONDARY)
   }
 
   div.three {
