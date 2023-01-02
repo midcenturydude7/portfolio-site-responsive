@@ -24,6 +24,7 @@
   --COLOR-DROP-SHADOW-01: #bdbdbd15;
   --COLOR-GRADIENT-01: linear-gradient(to top, var(--COLOR-SECONDARY), var(--COLOR-ACCENT-01));
   --COLOR-GRADIENT-02: linear-gradient(to bottom, var(--COLOR-PRIMARY-LIGHT), var(--COLOR-PRIMARY));
+  --COLOR-GRADIENT-03: radial-gradient(circle, rgba(245,245,245,1) 5%, rgba(48,182,153,1) 41%, rgba(3,2,31,1) 90%);
 
 }
 
@@ -323,6 +324,12 @@ main {
 .main__article:nth-child(2) {
   display: none;
 }
+
+.main__col {
+  display: none;
+}
+
+.para-two { display: none;}
 
 .main__text {
   color: var(--COLOR-GRAY-02);
@@ -722,6 +729,7 @@ main {
 
   .main__article {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     margin: 0;
     padding: 2em 0
@@ -735,8 +743,8 @@ main {
   }
 
   .main__text {
-    width: 75%;
-    margin-left: 2em;
+    width: 90%;
+    margin: 0 auto;
     text-align: justify;
   }
 
@@ -861,13 +869,8 @@ main {
   }
 }
 
-/* Between Medium & Big Screens */
-@media (min-width: 1200px) {
-  
-}
-
 /* Big Screens */
-@media (min-width: 1450px) {
+@media (min-width: 1200px) {
   /* GENERAL SYTLES */
   header {
     padding: 0.25em;
@@ -884,6 +887,11 @@ main {
 
   .row {
     flex-direction: row;
+  }
+  
+  .top-row {
+    display: flex;
+    flex-wrap: wrap;
   }
   
   .bottom-row {
@@ -919,7 +927,7 @@ main {
   main {
     padding: 5em 0 2% 25%;
   }
-  
+
   .main__hero-image {
     margin: 2em 2em 0 0;
     width: 65%;
@@ -966,6 +974,11 @@ main {
     margin: 0;
     padding: 1em 2.25em 0 2.25em;
   }
+
+  div.main__col {
+    display: block;
+  }
+
 
   div.main__col > h1 {
     color: var(--COLOR-GRAY-02);
@@ -1158,6 +1171,13 @@ main {
   
   .chevron-terminal {
     margin-left: 0.15em;
+  }
+}
+
+/* Bigger Screens | Fixes Top Row */
+@media (min-width: 1450px) {
+  .top-row {
+    flex-wrap: nowrap;
   }
 }
 

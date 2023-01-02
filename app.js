@@ -1,5 +1,6 @@
 // Reset animation
 "use strict";
+
 // Global DOM variables
 const colOne = document.querySelector(".one");
 const colTwo = document.querySelector(".two");
