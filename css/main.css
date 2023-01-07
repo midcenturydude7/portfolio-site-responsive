@@ -1091,12 +1091,12 @@ main {
   }
 
   .main-btn {
-    margin: 4.4875em 0 0 0;
+    margin: 2.75em 0 2em 0;
     justify-content: left;
   }
 
   .main-btn--right {
-    margin-top: 1.25em;
+    margin-top: 1em;
   }
 
   .col--left-bottom {
@@ -1147,6 +1147,15 @@ main {
   .col--middle {
     width: 43%;
     padding: 1.5em 0 1.2em 0;
+  }
+
+  .main-btn {
+    margin-top: 4.01375em;
+    margin-bottom: 0;
+  }
+
+  .main-btn--right {
+    margin-top: 1.25em;
   }
 
   .bottom-row {
