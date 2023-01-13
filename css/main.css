@@ -1127,6 +1127,10 @@ main {
     margin-right: -0.65em;
   }
 
+  .chevron-solid {
+    margin-left: -0.3em;
+  }
+
   .chevron-terminal {
     margin-left: 0.15em;
   }
