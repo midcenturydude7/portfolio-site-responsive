@@ -447,6 +447,7 @@ main {
 
   .top-row {
     padding-bottom: 1em;
+    width: 90%;
   }
   
   .bottom-row {
@@ -711,7 +712,7 @@ main {
   }
 
   .col--middle {
-    align-items: center;
+    text-align: center;
     padding: 0;
     margin: 0;
   }
@@ -863,6 +864,10 @@ main {
     transition: all .5s ease-out;
   }
 
+  .chevron-solid {
+    margin-right: -0.77em;
+  }
+
   /* FOOTER */
   .footer-btn {
     visibility: hidden;
@@ -907,7 +912,7 @@ main {
 
   .h-shape {
     transition: all .4s ease-in-out;
-    width: 25%;
+    width: 45%;
     height: 100vh;
     background: var(--COLOR-GRADIENT-01);
     position: fixed;
@@ -1138,6 +1143,9 @@ main {
 
 /* Bigger Screens | Fixes Top Row */
 @media (min-width: 1450px) {
+  .h-shape {
+    width: 20%;
+  }
   .top-row {
     flex-wrap: nowrap;
   }
