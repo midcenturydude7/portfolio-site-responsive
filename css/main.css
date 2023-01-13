@@ -139,6 +139,10 @@ a {
     max-width: 1200px;
   }
 
+  .top-row {
+    text-align: center;
+  }
+
   .row {
     display: flex;
     flex-direction: column;
@@ -433,6 +437,7 @@ main {
   .nav__list--primary {
     margin: 0;
   }
+
 }
 
 @media (min-width: 875px) {
@@ -874,6 +879,17 @@ main {
   }
 }
 
+
+@media (min-width: 950px) and (max-width: 1075px) {
+  .col--left-bottom {
+    white-space: nowrap;
+  }
+  .col--left-bottom .main__title {
+    text-align: center;
+    white-space: nowrap;
+  }
+}
+
 /* Big Screens */
 @media (min-width: 1200px) {
   /* GENERAL SYTLES */
@@ -1141,6 +1157,16 @@ main {
   }
 }
 
+@media (min-width: 1285px) and (max-width: 1407px) {
+  .col--left-bottom {
+    white-space: nowrap;
+  }
+  .col--left-bottom .main__title {
+    text-align: center;
+    white-space: nowrap;
+  }
+}
+
 /* Bigger Screens | Fixes Top Row */
 @media (min-width: 1450px) {
   .h-shape {
@@ -1189,8 +1215,8 @@ main {
   
   .chevron-text {
     display: block;
-    margin-left: 3.75em;
-    text-align: left;
+    margin-right: 5.75em;
+    text-align: right;
     opacity: 0.5;
   }
   
