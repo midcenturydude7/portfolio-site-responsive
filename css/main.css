@@ -907,7 +907,7 @@ main {
 
   .h-shape {
     transition: all .4s ease-in-out;
-    width: 30%;
+    width: 25%;
     height: 100vh;
     background: var(--COLOR-GRADIENT-01);
     position: fixed;
