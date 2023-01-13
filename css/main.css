@@ -907,7 +907,7 @@ main {
 
   .h-shape {
     transition: all .4s ease-in-out;
-    width: 40%;
+    width: 30%;
     height: 100vh;
     background: var(--COLOR-GRADIENT-01);
     position: fixed;
@@ -1144,6 +1144,9 @@ main {
 }
 
 @media (min-width: 1650px) {
+  .h-shape {
+    width: 35%;
+  }
   .col--middle {
     width: 43%;
     padding: 1.5em 0 1.2em 0;
