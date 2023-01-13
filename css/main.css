@@ -20,6 +20,7 @@
   --COLOR-GRAY-02: #ADADAD;
   --COLOR-GRAY-03: #7A7A7A;
   --COLOR-GRAY-04: #474747;
+  --COLOR-GRAY-04-05: #1d1d1d;
   --COLOR-GRAY-05: #141414;
   --COLOR-DROP-SHADOW-01: #bdbdbd15;
   --COLOR-GRADIENT-01: linear-gradient(to top, var(--COLOR-SECONDARY), var(--COLOR-ACCENT-01));
@@ -44,6 +45,7 @@
   --COLOR-GRAY-02: #474747;
   --COLOR-GRAY-03: #7A7A7A;
   --COLOR-GRAY-04: #ADADAD;
+  --COLOR-GRAY-04-05: #cacaca;
   --COLOR-GRAY-05: #CCCCCC;
   --COLOR-DROP-SHADOW-01: #010d2263;
   --COLOR-GRADIENT-02: linear-gradient(to bottom, var(--COLOR-PRIMARY-LIGHT), var(--COLOR-PRIMARY));
@@ -319,7 +321,7 @@ main {
 }
 
 .main__article {
-  border-top: 1px dashed var(--COLOR-GRAY-04);
+  border-top: 1px solid var(--COLOR-GRAY-04-05);
   width: 90%;
   margin: 1.5em auto 0;
   padding-top: 1.125em;
@@ -755,7 +757,7 @@ main {
   }
 
   .row:nth-child(2) {
-    border-top: 1px dashed var(--COLOR-GRAY-04);
+    border-top: 1px solid var(--COLOR-GRAY-04-05);
     width: 75%;
   }
 
