@@ -21,35 +21,36 @@
     <div class="h-shape"></div>
   </div>
 
-  <!-- HEADER / NAVIGATION -->
-  <header class="header__bg-image">
-    <div class="container">
-      <button class="nav-toggle" id="nav-toggle" aria-label="open navigation">
-        <span class="nav__menu"><i class="fas fa-bars"></i></span>
-      </button>
-      <nav class="nav">
-        <ul class="nav__list nav__list--primary">
-          <li class="nav__item nav__item-hover"><a href="#" class="nav__link">Home</a></li>
-          <li class="nav__item nav__item-hover"><a href="#" class="nav__link">About</a></li>
-          <li class="nav__item nav__item-hover"><a href="#" class="nav__link">Work</a></li>
-          <li class="nav__item nav__item-hover"><a href="#" class="nav__link">Contact</a></li>
-        </ul>
-        <ul class="nav__list nav__list--secondary">
-          <li class="nav__item"><a href="#" class="nav__link nav__link--theme-button" id="nav__link"><i class="fas fa-adjust"></i></a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <div class="content-wrapper">
+    <!-- HEADER / NAVIGATION -->
+    <header class="header__bg-image">
+      <div class="container">
+        <button class="nav-toggle" id="nav-toggle" aria-label="open navigation">
+          <span class="nav__menu"><i class="fas fa-bars"></i></span>
+        </button>
+        <nav class="nav">
+          <ul class="nav__list nav__list--primary">
+            <li class="nav__item nav__item-hover"><a href="./index.html" class="nav__link">Home</a></li>
+            <li class="nav__item nav__item-hover"><a href="#" class="nav__link">About</a></li>
+            <li class="nav__item nav__item-hover"><a href="./work.html" class="nav__link">Work</a></li>
+            <li class="nav__item nav__item-hover"><a href="#" class="nav__link">Contact</a></li>
+          </ul>
+          <ul class="nav__list nav__list--secondary">
+            <li class="nav__item"><a href="#" class="nav__link nav__link--theme-button" id="nav__link"><i class="fas fa-adjust"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-  <!-- MOBILE ELEMENT: LIGHT/DARK MODE BTN -->
-  <div class="container-shape">
-    <div class="theme-btn">
-      <i class="fas fa-adjust"></i>
+    <!-- MOBILE ELEMENT: LIGHT/DARK MODE BTN -->
+    <div class="container-shape">
+      <div class="theme-btn">
+        <i class="fas fa-adjust"></i>
+      </div>
     </div>
-  </div>
 
-  <!-- MAIN CONTENT -->
-    <main>
+    <!-- MAIN CONTENT -->
+    <main class="main-hp">
       <div class="container row top-row">
         <div class="col--left">
           <img class="main__hero-image" src="img/MG_Avatar.jpg" alt="">
@@ -117,7 +118,7 @@
         </div>
       </div>
     </main>
-    
+
     <!-- FOOTER CONTENT -->
     <footer>
       <div class="footer-btn">
@@ -127,6 +128,7 @@
         </a>
       </div>
     </footer>
+  </div>
 
   <!-- JS FILE >App.js< IMPORT -->
   <script src="app.js" type="module"></script>
