@@ -575,6 +575,10 @@ main {
   z-index: -1;
 }
 
+.work--footer-btn {
+  display: none;
+}
+
 /*======================
     SPECIAL ELEMENTS
   ====================== */
@@ -1043,7 +1047,7 @@ main {
 
   /* FOOTER */
   .footer-btn {
-    visibility: hidden;
+    display: none;
   }
 }
 
