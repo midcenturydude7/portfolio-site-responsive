@@ -20,9 +20,11 @@
   --COLOR-GRAY-02: #ADADAD;
   --COLOR-GRAY-03: #7A7A7A;
   --COLOR-GRAY-04: #474747;
-  --COLOR-GRAY-04-05: #1d1d1d;
+  --COLOR-GRAY-04-025: #2c2c2c;
+  --COLOR-GRAY-04-05: #1b1b1b;
   --COLOR-GRAY-05: #141414;
   --COLOR-DROP-SHADOW-01: #bdbdbd15;
+  --COLOR-DROP-SHADOW-02: #bdbdbd2f;
   --COLOR-GRADIENT-01: linear-gradient(to top, var(--COLOR-SECONDARY), var(--COLOR-ACCENT-01));
   --COLOR-GRADIENT-02: linear-gradient(to bottom, var(--COLOR-PRIMARY-LIGHT), var(--COLOR-PRIMARY));
   --COLOR-GRADIENT-03: radial-gradient(circle, rgba(245,245,245,1) 5%, rgba(48,182,153,1) 41%, rgba(3,2,31,1) 90%);
@@ -45,9 +47,11 @@
   --COLOR-GRAY-02: #474747;
   --COLOR-GRAY-03: #7A7A7A;
   --COLOR-GRAY-04: #ADADAD;
+  --COLOR-GRAY-04-025: #cecece;
   --COLOR-GRAY-04-05: #cacaca;
   --COLOR-GRAY-05: #CCCCCC;
   --COLOR-DROP-SHADOW-01: #010d2263;
+  --COLOR-DROP-SHADOW-02: #010d2221;
   --COLOR-GRADIENT-02: linear-gradient(to bottom, var(--COLOR-PRIMARY-LIGHT), var(--COLOR-PRIMARY));
 }
 
@@ -359,6 +363,281 @@ main {
 
 .main-container {
   text-align: center;
+}
+
+/* -- ABOUT PAGE: BOXES -- */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-content--container {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 1.75em;
+}
+
+.about-text--container {
+  margin: 1.75em 0;
+}
+
+.about-text, 
+.about-item--small-text {
+  color: var(--COLOR-GRAY-02);
+}
+
+.about-text {
+  font-size: 1rem;
+  line-height: 1.75;
+  letter-spacing: .05em;
+  text-align: justify;
+}
+
+.about-text:last-child {
+  margin-top: 1.5em;
+}
+
+.about-boxes--container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2.75em;
+  margin-top: 2em;
+}
+
+.about-boxes--item {
+  border: 1px solid var(--COLOR-GRAY-04);
+  border-radius: 5px;
+  transition: all .4s ease-in-out;
+  box-shadow: 1px 2px 15px var(--COLOR-DROP-SHADOW-01);
+}
+
+.about-boxes--item:hover {
+  cursor: default;
+  transform: translateY(-5px);
+  border: 1px solid var(--COLOR-SECONDARY);
+  box-shadow: 1px 2px 15px var(--COLOR-DROP-SHADOW-02);
+}
+
+.about-item--text {
+  padding: 1.4em;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-item--large-text {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--COLOR-SECONDARY);
+}
+
+.about-item--small-text {
+  padding-left: 3em;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+.about-item--small-text::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 15px;
+  width: 2em;
+  height: 0.175em;
+  background-color: var(--COLOR-GRAY-02);
+}
+
+/* -- ABOUT PAGE: STATS/PROGRESS BARS -- */
+.about-stats--container {
+  margin-top: 5em;
+  text-align: center;
+}
+
+.about-stats--container:last-child {
+  margin-top: 0;
+}
+
+.about-title {
+  text-transform: uppercase;
+  padding: 3.5rem 0 1.5em;
+  color: var(--COLOR-GRAY-02);
+  font-size: 1.4rem;
+  position: relative;
+}
+
+.about-title::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 15em;
+  height: .125em;
+  background-color: var(--COLOR-GRAY-04-05);
+  transform: translateX(-50%);
+}
+
+.about-progress--bars {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2em;
+}
+
+.about-progress--bar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 1.5em;
+}
+
+.about-progress--title {
+  color: var(--COLOR-GRAY-01);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.about-progress--con {
+  display: flex;
+  align-items: center;
+}
+
+.about-progress--text {
+  color: var(--COLOR-GRAY-03)
+}
+
+.about-progress {
+  width: 20em;
+  height: .45em;
+  background-color: var(--COLOR-GRAY-04);
+  margin-left: 1em;
+  position: relative;
+}
+
+/* -- ABOUT PAGE: SKILLS */
+.about-progress--react,
+.about-progress--js_algo,
+.about-progress--css,
+.about-progress--html5,
+.about-progress--github,
+.about-progress--typescript,
+.about-progress--nextjs,
+.about-progress--nodejs, 
+.about-progress--scss,
+.about-progress--python {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: var(--COLOR-SECONDARY);
+  transition: all .4s ease-in-out;
+}
+
+/* -- ABOUT PAGE: ESSENTIAL SKILLS */
+.about-progress--react {
+  width: 50%;
+}
+.about-progress--js_algo {
+  width: 35%;
+}
+
+.about-progress--css {
+  width: 60%;
+}
+
+.about-progress--html5 {
+  width: 80%;
+}
+
+.about-progress--github {
+  width: 50%;
+}
+
+/* -- ABOUT PAGE: DEVELOPING SKILLS */
+.about-progress--typescript {
+  width: 10%;
+}
+.about-progress--nextjs {
+  width: 15%;
+}
+
+.about-progress--nodejs {
+  width: 10%;
+}
+
+.about-progress--scss {
+  width: 30%;
+}
+
+.about-progress--python {
+  width: 50%;
+}
+
+/* -- ABOUT PAGE: TIMELINE */
+.about-timeline--container {
+  margin-top: 5em;
+  padding: 0 1.5em;
+  text-align: center;
+}
+
+.about-timeline {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2em;
+  padding-bottom: 3em;
+}
+
+.about-timeline--item {
+  position: relative;
+  padding-left: 3em;
+  border-left: 1px solid var(--COLOR-GRAY-04-025);
+  text-align: left;
+}
+
+.about-timeline--icon {
+  position: absolute;
+  left: -27px;
+  top: 0;
+  background-color: var(--COLOR-SECONDARY);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tl-icon {
+  font-size: 1.25rem;
+}
+
+.about-timeline--duration {
+  padding: .2em .6em;
+  color: var(--COLOR-GRAY-03);
+  background-color: var(--COLOR-GRAY-04-05);
+}
+
+.about-timeline--copy {
+  padding-left: .4em;
+}
+
+.about-timeline--sub-title {
+  color: var(--COLOR-GRAY-02);
+  padding: 1rem 0;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.about-timeline--small-text {
+  color: var(--COLOR-GRAY-03);
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.about-timeline--desc {
+  color: var(--COLOR-GRAY-02);
+  line-height: 1.7;
 }
 
 /* -- WORK BOX -- */
