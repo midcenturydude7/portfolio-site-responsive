@@ -1338,6 +1338,10 @@ main {
   }
 
   .about-boxes--item {
+    min-height: 245px;
+  }
+
+  .about-boxes--item {
     max-width: 20em;
   }
 
