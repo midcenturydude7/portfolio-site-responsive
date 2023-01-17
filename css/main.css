@@ -370,16 +370,17 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 95%;
 }
 
-.about-content--container {
-  display: grid;
-  grid-template-columns: 1fr;
-  margin-top: 1.75em;
+.about-textBoxes--container {
+  display: flex;
+  flex-direction: column;
 }
 
 .about-text--container {
   margin: 1.75em 0;
+  max-width: 800px;
 }
 
 .about-text, 
@@ -394,7 +395,7 @@ main {
   text-align: justify;
 }
 
-.about-text:last-child {
+.about-text + .about-text {
   margin-top: 1.5em;
 }
 
@@ -507,7 +508,7 @@ main {
 }
 
 .about-progress {
-  width: 20em;
+  max-width: 20em;
   height: .45em;
   background-color: var(--COLOR-GRAY-04);
   margin-left: 1em;
@@ -578,6 +579,7 @@ main {
   margin-top: 5em;
   padding: 0 1.5em;
   text-align: center;
+  max-width: 800px;
 }
 
 .about-timeline {
@@ -1328,6 +1330,23 @@ main {
   .footer-btn {
     display: none;
   }
+
+  /* -- ABOUT PAGE: BOXES, PROGRESS BARS -- */
+  .about-boxes--container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-boxes--item {
+    max-width: 20em;
+  }
+
+  .about-progress--bars {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-progress { 
+    max-width: 15.75em;
+  }
 }
 
 
@@ -1607,6 +1626,7 @@ main {
     margin-left: 0.15em;
   }
 
+  /* -- WORK PAGE -- */
   .work-box--container {
     display: flex;
     flex-direction: row;
@@ -1624,12 +1644,38 @@ main {
   .work-box:last-child {
     margin-top: 0 !important;
   }
+
+  /* -- ABOUT PAGE -- */
+  .about-textBoxes--container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .about-text--container {
+    max-width: 500px;
+    margin-right: 3.25em;
+  }
+
+  .about-progress {
+    max-width: 25em;
+  }
+
+  .about-timeline--container {
+    max-width: 65%;
+  }
+
+  .about-timeline {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5em;
+  }
 }
 
 @media (min-width: 1285px) and (max-width: 1407px) {
   .col--left-bottom {
     white-space: nowrap;
   }
+
   .col--left-bottom .main__title {
     text-align: center;
     white-space: nowrap;
@@ -1648,6 +1694,10 @@ main {
 
 .col--middle {
   width: 45%;
+}
+
+.about-progress {
+  width: 32em;
 }
 
 @media (min-width: 1650px) {
