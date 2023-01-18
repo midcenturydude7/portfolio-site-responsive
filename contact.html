@@ -32,8 +32,8 @@
           <ul class="nav__list nav__list--primary">
             <li class="nav__item nav__item-hover"><a href="/index.html" class="nav__link">Home</a></li>
             <li class="nav__item nav__item-hover"><a href="/about.html" class="nav__link">About</a></li>
-            <li class="nav__item nav__item-hover"><a href="#" class="nav__link">Work</a></li>
-            <li class="nav__item nav__item-hover"><a href="/contact.html" class="nav__link">Contact</a></li>
+            <li class="nav__item nav__item-hover"><a href="/work.html" class="nav__link">Work</a></li>
+            <li class="nav__item nav__item-hover"><a href="#" class="nav__link">Contact</a></li>
           </ul>
           <ul class="nav__list nav__list--secondary">
             <li class="nav__item"><a href="#" class="nav__link nav__link--theme-button" id="nav__link"><i class="fas fa-adjust"></i></a></li>
@@ -53,54 +53,55 @@
     <main>
       <div class="main-wrapper">
         <div class="main-container">
-          <h1 class="main__title"><span class="main__title--accent">The Work</span></h1>
-          <p class="main__sub-title">Sharing is caring</p>
+          <h1 class="main__title"><span class="main__title--accent">Contact</span></h1>
+          <p class="main__sub-title">Make it happen</p>
         </div>
-        <div class="work-box--container">
-          <!--Box 1-->
-          <div class="work-box">
-            <img class="work-box--img" src="img/port2.jpg" alt="work desk">
-            <div class="work-box--banner">Frontend Dev</div>
-            <div class="work-box--text">
-              <a href="#">
-                <h4 class="work-box--title">
-                  Twitter clone built with HTML, CSS and Javascript
-                </h4>
-              </a>
-              <p class="work-box--para">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, enim consectetur? Sit voluptates dignissimos iure labore quo eum qui ipsam similique... <a href="#"><span class="work-box--span">Read more 🡆</span></a>
-              </p>
+        <div class="contact-container">
+          <div class="contact-left--container">
+            <p class="contact-left--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam inventore officiis repellat, cupiditate saepe temporibus tenetur aliquam dicta, dolorum deserunt blanditiis eos! Quis nobis eveniet neque quas possimus itaque reiciendis.</p>
+            <div class="contact-info--container">
+              <div class="contact-info--item">
+                <div class="contact-info--icon">
+                  <i class="fas fa-map-marker-alt icon-text"></i>
+                  <span class="contact-info--item-text">Location</span>
+                </div>
+                <p>
+                  <span class="contact-info--item-text">:: Portland, Oregon</span>
+                </p>
+              </div>
+              <div class="contact-info--item">
+                <div class="contact-info--icon">
+                  <i class="fas fa-envelope icon-text"></i>
+                  <span class="contact-info--item-text padding-text">Email</span>
+                </div>
+                <p>
+                  <span class="contact-info--item-text">:: mgriffes[at]gmail[dot]com</span>
+                </p>
+              </div>
+              <div class="contact-info--item">
+                <div class="contact-info--icon">
+                  <i class="fa-solid fa-signal icon-text"></i>
+                  <span class="contact-info--item-text padding-text">Phone</span>
+                </div>
+                <p>
+                  <span class="contact-info--item-text">:: (503) 896-6087</span>
+                </p>
+              </div>
             </div>
           </div>
-          <!--Box 2-->
-          <div class="work-box">
-            <img class="work-box--img" src="img/port1.jpg" alt="work desk">
-            <div class="work-box--banner">Full Stack</div>
-            <div class="work-box--text">
-              <a href="#">
-                <h4 class="work-box--title">
-                  Fitness App via Spotify API Built with React and Node.js
-                </h4>
-              </a>
-              <p class="work-box--para">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, enim consectetur? Sit voluptates dignissimos iure labore quo eum qui ipsam similique... <a href="#"><span class="work-box--span">Read more 🡆</span></a>
-              </p>
-            </div>
-          </div>
-          <!--Box 3-->
-          <div class="work-box">
-            <img class="work-box--img" src="img/port5.jpg" alt="work desk">
-            <div class="work-box--banner">React</div>
-            <div class="work-box--text">
-              <a href="#">
-                <h4 class="work-box--title">
-                  Tenzies Game Built with React and Javascript
-                </h4>
-              </a>
-              <p class="work-box--para">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, enim consectetur? Sit voluptates dignissimos iure labore quo eum qui ipsam similique... <a href="#"><span class="work-box--span">Read more 🡆</span></a>
-              </p>
-            </div>
+          <div class="contact-right--container">
+            <form action="" class="contact-form--container">
+              <div class="contact-form--input">
+                <input class="contact-input" type="text" required placeholder="YOUR NAME">
+                <input class="contact-input" type="email" required placeholder="YOUR EMAIL">
+              </div>
+              <div class="contact-form--input">
+                <input type="text" required placeholder="SUBJECT">
+              </div>
+              <div class="contact-form--input">
+                <textarea class="contact-textarea" name="" id="" cols="15" rows="8" placeholder="WHAT IS YOUR QUEST?"></textarea>
+              </div>
+            </form>
           </div>
         </div>
       </div>

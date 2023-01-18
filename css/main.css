@@ -796,6 +796,101 @@ main {
   transition: all .4s ease-in-out;
 }
 
+/* -- CONTACT PAGE -- */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2.75em;
+  width: 90%;
+}
+
+.contact-left--container {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-left--text {
+  color: var(--COLOR-GRAY-02);
+  text-align: justify;
+  line-height: 1.7;
+}
+
+.contact-info--container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+}
+
+.contact-info--item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: .95rem;
+}
+
+.contact-info--item + .contact-info--item {
+  margin-top: .7em;
+}
+
+/* .contact-info--icon {
+  display: flex;
+
+} */
+
+.contact-info--item-text,
+.icon-text {
+  color: var(--COLOR-GRAY-02);
+}
+
+.contact-info--item-text {
+  padding-left: .9em;
+}
+
+.padding-text {
+  padding-left: .55em;
+}
+
+.contact-right--container {
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.contact-form--container {
+  /* display: flex;
+  flex-direction: column; */
+  margin-top: 2em;
+}
+
+.contact-form--input {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  border-radius: 7px;
+  font-weight: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  padding: .5em 7em .5em 1em;
+  outline: none;
+  border: none;
+  background-color: var(--COLOR-GRAY-04-05);
+  color: var(--COLOR-GRAY-01);
+  width: 100%;
+  resize: none;
+}
+
+.contact-input:last-child {
+  margin-top: 1.75em;
+  margin-bottom: 1.75em;
+}
+
+.contact-textarea {
+  margin-top: 1.75em;
+}
+
 /*======================
     FOOTER
   ====================== */
