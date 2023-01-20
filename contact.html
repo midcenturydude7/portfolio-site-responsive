@@ -91,16 +91,20 @@
           </div>
           <div class="contact-right--container">
             <form action="" class="contact-form--container">
-              <div class="contact-form--input">
-                <input class="contact-input" type="text" required placeholder="YOUR NAME">
-                <input class="contact-input" type="email" required placeholder="YOUR EMAIL">
+              <div class="input-container">
+                <label for="name">Your name</label>
+                <input class="input-styles" type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input class="input-styles" type="email" id="email" name="email" required>
               </div>
-              <div class="contact-form--input">
-                <input type="text" required placeholder="SUBJECT">
+              <div class="textarea-container">
+                <label for="info">You don't need ChatGPT here...</label>
+                <textarea name="info" id="info" cols="65" rows="10"></textarea>
               </div>
-              <div class="contact-form--input">
-                <textarea class="contact-textarea" name="" id="" cols="15" rows="8" placeholder="WHAT IS YOUR QUEST?"></textarea>
-              </div>
+              <p>
+                <img class="recaptcha" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/308367/recaptcha-dark.png" alt="">
+              </p>
+              <button class="form--submit-btn">Submit</button>
             </form>
           </div>
         </div>

@@ -808,6 +808,7 @@ main {
 .contact-left--container {
   display: flex;
   flex-direction: column;
+  max-width: 750px;
 }
 
 .contact-left--text {
@@ -819,6 +820,7 @@ main {
 .contact-info--container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin-top: 2em;
 }
 
@@ -857,37 +859,72 @@ main {
 }
 
 .contact-form--container {
-  /* display: flex;
-  flex-direction: column; */
+  display: flex;
+  flex-direction: column;
   margin-top: 2em;
 }
 
-.contact-form--input {
+.input-container, .textarea-container {
   display: flex;
   flex-direction: column;
+  margin-top: 1.75em;
+  color: var(--COLOR-GRAY-02);
 }
 
-input,
-textarea {
+.input-container label,
+.textarea-container label {
+  padding: 0 0 .5em .25em;
+}
+
+input[type=text],
+input[type=email], 
+textarea,
+button {
+  padding: 0.25em 2em;
   border-radius: 7px;
-  font-weight: inherit;
-  font-size: inherit;
-  font-family: inherit;
-  padding: .5em 7em .5em 1em;
-  outline: none;
   border: none;
-  background-color: var(--COLOR-GRAY-04-05);
-  color: var(--COLOR-GRAY-01);
+  outline: none;
+  background: #191d25;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+} 
+
+input[type=text],
+input[type=email] {
+  width: 100%;
+  height: 50px;
+}
+
+.input-styles {
+  margin-bottom: 2em;
+}
+
+.input-styles:last-child {
+  margin-bottom: 0;
+}
+
+textarea {
   width: 100%;
   resize: none;
+  padding-top: 1.25em;
 }
 
-.contact-input:last-child {
+.form--submit-btn {
   margin-top: 1.75em;
-  margin-bottom: 1.75em;
+  padding: 1em 2em;
+  cursor: pointer;
+  width: 150px;
+  transform: scale(1);
+  transition: transform ease-in-out 150;
 }
 
-.contact-textarea {
+.form--submit-btn:hover {
+  transform: scale(1.05);
+  background: #20232b;
+}
+
+.recaptcha {
   margin-top: 1.75em;
 }
 
