@@ -23,6 +23,8 @@
   --COLOR-GRAY-04-025: #2c2c2c;
   --COLOR-GRAY-04-05: #1b1b1b;
   --COLOR-GRAY-05: #141414;
+  --COLOR-GRAY-06: #191d25;
+  --COLOR-GRAY-07: #20232b;
   --COLOR-DROP-SHADOW-01: #bdbdbd15;
   --COLOR-DROP-SHADOW-02: #bdbdbd2f;
   --COLOR-GRADIENT-01: linear-gradient(to top, var(--COLOR-SECONDARY), var(--COLOR-ACCENT-01));
@@ -50,6 +52,8 @@
   --COLOR-GRAY-04-025: #cecece;
   --COLOR-GRAY-04-05: #cacaca;
   --COLOR-GRAY-05: #CCCCCC;
+  --COLOR-GRAY-06: #CECECE;
+  --COLOR-GRAY-07: #bebebe;
   --COLOR-DROP-SHADOW-01: #010d2263;
   --COLOR-DROP-SHADOW-02: #010d2221;
   --COLOR-GRADIENT-02: linear-gradient(to bottom, var(--COLOR-PRIMARY-LIGHT), var(--COLOR-PRIMARY));
@@ -858,10 +862,17 @@ main {
   flex-direction: column; */
 }
 
+.form-title {
+  color: var(--COLOR-GRAY-02);
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-top: 2em;
+}
+
 .contact-form--container {
   display: flex;
   flex-direction: column;
-  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .input-container, .textarea-container {
@@ -884,7 +895,7 @@ button {
   border-radius: 7px;
   border: none;
   outline: none;
-  background: #191d25;
+  background: var(--COLOR-GRAY-06);
   color: inherit;
   font-family: inherit;
   font-size: inherit;
@@ -915,13 +926,15 @@ textarea {
   padding: 1em 2em;
   cursor: pointer;
   width: 150px;
+  color: var(--COLOR-GRAY-02);
   transform: scale(1);
   transition: transform ease-in-out 150;
 }
 
 .form--submit-btn:hover {
   transform: scale(1.05);
-  background: #20232b;
+  background: var(--COLOR-GRAY-07);
+  color: var(--COLOR-GRAY-01);
 }
 
 .recaptcha {
@@ -1805,6 +1818,11 @@ textarea {
   .about-timeline {
     grid-template-columns: 1fr 1fr;
     grid-gap: 5em;
+  }
+
+    /* -- CONTACT PAGE -- */
+  .contact-form--container {
+    min-width: 750px;
   }
 }
 
