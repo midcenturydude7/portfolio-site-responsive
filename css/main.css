@@ -933,6 +933,7 @@ textarea {
   color: var(--COLOR-GRAY-02);
   transform: scale(1);
   transition: transform ease-in-out 150;
+  border: 1px solid var(--COLOR-GRAY-04-05);
 }
 
 .form--submit-btn:hover {
