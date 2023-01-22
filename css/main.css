@@ -1818,12 +1818,19 @@ textarea {
   .about-textBoxes--container {
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    max-width: 65%;
   }
 
   .about-text--container {
     max-width: 500px;
     margin-right: 3.25em;
+    background: var(--COLOR-PRIMARY);  /* fallback for old browsers */
+    background: -webkit-var(--COLOR-GRADIENT-04);  /* Chrome 10-25, Safari 5.1-6 */
+    background: var(--COLOR-GRADIENT-04); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 7px;
+    /* border: 1px solid #adadad10; */
+    padding: 2.25em;
   }
 
   .about-progress {
@@ -1831,12 +1838,18 @@ textarea {
   }
 
   .about-timeline--container {
-    max-width: 80%;
+    max-width: 65%;
   }
 
   .about-timeline {
     grid-template-columns: 1fr 1fr;
     grid-gap: 5em;
+    background: var(--COLOR-PRIMARY);  /* fallback for old browsers */
+    background: -webkit-var(--COLOR-GRADIENT-04);  /* Chrome 10-25, Safari 5.1-6 */
+    background: var(--COLOR-GRADIENT-04); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 7px;
+    /* border: 1px solid #adadad10; */
+    padding: 3em;
   }
 
     /* -- CONTACT PAGE -- */
