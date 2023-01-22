@@ -939,6 +939,9 @@ textarea {
 .form--submit-btn:hover {
   transform: scale(1.05);
   background: var(--COLOR-GRAY-07);
+  -webkit-box-shadow:0px 12px 55px 15px rgba(213, 206, 247, 0.078);
+  -moz-box-shadow: 0px 12px 55px 15px rgba(213, 206, 247, 0.078);
+  box-shadow: 0px 12px 55px 15px rgba(213, 206, 247, 0.078);
   color: var(--COLOR-GRAY-01);
 }
 
