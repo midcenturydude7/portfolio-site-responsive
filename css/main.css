@@ -1134,8 +1134,13 @@ textarea {
   .nav__list .nav__link--theme-button {
     visibility: visible;
     opacity: 1 !important;
-    font-size: 2.275rem;
+    font-size: 1.75rem;
     color: var(--COLOR-PRIMARY-UNIV);
+    border: 1px solid var(--COLOR-PRIMARY-UNIV);
+    padding: .025em .45em;
+    border-radius: 50%;
+    background: linear-gradient(to top, #92ebd5fa 0%, #daeffc 100%);
+    box-shadow: 0px 8px 40px 5px rgba(213, 206, 247, 0.5);
   }
 
   .nav__link-selected {
@@ -1144,8 +1149,13 @@ textarea {
   }
 
   .nav__link--theme-button-hover {
-    font-size: 2.275rem;
-    opacity: .75;
+    font-size: 1.75rem;
+    border: 1px solid var(--COLOR-PRIMARY-UNIV);
+    padding: .025em .45em;
+    border-radius: 50%;
+    background: linear-gradient(to top, #d2ffd9 0%, #cadcfc 100%);
+    box-shadow: 0px 8px 40px 5px rgba(213, 206, 247, 0.5);
+    color: var(--COLOR-PRIMARY-UNIV);
   }
 
   .nav__link:hover,
@@ -1426,7 +1436,7 @@ textarea {
   }
 
   .main__main-btn--right {
-    border: 1px solid var(--COLOR-SECONDARY)
+    border: 1px solid var(--COLOR-SECONDARY);
   }
 
   .main__btn-text {
