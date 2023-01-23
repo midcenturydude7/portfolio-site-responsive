@@ -207,7 +207,7 @@ a {
   border: 0;
   width: 3.5em;
   height: 3.5em;
-  padding: 0em;
+  padding: 0;
   border-radius: 50%;
   transition: opacity 250ms ease;
 
@@ -1082,6 +1082,8 @@ textarea {
     display: flex;
     align-items: center;
     position: relative;
+    margin: 0;
+    padding: 0;
   }
 
   .nav__list {
@@ -1095,9 +1097,9 @@ textarea {
   }
 
   .nav__item {
-    margin: 0 0 0 2em;
-    padding: 0;
+    margin: 0;
     border: none;
+    padding: 1em 1.75em .5em;
   }
 
   .nav__item-hover:hover,
@@ -1106,11 +1108,21 @@ textarea {
   }
 
   .nav__item + .nav__item {
-    margin-left: 2em;
+    margin-left: 1em;
   }
 
-  .nav__item:nth-child(4) {
-    padding-bottom: 0;
+  .nav__item:hover,
+  .nav__item-selected {
+    opacity: 1 !important;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to top, #d2ffd9 0%, #cadcfc 100%);
+  }
+
+  .nav__item-selected,
+  .nav__item-selected:hover {
+    opacity: 1;
+    cursor: default;
   }
 
   .nav__list--secondary .nav__item {
