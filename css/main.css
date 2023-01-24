@@ -1853,7 +1853,7 @@ textarea {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    max-width: 65%;
+    max-width: 95%;
   }
 
   .about-text--container {
@@ -1872,7 +1872,7 @@ textarea {
   }
 
   .about-timeline--container {
-    max-width: 65%;
+    max-width: 95%;
   }
 
   .about-timeline {
@@ -1915,6 +1915,11 @@ textarea {
 
 .col--middle {
   width: 45%;
+}
+
+.about-textBoxes--container, 
+.about-timeline--container {
+  max-width: 95%;
 }
 
 .about-progress {
@@ -1977,6 +1982,11 @@ textarea {
     margin-left: 0.15em;
   }
 
+  .about-textBoxes--container,
+  .about-timeline--container {
+    max-width: 80%;
+  }
+
   .work-box:last-child {
     margin-bottom: 0 !important;
   }
@@ -1987,7 +1997,13 @@ textarea {
   .chevron-text {
     margin-left: 8em;
   }
+
+  .about-textBoxes--container,
+  .about-timeline--container {
+    max-width: 65%;
+  }
 }
+
 @media (min-width: 2500px) {
   .main__hero-image {
     margin: 2em 2em 0 0;
