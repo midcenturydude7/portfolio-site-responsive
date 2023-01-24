@@ -2007,6 +2007,11 @@ textarea {
   .about-timeline--container {
     max-width: 65%;
   }
+
+  .work-box--container {
+    max-width: 75%;
+    margin-bottom: 2em;
+  }
 }
 
 @media (min-width: 2500px) {
