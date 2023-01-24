@@ -1987,6 +1987,11 @@ textarea {
     max-width: 80%;
   }
 
+  .work-box--container {
+    max-width: 75%;
+    margin-bottom: 2em;
+  }
+
   .work-box:last-child {
     margin-bottom: 0 !important;
   }
