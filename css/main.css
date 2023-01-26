@@ -1695,6 +1695,7 @@ textarea {
     position: relative;
     text-decoration: none;
     color: var(--COLOR-GRAY-02);
+    box-shadow: none;
   }
 
   a.box-animation-left:hover,
@@ -1711,7 +1712,15 @@ textarea {
     bottom: 0;
     left: 0;
     right: 0;
-    box-shadow: 5px 55px 55px 5px rgba(213, 206, 247, 0.185);
+  }
+
+  a.box-animation-right::before {
+    box-shadow: var(--boxShadowAfter, none);
+  }
+  
+
+  a.box-animation-left::before {
+    box-shadow: var(--boxShadowAfter, 5px 55px 55px 5px rgba(213, 206, 247, 0.185));
   }
 
   div.three {

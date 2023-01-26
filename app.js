@@ -141,6 +141,8 @@ first.addEventListener(
     setTimeout(() => {
       colOne.style.borderBottom = "4px solid var(--COLOR-GRAY-02)";
       colTwo.style.borderBottom = "none";
+      boxAnimLeft.style.setProperty("--boxShadowAfter", "5px 55px 55px 5px rgba(213, 206, 247, 0.185)");
+      boxAnimRight.style.setProperty("--boxShadowAfter", "none");
     }, 110);
 
     // Reset animation helper: hides graph #2
@@ -165,6 +167,8 @@ second.addEventListener(
     setTimeout(() => {
       colOne.style.borderBottom = "none";
       colTwo.style.borderBottom = "4px solid var(--COLOR-GRAY-02)";
+      boxAnimRight.style.setProperty("--boxShadowAfter", "5px 55px 55px 5px rgba(213, 206, 247, 0.185)");
+      boxAnimLeft.style.setProperty("--boxShadowAfter", "none");
     }, 110);
 
     // Reset animation helper: hides graph #1
