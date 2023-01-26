@@ -156,6 +156,17 @@ first.addEventListener(
   false
 );
 
+// second.addEventListener("mouseover", () => {
+//   boxAnimRight.style.setProperty(
+//     "--boxShadowAfter",
+//     "5px 55px 55px 5px rgba(213, 206, 247, 0.185)"
+//   );
+// });
+
+// second.addEventListener("mouseout", () => {
+//   boxAnimRight.style.setProperty("--boxShadowAfter", "none");
+// });
+
 // What's Next
 second.addEventListener(
   "click",
