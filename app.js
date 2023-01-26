@@ -9,12 +9,7 @@ const second = document.getElementById("second");
 const paraOne = document.querySelector(".para-one");
 const paraTwo = document.querySelector(".para-two");
 const boxAnimLeft = document.querySelector(".box-animation-left");
-const boxAnimLeftAfter = window.getComputedStyle(boxAnimLeft, "::before");
 const boxAnimRight = document.querySelector(".box-animation-right");
-const boxAnimRightAfter = window.getComputedStyle(boxAnimRight, "::before");
-
-console.log(boxAnimLeftAfter.display);
-console.log(boxAnimRightAfter.boxShadow);
 
 // Mobile Navigation Menu Toggle Btn
 const mobileNavBtn = () => {
@@ -141,7 +136,10 @@ first.addEventListener(
     setTimeout(() => {
       colOne.style.borderBottom = "4px solid var(--COLOR-GRAY-02)";
       colTwo.style.borderBottom = "none";
-      boxAnimLeft.style.setProperty("--boxShadowAfter", "5px 55px 55px 5px rgba(213, 206, 247, 0.185)");
+      boxAnimLeft.style.setProperty(
+        "--boxShadowAfter",
+        "5px 55px 55px 5px rgba(213, 206, 247, 0.185)"
+      );
       boxAnimRight.style.setProperty("--boxShadowAfter", "none");
     }, 110);
 
@@ -167,7 +165,10 @@ second.addEventListener(
     setTimeout(() => {
       colOne.style.borderBottom = "none";
       colTwo.style.borderBottom = "4px solid var(--COLOR-GRAY-02)";
-      boxAnimRight.style.setProperty("--boxShadowAfter", "5px 55px 55px 5px rgba(213, 206, 247, 0.185)");
+      boxAnimRight.style.setProperty(
+        "--boxShadowAfter",
+        "5px 55px 55px 5px rgba(213, 206, 247, 0.185)"
+      );
       boxAnimLeft.style.setProperty("--boxShadowAfter", "none");
     }, 110);
 
