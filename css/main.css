@@ -1675,7 +1675,6 @@ textarea {
     display: block;
   }
 
-
   div.main__col > h1 {
     color: var(--COLOR-GRAY-02);
     font-size: 1.3rem;
@@ -1691,14 +1690,28 @@ textarea {
     padding-bottom: 0.75em;
   }
 
-  a.box-animation {
+  a.box-animation-left,
+  a.box-animation-right {
+    position: relative;
     text-decoration: none;
     color: var(--COLOR-GRAY-02);
   }
 
-  a.box-animation:hover,
-  a.bog-animation:focus {
-    color: var(--COLOR-SECONDARY)
+  a.box-animation-left:hover,
+  a.box-animation-right:hover {
+    color: var(--COLOR-SECONDARY);
+  }
+
+  a.box-animation-left::before,
+  a.box-animation-right::before {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 5px 55px 55px 5px rgba(213, 206, 247, 0.185);
   }
 
   div.three {

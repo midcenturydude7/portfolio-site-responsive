@@ -8,6 +8,13 @@ const first = document.getElementById("first");
 const second = document.getElementById("second");
 const paraOne = document.querySelector(".para-one");
 const paraTwo = document.querySelector(".para-two");
+const boxAnimLeft = document.querySelector(".box-animation-left");
+const boxAnimLeftAfter = window.getComputedStyle(boxAnimLeft, "::before");
+const boxAnimRight = document.querySelector(".box-animation-right");
+const boxAnimRightAfter = window.getComputedStyle(boxAnimRight, "::before");
+
+console.log(boxAnimLeftAfter.display);
+console.log(boxAnimRightAfter.boxShadow);
 
 // Mobile Navigation Menu Toggle Btn
 const mobileNavBtn = () => {
