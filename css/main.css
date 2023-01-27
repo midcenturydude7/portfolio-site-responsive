@@ -389,6 +389,14 @@ main {
   max-width: 800px;
 }
 
+.about-text-title {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  margin: 0 0 .4em 0;
+  padding: 0;
+}
+
+.about-text-title,
 .about-text, 
 .about-item--small-text {
   color: var(--COLOR-GRAY-02);
