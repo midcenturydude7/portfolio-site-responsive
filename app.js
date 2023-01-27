@@ -198,11 +198,11 @@ second.addEventListener(
 
 // Hover event for 4px border bottom color change
 // function borderBottomChange() {
-//   first.addEventListener("mouseover", () => {
+//   colOne.addEventListener("mouseenter", () => {
 //     colOne.style.borderBottom = "4px solid var(--COLOR-SECONDARY)";
 //   });
 
-//   first.addEventListener("mouseout", () => {
+//   colOne.addEventListener("mouseleave", () => {
 //     colOne.style.borderBottom = "4px solid var(--COLOR-GRAY-02)";
 //   });
 // }
