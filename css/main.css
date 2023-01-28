@@ -1708,7 +1708,7 @@ textarea {
 
   a.box-animation-left:hover,
   a.box-animation-right:hover {
-    color: var(--COLOR-SECONDARY);
+    color: var(--COLOR-GRAY-01);
   }
 
   a.box-animation-left::before,
