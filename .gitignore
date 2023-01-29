@@ -11,5 +11,8 @@
 # Font awesome credentials
 .npmrc
 
+# Ignore Stylelint
+stylelintrc.json
+
 # Additional css file for draft purposes
 draft.css
