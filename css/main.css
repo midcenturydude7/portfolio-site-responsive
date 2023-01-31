@@ -623,6 +623,26 @@ main {
   justify-content: center;
 }
 
+/* .tl-icon-title__container {
+  position: absolute;
+  top: 3.5em;
+  left: 33.5em;
+  font-size: 1rem;
+  color: var(--COLOR-PRIMARY);
+  background-color: var(--COLOR-SECONDARY);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tl-icon-title {
+  font-size: 1rem;
+  color: var(--COLOR-PRIMARY);
+} */
+
 .tl-icon {
   font-size: 1.25rem;
 }
