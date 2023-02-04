@@ -1,137 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/main.css">
-  <!-- Google fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>Welcome to MG's Portfolio Site | Home page</title>
-</head>
-<body>
-
-  <!-- ABSOLUTELY POSITIONED ELEMENTS -->
-  <div class="container-shape">
-    <div class="h-shape"></div>
-  </div>
-
-  <div class="content-wrapper">
-    <!-- HEADER / NAVIGATION -->
-    <header class="header__bg-image">
-      <div class="container">
-        <button class="nav-toggle" id="nav-toggle" aria-label="open navigation">
-          <span class="nav__menu"><i class="fas fa-bars"></i></span>
-        </button>
-        <nav class="nav">
-          <ul class="nav__list nav__list--primary">
-            <li class="nav__item nav__item-hover nav__item-selected"><a href="#" class="nav__link nav__link-selected">Home</a></li>
-            <li class="nav__item nav__item-hover"><a href="/about.html" class="nav__link">About</a></li>
-            <li class="nav__item nav__item-hover"><a href="/work.html" class="nav__link">Work</a></li>
-            <li class="nav__item nav__item-hover"><a href="/contact.html" class="nav__link">Contact</a></li>
-          </ul>
-          <ul class="nav__list nav__list--secondary">
-            <li class="nav__item"><a href="#" class="nav__link nav__link--theme-button" id="nav__link"><i class="fa-solid fa-moon moon-btn"></i></a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <!-- MOBILE ELEMENT: LIGHT/DARK MODE BTN -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-rqn26AG5Pj86AF4SO72RK5fyefcQ/x32DNQfChxWvbXIyXFePlEktwD18fEz+kQU"
+      crossorigin="anonymous" />
+    <title>Welcome to MG's Portfolio Site | Home page</title>
+  </head>
+  <body>
+    <!-- ABSOLUTELY POSITIONED ELEMENTS -->
     <div class="container-shape">
-      <div class="theme-btn">
-        <i class="fa-solid fa-moon moon-btn"></i>
-      </div>
+      <div class="h-shape"></div>
     </div>
 
-    <!-- MAIN CONTENT -->
-    <main class="main-hp">
-      <div class="container row top-row">
-        <div class="col--left">
-          <img class="main__hero-image" src="img/MG_Avatar.jpg" alt="">
+    <div class="content-wrapper">
+      <!-- HEADER / NAVIGATION -->
+      <header class="header__bg-image">
+        <div class="container">
+          <button
+            class="nav-toggle"
+            id="nav-toggle"
+            aria-label="open navigation">
+            <span class="nav__menu"><i class="fas fa-bars"></i></span>
+          </button>
+          <nav class="nav">
+            <ul class="nav__list nav__list--primary">
+              <li class="nav__item nav__item-hover nav__item-selected">
+                <a href="#" class="nav__link nav__link-selected">Home</a>
+              </li>
+              <li class="nav__item nav__item-hover">
+                <a href="/about.html" class="nav__link">About</a>
+              </li>
+              <li class="nav__item nav__item-hover">
+                <a href="/work.html" class="nav__link">Work</a>
+              </li>
+              <li class="nav__item nav__item-hover">
+                <a href="/contact.html" class="nav__link">Contact</a>
+              </li>
+            </ul>
+            <ul class="nav__list nav__list--secondary">
+              <li class="nav__item">
+                <a
+                  href="#"
+                  class="nav__link nav__link--theme-button"
+                  id="nav__link"
+                  ><i class="fa-solid fa-moon moon-btn"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <div class="col--middle">
-          <h1 class="main__title">Hi, I'm <span class="main__title--accent">Matt</span></h1>
-          <p class="main__sub-title">I build things for the web</p>
-          <div class="main-btn">
-            <a href="/work.html" class="main__main-btn">
-              <span class="main__btn-text" id="main__btn-text">Learn more</span>
-              <span class="main__btn-icon"><i class="fas fa-terminal"></i></span>
-            </a>
-          </div>
-        </div>
-        <div class="col--right">
-          <div class="article-container">
-            <article class="main__article">
-              <div class="main__col one">
-                <h1 id="first" class="box-animation-title"><a class="box-animation-left" href="#">The 411</a></h1>
-              </div>
-              <div class="main__col two">
-                <h1 id="second" class="box-animation-title"><a class="box-animation-right" href="#">What's Next</a></h1>
-              </div>
-              
-              <div class="three">
-                <p class="main__text para-one">
-                  Thanks for stopping by. I am a self-taught front-end developer with an interest in building React.js web sites and applications. For this site, I utilized a mobile first design approach and coded it from scratch in HTML, CSS and Javascript. 
-                </p>
-                <p class="main__text para-two">
-                  Soon I'll refactor this site in React and Sass, and I am working with Spotify's API to develop a fun fitness oriented application that I hope to share soon. Additionally, I am also expanding my skillset to include Typsescript and Nodejs, as I work to become a full stack developer. Check back often for updates.
-                </p>
-              </div>
-              <div class="main-btn--right four">
-                <a href="#" class="main__main-btn--right">
-                  <span class="main__btn-text--right" id="main__btn-text--right">Download CV</span>
-                  <span class="main__btn-icon--right"><i class="fas fa-terminal"></i></span>
-                </a>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-      <div class="container row bottom-row">
-        <div class="col--left-bottom">
-          <h1 class="main__title">Here's what I'm <span class="main__title--accent">cooking up</span></h1>
-          <div class="chevron-text">
-            <i class="fa-solid fa-chevron-right chevron chevron-margin"></i>
-            <i class="fa-solid fa-chevron-right chevron chevron-margin chevron-solid"></i>
-            <i class="fas fa-terminal chevron chevron-terminal"></i>
-          </div>
-        </div>
-        <div class="col--right-bottom">
-          <img class="col--right-bottom--img" src="img/port2.jpg" alt="work desk">
-          <div class="col--right-bottom--banner">Frontend Dev</div>
-          <div class="col--right-bottom--text">
-            <a href="#">
-              <h4 class="col--right-bottom--title">
-                Twitter clone built with HTML, CSS and Javascript
-              </h4>
-            </a>
-            <p class="col--right-bottom--para">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, enim consectetur? Sit voluptates dignissimos iure labore quo eum qui ipsam similique... <a href="#"><span class="col--right-bottom--span">Read more 🡆</span></a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </main>
+      </header>
 
-    <!-- FOOTER CONTENT -->
-    <footer>
-      <div class="footer-btn">
-        <a href="/work.html" class="footer__main-btn">
-        <span class="footer__btn-text footer__btn-text--hover">Learn more</span>
-        <span class="footer__btn-icon"><i class="fas fa-terminal"></i></span>
-        </a>
+      <!-- MOBILE ELEMENT: LIGHT/DARK MODE BTN -->
+      <div class="container-shape">
+        <div class="theme-btn">
+          <i class="fa-solid fa-moon moon-btn"></i>
+        </div>
       </div>
-    </footer>
-  </div>
 
-  <!-- JS FILE >App.js< IMPORT -->
-  <script src="app.js" type="module"></script>
-  <!-- <script src="https://kit.fontawesome.com/b245f8ce7a.js" crossorigin="anonymous"></script> -->
+      <!-- MAIN CONTENT -->
+      <main class="main-hp">
+        <div class="container row top-row">
+          <div class="col--left">
+            <img class="main__hero-image" src="img/MG_Avatar.jpg" alt="" />
+          </div>
+          <div class="col--middle">
+            <h1 class="main__title">
+              Hi, I'm <span class="main__title--accent">Matt</span>
+            </h1>
+            <p class="main__sub-title">I build things for the web</p>
+            <div class="main-btn">
+              <a href="/work.html" class="main__main-btn">
+                <span class="main__btn-text" id="main__btn-text"
+                  >Learn more</span
+                >
+                <span class="main__btn-icon"
+                  ><i class="fas fa-terminal"></i
+                ></span>
+              </a>
+            </div>
+          </div>
+          <div class="col--right">
+            <div class="article-container">
+              <article class="main__article">
+                <div class="main__col one">
+                  <h1 id="first" class="box-animation-title">
+                    <a class="box-animation-left" href="#">The 411</a>
+                  </h1>
+                </div>
+                <div class="main__col two">
+                  <h1 id="second" class="box-animation-title">
+                    <a class="box-animation-right" href="#">What's Next</a>
+                  </h1>
+                </div>
+
+                <div class="three">
+                  <p class="main__text para-one">
+                    Thanks for stopping by. I am a self-taught front-end
+                    developer with an interest in building React.js web sites
+                    and applications. For this site, I utilized a mobile first
+                    design approach and coded it from scratch in HTML, CSS and
+                    Javascript.
+                  </p>
+                  <p class="main__text para-two">
+                    Soon I'll refactor this site in React and Sass, and I am
+                    working with Spotify's API to develop a fun fitness oriented
+                    application that I hope to share soon. Additionally, I am
+                    also expanding my skillset to include Typsescript and
+                    Nodejs, as I work to become a full stack developer. Check
+                    back often for updates.
+                  </p>
+                </div>
+                <div class="main-btn--right four">
+                  <a href="#" class="main__main-btn--right">
+                    <span
+                      class="main__btn-text--right"
+                      id="main__btn-text--right"
+                      >Download CV</span
+                    >
+                    <span class="main__btn-icon--right"
+                      ><i class="fas fa-terminal"></i
+                    ></span>
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+        <div class="container row bottom-row">
+          <div class="col--left-bottom">
+            <h1 class="main__title">
+              Here's what I'm
+              <span class="main__title--accent">cooking up</span>
+            </h1>
+            <div class="chevron-text">
+              <i class="fa-solid fa-chevron-right chevron chevron-margin"></i>
+              <i
+                class="fa-solid fa-chevron-right chevron chevron-margin chevron-solid"></i>
+              <i class="fas fa-terminal chevron chevron-terminal"></i>
+            </div>
+          </div>
+          <div class="col--right-bottom">
+            <img
+              class="col--right-bottom--img"
+              src="img/port2.jpg"
+              alt="work desk" />
+            <div class="col--right-bottom--banner">Frontend Dev</div>
+            <div class="col--right-bottom--text">
+              <a href="#">
+                <h4 class="col--right-bottom--title">
+                  Twitter clone built with HTML, CSS and Javascript
+                </h4>
+              </a>
+              <p class="col--right-bottom--para">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed,
+                enim consectetur? Sit voluptates dignissimos iure labore quo eum
+                qui ipsam similique...
+                <a href="#"
+                  ><span class="col--right-bottom--span">Read more 🡆</span></a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- FOOTER CONTENT -->
+      <footer>
+        <div class="footer-btn">
+          <a href="/work.html" class="footer__main-btn">
+            <span class="footer__btn-text footer__btn-text--hover"
+              >Learn more</span
+            >
+            <span class="footer__btn-icon"
+              ><i class="fas fa-terminal"></i
+            ></span>
+          </a>
+        </div>
+      </footer>
+    </div>
+
+    <!-- JS FILE >App.js< IMPORT -->
+    <script src="app.js" type="module"></script>
+    <!-- <script src="https://kit.fontawesome.com/b245f8ce7a.js" crossorigin="anonymous"></script> -->
   </body>
 </html>
