@@ -1,124 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/main.css">
-  <!-- Google fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>DRAFT: MG's Portfolio Site | The Work</title>
-</head>
-<body>
-
-  <!-- ABSOLUTELY POSITIONED ELEMENTS -->
-  <!-- <div class="container-shape">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet" />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/da1116647e.js"
+      crossorigin="anonymous"></script>
+    <title>DRAFT: MG's Portfolio Site | The Work</title>
+  </head>
+  <body>
+    <!-- ABSOLUTELY POSITIONED ELEMENTS -->
+    <!-- <div class="container-shape">
     <div class="h-shape"></div>
   </div> -->
 
-  <div class="content-wrapper">
-    <!-- HEADER / NAVIGATION -->
-    <header class="header__bg-image">
-      <div class="container">
-        <button class="nav-toggle" id="nav-toggle" aria-label="open navigation">
-          <span class="nav__menu"><i class="fas fa-bars"></i></span>
-        </button>
-        <nav class="nav">
-          <ul class="nav__list nav__list--primary">
-            <li class="nav__item nav__item-hover"><a href="/index.html" class="nav__link">Home</a></li>
-            <li class="nav__item nav__item-hover"><a href="/about.html" class="nav__link">About</a></li>
-            <li class="nav__item nav__item-hover nav__item-selected"><a href="#" class="nav__link nav__link-selected">Work</a></li>
-            <li class="nav__item nav__item-hover"><a href="/contact.html" class="nav__link">Contact</a></li>
-          </ul>
-          <ul class="nav__list nav__list--secondary">
-            <li class="nav__item"><a href="#" class="nav__link nav__link--theme-button" id="nav__link"><i class="fa-solid fa-moon moon-btn"></i></a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <div class="content-wrapper">
+      <!-- HEADER / NAVIGATION -->
+      <header class="header__bg-image">
+        <div class="container">
+          <button
+            class="nav-toggle"
+            id="nav-toggle"
+            aria-label="open navigation">
+            <span class="nav__menu"><i class="fas fa-bars"></i></span>
+          </button>
+          <nav class="nav">
+            <ul class="nav__list nav__list--primary">
+              <li class="nav__item nav__item-hover">
+                <a href="/index.html" class="nav__link">Home</a>
+              </li>
+              <li class="nav__item nav__item-hover">
+                <a href="/about.html" class="nav__link">About</a>
+              </li>
+              <li class="nav__item nav__item-hover nav__item-selected">
+                <a href="#" class="nav__link nav__link-selected">Work</a>
+              </li>
+              <li class="nav__item nav__item-hover">
+                <a href="/contact.html" class="nav__link">Contact</a>
+              </li>
+            </ul>
+            <ul class="nav__list nav__list--secondary">
+              <li class="nav__item">
+                <a
+                  href="#"
+                  class="nav__link nav__link--theme-button"
+                  id="nav__link"
+                  ><i class="fa-solid fa-moon moon-btn"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
 
-    <!-- MOBILE ELEMENT: LIGHT/DARK MODE BTN -->
-    <div class="container-shape">
-      <div class="theme-btn">
-        <i class="fa-solid fa-moon moon-btn"></i>
+      <!-- MOBILE ELEMENT: LIGHT/DARK MODE BTN -->
+      <div class="container-shape">
+        <div class="theme-btn">
+          <i class="fa-solid fa-moon moon-btn"></i>
+        </div>
       </div>
+
+      <!-- MAIN CONTENT -->
+      <main>
+        <div class="main-wrapper">
+          <div class="main-container">
+            <h1 class="main__title">
+              <span class="main__title--accent">The Work</span>
+            </h1>
+            <p class="main__sub-title">Sharing is caring</p>
+          </div>
+          <div class="work-box--container">
+            <!--Box 1-->
+            <div class="work-box">
+              <img class="work-box--img" src="img/port2.jpg" alt="work desk" />
+              <div class="work-box--banner">Frontend Dev</div>
+              <div class="work-box--text">
+                <a href="#">
+                  <h4 class="work-box--title">
+                    Twitter clone built with HTML, CSS and Javascript
+                  </h4>
+                </a>
+                <p class="work-box--para">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed,
+                  enim consectetur? Sit voluptates dignissimos iure labore quo
+                  eum qui ipsam similique...
+                  <a href="#"
+                    ><span class="work-box--span">Read more 🡆</span></a
+                  >
+                </p>
+              </div>
+            </div>
+            <!--Box 2-->
+            <div class="work-box">
+              <img class="work-box--img" src="img/port1.jpg" alt="work desk" />
+              <div class="work-box--banner">Full Stack</div>
+              <div class="work-box--text">
+                <a href="#">
+                  <h4 class="work-box--title">
+                    Fitness App via Spotify API Built with React and Node.js
+                  </h4>
+                </a>
+                <p class="work-box--para">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed,
+                  enim consectetur? Sit voluptates dignissimos iure labore quo
+                  eum qui ipsam similique...
+                  <a href="#"
+                    ><span class="work-box--span">Read more 🡆</span></a
+                  >
+                </p>
+              </div>
+            </div>
+            <!--Box 3-->
+            <div class="work-box">
+              <img class="work-box--img" src="img/port5.jpg" alt="work desk" />
+              <div class="work-box--banner">React</div>
+              <div class="work-box--text">
+                <a href="#">
+                  <h4 class="work-box--title">
+                    Tenzies Game Built with React and Javascript
+                  </h4>
+                </a>
+                <p class="work-box--para">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed,
+                  enim consectetur? Sit voluptates dignissimos iure labore quo
+                  eum qui ipsam similique...
+                  <a href="#"
+                    ><span class="work-box--span">Read more 🡆</span></a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- FOOTER CONTENT -->
+      <footer>
+        <div class="footer-btn">
+          <a href="#" class="footer__main-btn">
+            <span class="footer__btn-text footer__btn-text--hover"
+              >Learn more</span
+            >
+            <span class="footer__btn-icon"
+              ><i class="fas fa-terminal"></i
+            ></span>
+          </a>
+        </div>
+      </footer>
     </div>
 
-    <!-- MAIN CONTENT -->
-    <main>
-      <div class="main-wrapper">
-        <div class="main-container">
-          <h1 class="main__title"><span class="main__title--accent">The Work</span></h1>
-          <p class="main__sub-title">Sharing is caring</p>
-        </div>
-        <div class="work-box--container">
-          <!--Box 1-->
-          <div class="work-box">
-            <img class="work-box--img" src="img/port2.jpg" alt="work desk">
-            <div class="work-box--banner">Frontend Dev</div>
-            <div class="work-box--text">
-              <a href="#">
-                <h4 class="work-box--title">
-                  Twitter clone built with HTML, CSS and Javascript
-                </h4>
-              </a>
-              <p class="work-box--para">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, enim consectetur? Sit voluptates dignissimos iure labore quo eum qui ipsam similique... <a href="#"><span class="work-box--span">Read more 🡆</span></a>
-              </p>
-            </div>
-          </div>
-          <!--Box 2-->
-          <div class="work-box">
-            <img class="work-box--img" src="img/port1.jpg" alt="work desk">
-            <div class="work-box--banner">Full Stack</div>
-            <div class="work-box--text">
-              <a href="#">
-                <h4 class="work-box--title">
-                  Fitness App via Spotify API Built with React and Node.js
-                </h4>
-              </a>
-              <p class="work-box--para">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, enim consectetur? Sit voluptates dignissimos iure labore quo eum qui ipsam similique... <a href="#"><span class="work-box--span">Read more 🡆</span></a>
-              </p>
-            </div>
-          </div>
-          <!--Box 3-->
-          <div class="work-box">
-            <img class="work-box--img" src="img/port5.jpg" alt="work desk">
-            <div class="work-box--banner">React</div>
-            <div class="work-box--text">
-              <a href="#">
-                <h4 class="work-box--title">
-                  Tenzies Game Built with React and Javascript
-                </h4>
-              </a>
-              <p class="work-box--para">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, enim consectetur? Sit voluptates dignissimos iure labore quo eum qui ipsam similique... <a href="#"><span class="work-box--span">Read more 🡆</span></a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <!-- FOOTER CONTENT -->
-    <footer>
-      <div class="footer-btn">
-        <a href="#" class="footer__main-btn">
-        <span class="footer__btn-text footer__btn-text--hover">Learn more</span>
-        <span class="footer__btn-icon"><i class="fas fa-terminal"></i></span>
-        </a>
-      </div>
-    </footer>
-  </div>
-
-  <!-- JS FILE >App.js< IMPORT -->
-  <script src="app.js" type="module"></script>
-  <!-- <script src="https://kit.fontawesome.com/b245f8ce7a.js" crossorigin="anonymous"></script> -->
+    <!-- JS FILE >App.js< IMPORT -->
+    <script src="app.js" type="module"></script>
+    <!-- <script src="https://kit.fontawesome.com/b245f8ce7a.js" crossorigin="anonymous"></script> -->
   </body>
 </html>

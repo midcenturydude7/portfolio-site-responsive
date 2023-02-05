@@ -1185,10 +1185,10 @@ textarea {
   .nav__list .nav__link--theme-button {
     visibility: visible;
     opacity: 1 !important;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     color: var(--COLOR-PRIMARY-UNIV);
     /* border: 1px solid var(--COLOR-PRIMARY-UNIV); */
-    padding: 0.025em 0.45em;
+    padding: 0.125em 0.45em;
     border-radius: 50%;
     background: linear-gradient(to top, #92ebd5fa 0%, #daeffc 100%);
     box-shadow: 0px 8px 40px 5px rgba(213, 206, 247, 0.5);
@@ -1200,13 +1200,18 @@ textarea {
   }
 
   .nav__link--theme-button-hover {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     /* border: 1px solid var(--COLOR-PRIMARY-UNIV); */
-    padding: 0.025em 0.45em;
+    padding: 0.125em 0.45em;
     border-radius: 50%;
     background: linear-gradient(to top, #d2ffd9 0%, #cadcfc 100%);
     box-shadow: 0px 8px 40px 5px rgba(213, 206, 247, 0.5);
     color: var(--COLOR-PRIMARY-UNIV);
+  }
+
+  .icon-btn:hover {
+    transition: 5s ease-in-out;
+    transform: rotate(450deg);
   }
 
   .nav__link:hover,

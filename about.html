@@ -1,348 +1,451 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/main.css">
-  <!-- Google fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>DRAFT: MG's Portfolio Site | About</title>
-</head>
-<body>
-
-  <!-- ABSOLUTELY POSITIONED ELEMENTS -->
-  <!-- <div class="container-shape">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet" />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/da1116647e.js"
+      crossorigin="anonymous"></script>
+    <title>DRAFT: MG's Portfolio Site | About</title>
+  </head>
+  <body>
+    <!-- ABSOLUTELY POSITIONED ELEMENTS -->
+    <!-- <div class="container-shape">
     <div class="h-shape"></div>
   </div> -->
 
-  <div class="content-wrapper">
-    <!-- HEADER / NAVIGATION -->
-    <header class="header__bg-image">
-      <div class="container">
-        <button class="nav-toggle" id="nav-toggle" aria-label="open navigation">
-          <span class="nav__menu"><i class="fas fa-bars"></i></span>
-        </button>
-        <nav class="nav">
-          <ul class="nav__list nav__list--primary">
-            <li class="nav__item nav__item-hover"><a href="/index.html" class="nav__link">Home</a></li>
-            <li class="nav__item nav__item-hover nav__item-selected"><a href="#" class="nav__link nav__link-selected">About</a></li>
-            <li class="nav__item nav__item-hover"><a href="/work.html" class="nav__link">Work</a></li>
-            <li class="nav__item nav__item-hover"><a href="/contact.html" class="nav__link">Contact</a></li>
-          </ul>
-          <ul class="nav__list nav__list--secondary">
-            <li class="nav__item"><a href="#" class="nav__link nav__link--theme-button" id="nav__link"><i class="fa-solid fa-moon moon-btn"></i></a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <div class="content-wrapper">
+      <!-- HEADER / NAVIGATION -->
+      <header class="header__bg-image">
+        <div class="container">
+          <button
+            class="nav-toggle"
+            id="nav-toggle"
+            aria-label="open navigation">
+            <span class="nav__menu"><i class="fas fa-bars"></i></span>
+          </button>
+          <nav class="nav">
+            <ul class="nav__list nav__list--primary">
+              <li class="nav__item nav__item-hover">
+                <a href="/index.html" class="nav__link">Home</a>
+              </li>
+              <li class="nav__item nav__item-hover nav__item-selected">
+                <a href="#" class="nav__link nav__link-selected">About</a>
+              </li>
+              <li class="nav__item nav__item-hover">
+                <a href="/work.html" class="nav__link">Work</a>
+              </li>
+              <li class="nav__item nav__item-hover">
+                <a href="/contact.html" class="nav__link">Contact</a>
+              </li>
+            </ul>
+            <ul class="nav__list nav__list--secondary">
+              <li class="nav__item">
+                <a
+                  href="#"
+                  class="nav__link nav__link--theme-button"
+                  id="nav__link"
+                  ><i class="fa-solid fa-moon moon-btn"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
 
-    <!-- MOBILE ELEMENT: LIGHT/DARK MODE BTN -->
-    <div class="container-shape">
-      <div class="theme-btn">
-        <i class="fa-solid fa-moon moon-btn"></i>
+      <!-- MOBILE ELEMENT: LIGHT/DARK MODE BTN -->
+      <div class="container-shape">
+        <div class="theme-btn">
+          <i class="fa-solid fa-moon moon-btn"></i>
+        </div>
       </div>
+
+      <!-- MAIN CONTENT -->
+      <main>
+        <div class="main-wrapper">
+          <div class="main-container">
+            <h1 class="main__title">
+              <span class="main__title--accent">About</span>
+            </h1>
+            <p class="main__sub-title">What's up with Matt?</p>
+          </div>
+          <!-- ABOUT CONTENT -->
+          <div class="about-container">
+            <div class="about-textBoxes--container">
+              <div class="about-text--container">
+                <h1 class="about-text-title">React Developer</h1>
+                <p class="about-text">
+                  Becoming a React developer is absolutely the goal. The
+                  learning curve is high but this site provides an overview of
+                  my progress to date.
+                </p>
+                <p class="about-text">
+                  In terms of frontend development, I am focusing on building
+                  web applications using the React.js framework.
+                </p>
+                <p class="about-text">
+                  While frontend development is my current focus, I plan on
+                  folding in backend tools and frameworks so that I can
+                  eventually become a full stack developer.
+                </p>
+                <p class="about-text">
+                  Take a moment to review my skills and experience and let me
+                  know if you have any questions.
+                </p>
+              </div>
+              <div class="about-boxes--container">
+                <!-- ABOUT: BOX 1 -->
+                <div class="about-boxes--item">
+                  <div class="about-item--text">
+                    <p class="about-item--large-text">4+</p>
+                    <p class="about-item--small-text">
+                      Years of Experience with<br />
+                      Object Oriented Programming
+                    </p>
+                  </div>
+                </div>
+                <!-- ABOUT: BOX 2 -->
+                <div class="about-boxes--item">
+                  <div class="about-item--text">
+                    <p class="about-item--large-text">1+</p>
+                    <p class="about-item--small-text">
+                      Years of Experience with<br />
+                      React.js
+                    </p>
+                  </div>
+                </div>
+                <!-- ABOUT: BOX  3 -->
+                <div class="about-boxes--item">
+                  <div class="about-item--text">
+                    <p class="about-item--large-text">1+</p>
+                    <p class="about-item--small-text">
+                      Years of Experience with<br />
+                      React.js
+                    </p>
+                  </div>
+                </div>
+                <!-- ABOUT: BOX  4 -->
+                <div class="about-boxes--item">
+                  <div class="about-item--text">
+                    <p class="about-item--large-text">1+</p>
+                    <p class="about-item--small-text">
+                      Years of Experience with<br />
+                      React.js
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ABOUT: ESSENTIAL SKILLS -->
+            <div class="about-stats--container">
+              <h3 class="about-title">Essential Skills</h3>
+              <div class="about-progress--bars">
+                <!-- ABOUT: REACT BAR -->
+                <div class="about-progress--bar">
+                  <p class="about-progress--title">React.js</p>
+                  <div class="about-progress--con">
+                    <p class="about-progress--text">50%</p>
+                    <div class="about-progress">
+                      <span class="about-progress--react"></span>
+                    </div>
+                  </div>
+                </div>
+                <!-- ABOUT: JAVASCRIPT ALGO BAR -->
+                <div class="about-progress--bar">
+                  <p class="about-progress--title">
+                    JS Algorithms & Data Structures
+                  </p>
+                  <div class="about-progress--con">
+                    <p class="about-progress--text">35%</p>
+                    <div class="about-progress">
+                      <span class="about-progress--js_algo"></span>
+                    </div>
+                  </div>
+                </div>
+                <!-- ABOUT: CSS BAR -->
+                <div class="about-progress--bar">
+                  <p class="about-progress--title">css</p>
+                  <div class="about-progress--con">
+                    <p class="about-progress--text">60%</p>
+                    <div class="about-progress">
+                      <span class="about-progress--css"></span>
+                    </div>
+                  </div>
+                </div>
+                <!-- ABOUT: HTML5 BAR -->
+                <div class="about-progress--bar">
+                  <p class="about-progress--title">html5</p>
+                  <div class="about-progress--con">
+                    <p class="about-progress--text">80%</p>
+                    <div class="about-progress">
+                      <span class="about-progress--html5"></span>
+                    </div>
+                  </div>
+                </div>
+                <!-- ABOUT: GITHUB BAR -->
+                <div class="about-progress--bar">
+                  <p class="about-progress--title">github</p>
+                  <div class="about-progress--con">
+                    <p class="about-progress--text">50%</p>
+                    <div class="about-progress">
+                      <span class="about-progress--github"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ABOUT: DEVELOPING SKILLS -->
+            <div class="about-stats--container">
+              <h3 class="about-title">Developing Skills</h3>
+              <div class="about-progress--bars">
+                <!-- ABOUT: TYPESCRIPT BAR -->
+                <div class="about-progress--bar">
+                  <p class="about-progress--title">Typescript</p>
+                  <div class="about-progress--con">
+                    <p class="about-progress--text">10%</p>
+                    <div class="about-progress">
+                      <span class="about-progress--typescript"></span>
+                    </div>
+                  </div>
+                </div>
+                <!-- ABOUT: NEXTJS BAR -->
+                <div class="about-progress--bar">
+                  <p class="about-progress--title">Next.js</p>
+                  <div class="about-progress--con">
+                    <p class="about-progress--text">15%</p>
+                    <div class="about-progress">
+                      <span class="about-progress--nextjs"></span>
+                    </div>
+                  </div>
+                </div>
+                <!-- ABOUT: NODEJS BAR -->
+                <div class="about-progress--bar">
+                  <p class="about-progress--title">Node.js</p>
+                  <div class="about-progress--con">
+                    <p class="about-progress--text">10%</p>
+                    <div class="about-progress">
+                      <span class="about-progress--nodejs"></span>
+                    </div>
+                  </div>
+                </div>
+                <!-- ABOUT: SASS BAR -->
+                <div class="about-progress--bar">
+                  <p class="about-progress--title">sass</p>
+                  <div class="about-progress--con">
+                    <p class="about-progress--text">30%</p>
+                    <div class="about-progress">
+                      <span class="about-progress--scss"></span>
+                    </div>
+                  </div>
+                </div>
+                <!-- ABOUT: PYTHON BAR -->
+                <div class="about-progress--bar">
+                  <p class="about-progress--title">Python</p>
+                  <div class="about-progress--con">
+                    <p class="about-progress--text">40%</p>
+                    <div class="about-progress">
+                      <span class="about-progress--python"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="about-timeline--container">
+              <h3 class="about-title">Experience & Education</h3>
+              <div class="about-timeline">
+                <!-- TIMELINE ITEM 1 -->
+                <div class="about-timeline--item">
+                  <div class="about-timeline--icon">
+                    <i class="fa-solid fa-code-fork tl-icon"></i>
+                  </div>
+                  <p class="about-timeline--duration">March 2022 - present</p>
+                  <div class="about-timeline--copy">
+                    <h5 class="about-timeline--sub-title">
+                      Frontend Developer<span
+                        class="about-timeline--small-text"></span>
+                    </h5>
+                    <p class="about-timeline--desc">
+                      Specializing in React web applications and data-driven web
+                      sites.
+                    </p>
+                  </div>
+                </div>
+                <!-- TIMELINE ITEM 2 -->
+                <div class="about-timeline--item">
+                  <div class="about-timeline--icon">
+                    <i class="fa-solid fa-laptop-code tl-icon"></i>
+                  </div>
+                  <p class="about-timeline--duration">January 2023 - present</p>
+                  <div class="about-timeline--copy">
+                    <h5 class="about-timeline--sub-title">
+                      Joy of React<span class="about-timeline--small-text">
+                        - Online Course by Josh W. Commeau</span
+                      >
+                    </h5>
+                    <p class="about-timeline--desc">
+                      An interactive learning experience that teaches students
+                      how to build dynamic web applications with React. | 27%
+                      complete
+                    </p>
+                  </div>
+                </div>
+                <!-- TIMELINE ITEM 3 -->
+                <div class="about-timeline--item">
+                  <div class="about-timeline--icon">
+                    <i class="fa-solid fa-laptop-code tl-icon"></i>
+                  </div>
+                  <p class="about-timeline--duration">
+                    November 2022 - present
+                  </p>
+                  <div class="about-timeline--copy">
+                    <h5 class="about-timeline--sub-title">
+                      Frontend Developer Career Path Certificate<span
+                        class="about-timeline--small-text">
+                        - Scrimba</span
+                      >
+                    </h5>
+                    <p class="about-timeline--desc">
+                      The program contains 13 modules encompassing HTML, CSS,
+                      JavaScript, React, and UI design. | 58% complete
+                    </p>
+                  </div>
+                </div>
+                <!-- TIMELINE ITEM 4 -->
+                <div class="about-timeline--item">
+                  <div class="about-timeline--icon">
+                    <i class="fa-solid fa-laptop-code tl-icon"></i>
+                  </div>
+                  <p class="about-timeline--duration">January 2023 - Present</p>
+                  <div class="about-timeline--copy">
+                    <h5 class="about-timeline--sub-title">
+                      Javascript Alogrithms and Data Structures
+                      Certification<span class="about-timeline--small-text">
+                        - Freecodecamp</span
+                      >
+                    </h5>
+                    <p class="about-timeline--desc">
+                      Encompassing the fundamentals of JavaScript including
+                      variables, arrays, objects, loops, and functions, while
+                      also applying that knowledge to create algorithms that
+                      manipulate strings, factorialize numbers, and run
+                      calculations.
+                    </p>
+                  </div>
+                </div>
+                <!-- TIMELINE ITEM 5 -->
+                <div class="about-timeline--item">
+                  <div class="about-timeline--icon">
+                    <i class="fa-solid fa-laptop-code tl-icon"></i>
+                  </div>
+                  <p class="about-timeline--duration">March 2022</p>
+                  <div class="about-timeline--copy">
+                    <h5 class="about-timeline--sub-title">
+                      React Bootcamp<span class="about-timeline--small-text">
+                        - Reed Barger</span
+                      >
+                    </h5>
+                    <p class="about-timeline--desc">
+                      Worked collaboratively with a group of software developers
+                      using Agile methodologies to build a Flask web application
+                      called Pyrate Stocks that allows users to track equities
+                      of their choosing.
+                    </p>
+                  </div>
+                </div>
+                <!-- TIMELINE ITEM 6 -->
+                <div class="about-timeline--item">
+                  <div class="about-timeline--icon">
+                    <i class="fa-solid fa-laptop-code tl-icon"></i>
+                  </div>
+                  <p class="about-timeline--duration">March 2022</p>
+                  <div class="about-timeline--copy">
+                    <h5 class="about-timeline--sub-title">
+                      Javascript Bootcamp<span
+                        class="about-timeline--small-text">
+                        - Reed Barger</span
+                      >
+                    </h5>
+                    <p class="about-timeline--desc">
+                      Worked collaboratively with a group of software developers
+                      using Agile methodologies to build a Flask web application
+                      called Pyrate Stocks that allows users to track equities
+                      of their choosing.
+                    </p>
+                  </div>
+                </div>
+                <!-- TIMELINE ITEM 7 -->
+                <div class="about-timeline--item">
+                  <div class="about-timeline--icon">
+                    <i class="fa-solid fa-code-fork tl-icon"></i>
+                  </div>
+                  <p class="about-timeline--duration">January - March 2021</p>
+                  <div class="about-timeline--copy">
+                    <h5 class="about-timeline--sub-title">
+                      Portland Python Pirates<span
+                        class="about-timeline--small-text">
+                        - Cohort</span
+                      >
+                    </h5>
+                    <p class="about-timeline--desc">
+                      Worked collaboratively with a group of software developers
+                      using Agile methodologies to build a Flask web application
+                      called Pyrate Stocks that allows users to track equities
+                      of their choosing.
+                    </p>
+                  </div>
+                </div>
+                <!-- TIMELINE ITEM 8 -->
+                <div class="about-timeline--item">
+                  <div class="about-timeline--icon">
+                    <i class="fa-solid fa-laptop-code tl-icon"></i>
+                  </div>
+                  <p class="about-timeline--duration">March - May 2020</p>
+                  <div class="about-timeline--copy">
+                    <h5 class="about-timeline--sub-title">
+                      Code in Place<span class="about-timeline--small-text">
+                        - Stanford CS106A, Python</span
+                      >
+                    </h5>
+                    <p class="about-timeline--desc">
+                      A community of 10,000 students and volunteer teachers from
+                      all over the globe, united by their love of computer
+                      science.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- FOOTER CONTENT -->
+      <footer>
+        <div class="work--footer-btn">
+          <a href="#" class="footer__main-btn">
+            <span class="footer__btn-text footer__btn-text--hover"
+              >Learn more</span
+            >
+            <span class="footer__btn-icon"
+              ><i class="fas fa-terminal"></i
+            ></span>
+          </a>
+        </div>
+      </footer>
     </div>
 
-    <!-- MAIN CONTENT -->
-    <main>
-      <div class="main-wrapper">
-        <div class="main-container">
-          <h1 class="main__title"><span class="main__title--accent">About</span></h1>
-          <p class="main__sub-title">What's up with Matt?</p>
-        </div>
-        <!-- ABOUT CONTENT -->
-        <div class="about-container">
-          <div class="about-textBoxes--container">
-            <div class="about-text--container">
-              <h1 class="about-text-title">React Developer</h1>
-              <p class="about-text">
-                Becoming a React developer is absolutely the goal. The learning curve is high but this site provides an overview of my progress to date.
-              </p>
-              <p class="about-text">
-                In terms of frontend development, I am focusing on building web applications using the React.js framework. 
-              </p>
-              <p class="about-text">
-                While frontend development is my current focus, I plan on folding in backend tools and frameworks so that I can eventually become a full stack developer.
-              </p>
-              <p class="about-text">
-                Take a moment to review my skills and experience and let me know if you have any questions.
-              </p>              
-            </div>
-            <div class="about-boxes--container">
-              <!-- ABOUT: BOX 1 -->
-              <div class="about-boxes--item">
-                <div class="about-item--text">
-                  <p class="about-item--large-text">4+</p>
-                  <p class="about-item--small-text">Years of Experience with<br/> Object Oriented Programming</p>
-                </div>
-              </div>
-              <!-- ABOUT: BOX 2 -->
-              <div class="about-boxes--item">
-                <div class="about-item--text">
-                  <p class="about-item--large-text">1+</p>
-                  <p class="about-item--small-text">Years of Experience with<br/> React.js</p>
-                </div>
-              </div>
-              <!-- ABOUT: BOX  3 -->
-              <div class="about-boxes--item">
-                <div class="about-item--text">
-                  <p class="about-item--large-text">1+</p>
-                  <p class="about-item--small-text">Years of Experience with<br/> React.js</p>
-                </div>
-              </div>
-              <!-- ABOUT: BOX  4 -->
-              <div class="about-boxes--item">
-                <div class="about-item--text">
-                  <p class="about-item--large-text">1+</p>
-                  <p class="about-item--small-text">Years of Experience with<br/> React.js</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- ABOUT: ESSENTIAL SKILLS -->
-          <div class="about-stats--container">
-            <h3 class="about-title">Essential Skills</h3>
-            <div class="about-progress--bars">
-              <!-- ABOUT: REACT BAR -->
-              <div class="about-progress--bar">
-                <p class="about-progress--title">React.js</p>
-                <div class="about-progress--con">
-                  <p class="about-progress--text">50%</p>
-                  <div class="about-progress">
-                    <span class="about-progress--react"></span>
-                  </div>
-                </div>
-              </div>
-              <!-- ABOUT: JAVASCRIPT ALGO BAR -->
-              <div class="about-progress--bar">
-                <p class="about-progress--title">JS Algorithms & Data Structures</p>
-                <div class="about-progress--con">
-                  <p class="about-progress--text">35%</p>
-                  <div class="about-progress">
-                    <span class="about-progress--js_algo"></span>
-                  </div>
-                </div>
-              </div>
-              <!-- ABOUT: CSS BAR -->
-              <div class="about-progress--bar">
-                <p class="about-progress--title">css</p>
-                <div class="about-progress--con">
-                  <p class="about-progress--text">60%</p>
-                  <div class="about-progress">
-                    <span class="about-progress--css"></span>
-                  </div>
-                </div>
-              </div>
-              <!-- ABOUT: HTML5 BAR -->
-              <div class="about-progress--bar">
-                <p class="about-progress--title">html5</p>
-                <div class="about-progress--con">
-                  <p class="about-progress--text">80%</p>
-                  <div class="about-progress">
-                    <span class="about-progress--html5"></span>
-                  </div>
-                </div>
-              </div>
-              <!-- ABOUT: GITHUB BAR -->
-              <div class="about-progress--bar">
-                <p class="about-progress--title">github</p>
-                <div class="about-progress--con">
-                  <p class="about-progress--text">50%</p>
-                  <div class="about-progress">
-                    <span class="about-progress--github"></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- ABOUT: DEVELOPING SKILLS -->
-          <div class="about-stats--container">
-            <h3 class="about-title">Developing Skills</h3>
-            <div class="about-progress--bars">
-              <!-- ABOUT: TYPESCRIPT BAR -->
-              <div class="about-progress--bar">
-                <p class="about-progress--title">Typescript</p>
-                <div class="about-progress--con">
-                  <p class="about-progress--text">10%</p>
-                  <div class="about-progress">
-                    <span class="about-progress--typescript"></span>
-                  </div>
-                </div>
-              </div>
-              <!-- ABOUT: NEXTJS BAR -->
-              <div class="about-progress--bar">
-                <p class="about-progress--title">Next.js</p>
-                <div class="about-progress--con">
-                  <p class="about-progress--text">15%</p>
-                  <div class="about-progress">
-                    <span class="about-progress--nextjs"></span>
-                  </div>
-                </div>
-              </div>
-              <!-- ABOUT: NODEJS BAR -->
-              <div class="about-progress--bar">
-                <p class="about-progress--title">Node.js</p>
-                <div class="about-progress--con">
-                  <p class="about-progress--text">10%</p>
-                  <div class="about-progress">
-                    <span class="about-progress--nodejs"></span>
-                  </div>
-                </div>
-              </div>
-              <!-- ABOUT: SASS BAR -->
-              <div class="about-progress--bar">
-                <p class="about-progress--title">sass</p>
-                <div class="about-progress--con">
-                  <p class="about-progress--text">30%</p>
-                  <div class="about-progress">
-                    <span class="about-progress--scss"></span>
-                  </div>
-                </div>
-              </div>
-              <!-- ABOUT: PYTHON BAR -->
-              <div class="about-progress--bar">
-                <p class="about-progress--title">Python</p>
-                <div class="about-progress--con">
-                  <p class="about-progress--text">40%</p>
-                  <div class="about-progress">
-                    <span class="about-progress--python"></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="about-timeline--container">
-            <h3 class="about-title">Experience & Education</h3>
-            <div class="about-timeline">
-              <!-- TIMELINE ITEM 1 -->
-              <div class="about-timeline--item">
-                <div class="about-timeline--icon">
-                  <i class="fa-solid fa-code-fork tl-icon"></i>
-                </div>
-                <p class="about-timeline--duration">March 2022 - present</p>
-                <div class="about-timeline--copy">
-                  <h5 class="about-timeline--sub-title">Frontend Developer<span class="about-timeline--small-text"></span></h5>
-                  <p class="about-timeline--desc">
-                    Specializing in React web applications and data-driven web sites.
-                  </p>
-                </div>
-              </div>
-              <!-- TIMELINE ITEM 2 -->
-              <div class="about-timeline--item">
-                <div class="about-timeline--icon">
-                  <i class="fa-solid fa-laptop-code tl-icon"></i>
-                </div>
-                <p class="about-timeline--duration">January 2023 - present</p>
-                <div class="about-timeline--copy">
-                  <h5 class="about-timeline--sub-title">Joy of React<span class="about-timeline--small-text"> - Online Course by Josh W. Commeau</span></h5>
-                  <p class="about-timeline--desc">
-                    An interactive learning experience that teaches students how to build dynamic web applications with React. | 27% complete
-                  </p>
-                </div>
-              </div>
-              <!-- TIMELINE ITEM 3 -->
-              <div class="about-timeline--item">
-                <div class="about-timeline--icon">
-                  <i class="fa-solid fa-laptop-code tl-icon"></i>
-                </div>
-                <p class="about-timeline--duration">November 2022 - present</p>
-                <div class="about-timeline--copy">
-                  <h5 class="about-timeline--sub-title">Frontend Developer Career Path Certificate<span class="about-timeline--small-text"> - Scrimba</span></h5>
-                  <p class="about-timeline--desc">
-                    The program contains 13 modules encompassing HTML, CSS, JavaScript, React, and UI design. | 58% complete
-                  </p>
-                </div>
-              </div>
-              <!-- TIMELINE ITEM 4 -->
-              <div class="about-timeline--item">
-                <div class="about-timeline--icon">
-                  <i class="fa-solid fa-laptop-code tl-icon"></i>
-                </div>
-                <p class="about-timeline--duration">January 2023 - Present</p>
-                <div class="about-timeline--copy">
-                  <h5 class="about-timeline--sub-title">Javascript Alogrithms and Data Structures Certification<span class="about-timeline--small-text"> - Freecodecamp</span></h5>
-                  <p class="about-timeline--desc">
-                    Encompassing the fundamentals of JavaScript including variables, arrays, objects, loops, and functions, while also applying that knowledge to create algorithms that manipulate strings, factorialize numbers, and run calculations. 
-                  </p>
-                </div>
-              </div>
-              <!-- TIMELINE ITEM 5 -->
-              <div class="about-timeline--item">
-                <div class="about-timeline--icon">
-                  <i class="fa-solid fa-laptop-code tl-icon"></i>
-                </div>
-                <p class="about-timeline--duration">March 2022</p>
-                <div class="about-timeline--copy">
-                  <h5 class="about-timeline--sub-title">React Bootcamp<span class="about-timeline--small-text"> - Reed Barger</span></h5>
-                  <p class="about-timeline--desc">
-                    Worked collaboratively with a group of software developers using Agile methodologies to build a Flask web application called Pyrate Stocks that allows users to track equities of their choosing. 
-                  </p>
-                </div>
-              </div>
-              <!-- TIMELINE ITEM 6 -->
-              <div class="about-timeline--item">
-                <div class="about-timeline--icon">
-                  <i class="fa-solid fa-laptop-code tl-icon"></i>
-                </div>
-                <p class="about-timeline--duration">March 2022</p>
-                <div class="about-timeline--copy">
-                  <h5 class="about-timeline--sub-title">Javascript Bootcamp<span class="about-timeline--small-text"> - Reed Barger</span></h5>
-                  <p class="about-timeline--desc">
-                    Worked collaboratively with a group of software developers using Agile methodologies to build a Flask web application called Pyrate Stocks that allows users to track equities of their choosing. 
-                  </p>
-                </div>
-              </div>
-              <!-- TIMELINE ITEM 7 -->
-              <div class="about-timeline--item">
-                <div class="about-timeline--icon">
-                  <i class="fa-solid fa-code-fork tl-icon"></i>
-                </div>
-                <p class="about-timeline--duration">January - March 2021</p>
-                <div class="about-timeline--copy">
-                  <h5 class="about-timeline--sub-title">Portland Python Pirates<span class="about-timeline--small-text"> - Cohort</span></h5>
-                  <p class="about-timeline--desc">
-                    Worked collaboratively with a group of software developers using Agile methodologies to build a Flask web application called Pyrate Stocks that allows users to track equities of their choosing. 
-                  </p>
-                </div>
-              </div>
-              <!-- TIMELINE ITEM 8 -->
-              <div class="about-timeline--item">
-                <div class="about-timeline--icon">
-                  <i class="fa-solid fa-laptop-code tl-icon"></i>
-                </div>
-                <p class="about-timeline--duration"> March - May 2020</p>
-                <div class="about-timeline--copy">
-                  <h5 class="about-timeline--sub-title">Code in Place<span class="about-timeline--small-text"> - Stanford CS106A, Python</span></h5>
-                  <p class="about-timeline--desc">
-                    A community of 10,000 students and volunteer teachers from all over the globe, united by their love of computer science. 
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>          
-        </div>
-      </div>
-    </main>
-
-    <!-- FOOTER CONTENT -->
-    <footer>
-      <div class="work--footer-btn">
-        <a href="#" class="footer__main-btn">
-        <span class="footer__btn-text footer__btn-text--hover">Learn more</span>
-        <span class="footer__btn-icon"><i class="fas fa-terminal"></i></span>
-        </a>
-      </div>
-    </footer>
-  </div>
-
-  <!-- JS FILE >App.js< IMPORT -->
-  <script src="app.js" type="module"></script>
-  <!-- <script src="https://kit.fontawesome.com/b245f8ce7a.js" crossorigin="anonymous"></script> -->
+    <!-- JS FILE >App.js< IMPORT -->
+    <script src="app.js" type="module"></script>
+    <!-- <script src="https://kit.fontawesome.com/b245f8ce7a.js" crossorigin="anonymous"></script> -->
   </body>
 </html>
