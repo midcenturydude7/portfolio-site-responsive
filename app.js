@@ -2,7 +2,7 @@
 ("use strict");
 
 // Global DOM variables
-const brightBtn = document.getElementById("bright-btn");
+const faBright = document.querySelector(".fa-brightness");
 const colOne = document.querySelector(".one");
 const colTwo = document.querySelector(".two");
 const first = document.getElementById("first");
@@ -70,29 +70,16 @@ function toggleLightModeDesktop() {
   navLinkThemeBtn.addEventListener("click", () => {
     let element = document.body;
     element.classList.toggle("light-mode");
-    brightBtn.id.replace(
-      "bright-btn",
-      `
-        <i id="moon-btn" class="fa-solid fa-moon moon-btn"></i>
-      `
-    );
+    if (element.classList.value === "light-mode") {
+      // faReg.classList.replace("fa-regular", "fa-solid");
+      faBright.classList.replace("fa-brightness", "fa-moon");
+      console.log("light mode!");
+    } else if (element.classList.value === "") {
+      // faReg.classList.replace("fa-solid", "fa-regular");
+      faBright.classList.replace("fa-moon", "fa-brightness");
+      console.log("dark mode!");
+    }
   });
-
-  // navLinkThemeBtn.addEventListener("mouseover", () => {
-  //   let element = document.getElementById("nav__link");
-  //   element.classList.replace(
-  //     "nav__link--theme-button",
-  //     "nav__link--theme-button-hover"
-  //   );
-  // });
-
-  // navLinkThemeBtn.addEventListener("mouseout", () => {
-  //   let element = document.getElementById("nav__link");
-  //   element.classList.replace(
-  //     "nav__link--theme-button-hover",
-  //     "nav__link--theme-button"
-  //   );
-  // });
 }
 toggleLightModeDesktop();
 
