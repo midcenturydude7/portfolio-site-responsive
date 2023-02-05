@@ -2,6 +2,7 @@
 ("use strict");
 
 // Global DOM variables
+const brightBtn = document.getElementById("bright-btn");
 const colOne = document.querySelector(".one");
 const colTwo = document.querySelector(".two");
 const first = document.getElementById("first");
@@ -69,23 +70,29 @@ function toggleLightModeDesktop() {
   navLinkThemeBtn.addEventListener("click", () => {
     let element = document.body;
     element.classList.toggle("light-mode");
-  });
-
-  navLinkThemeBtn.addEventListener("mouseover", () => {
-    let element = document.getElementById("nav__link");
-    element.classList.replace(
-      "nav__link--theme-button",
-      "nav__link--theme-button-hover"
+    brightBtn.id.replace(
+      "bright-btn",
+      `
+        <i id="moon-btn" class="fa-solid fa-moon moon-btn"></i>
+      `
     );
   });
 
-  navLinkThemeBtn.addEventListener("mouseout", () => {
-    let element = document.getElementById("nav__link");
-    element.classList.replace(
-      "nav__link--theme-button-hover",
-      "nav__link--theme-button"
-    );
-  });
+  // navLinkThemeBtn.addEventListener("mouseover", () => {
+  //   let element = document.getElementById("nav__link");
+  //   element.classList.replace(
+  //     "nav__link--theme-button",
+  //     "nav__link--theme-button-hover"
+  //   );
+  // });
+
+  // navLinkThemeBtn.addEventListener("mouseout", () => {
+  //   let element = document.getElementById("nav__link");
+  //   element.classList.replace(
+  //     "nav__link--theme-button-hover",
+  //     "nav__link--theme-button"
+  //   );
+  // });
 }
 toggleLightModeDesktop();
 

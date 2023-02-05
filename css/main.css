@@ -1209,7 +1209,12 @@ textarea {
     color: var(--COLOR-PRIMARY-UNIV);
   }
 
-  .icon-btn:hover {
+  .bright-btn:hover {
+    transition: 5s ease-in-out;
+    transform: rotate(450deg);
+  }
+
+  .moon-btn:hover {
     transition: 5s ease-in-out;
     transform: rotate(450deg);
   }
