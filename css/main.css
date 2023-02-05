@@ -1210,13 +1210,8 @@ textarea {
   }
 
   .bright-btn:hover {
-    transition: 5s ease-in-out;
-    transform: rotate(450deg);
-  }
-
-  .moon-btn:hover {
-    transition: 5s ease-in-out;
-    transform: rotate(450deg);
+    transition: 3s ease-in-out;
+    transform: rotate(360deg);
   }
 
   .nav__link:hover,
