@@ -71,14 +71,26 @@ function toggleLightModeDesktop() {
     let element = document.body;
     element.classList.toggle("light-mode");
     if (element.classList.value === "light-mode") {
-      // faReg.classList.replace("fa-regular", "fa-solid");
       faBright.classList.replace("fa-brightness", "fa-moon");
       console.log("light mode!");
     } else if (element.classList.value === "") {
-      // faReg.classList.replace("fa-solid", "fa-regular");
       faBright.classList.replace("fa-moon", "fa-brightness");
       console.log("dark mode!");
     }
+  });
+
+  navLinkThemeBtn.addEventListener("mouseover", () => {
+    navLinkThemeBtn.classList.replace(
+      "nav__link--theme-button",
+      "nav__link--theme-button-hover"
+    );
+  });
+
+  navLinkThemeBtn.addEventListener("mouseout", () => {
+    navLinkThemeBtn.classList.replace(
+      "nav__link--theme-button-hover",
+      "nav__link--theme-button"
+    );
   });
 }
 toggleLightModeDesktop();

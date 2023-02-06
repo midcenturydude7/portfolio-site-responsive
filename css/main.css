@@ -1201,7 +1201,6 @@ textarea {
 
   .nav__link--theme-button-hover {
     font-size: 1.5rem;
-    /* border: 1px solid var(--COLOR-PRIMARY-UNIV); */
     padding: 0.125em 0.45em;
     border-radius: 50%;
     background: linear-gradient(to top, #d2ffd9 0%, #cadcfc 100%);
