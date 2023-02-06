@@ -1208,9 +1208,14 @@ textarea {
     color: var(--COLOR-PRIMARY-UNIV);
   }
 
-  .bright-btn:hover {
+  .icon-btn:hover {
     transition: 3s ease-in-out;
     transform: rotate(360deg);
+  }
+
+  .icon-btn--mouseout {
+    transition: 2s ease-in-out;
+    transform: rotate(-10deg);
   }
 
   .nav__link:hover,

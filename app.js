@@ -2,7 +2,7 @@
 ("use strict");
 
 // Global DOM variables
-const faBright = document.querySelector(".fa-brightness");
+const iconBtn = document.querySelector(".icon-btn");
 const colOne = document.querySelector(".one");
 const colTwo = document.querySelector(".two");
 const first = document.getElementById("first");
@@ -71,10 +71,10 @@ function toggleLightModeDesktop() {
     let element = document.body;
     element.classList.toggle("light-mode");
     if (element.classList.value === "light-mode") {
-      faBright.classList.replace("fa-brightness", "fa-moon");
+      iconBtn.classList.replace("fa-brightness", "fa-moon");
       console.log("light mode!");
     } else if (element.classList.value === "") {
-      faBright.classList.replace("fa-moon", "fa-brightness");
+      iconBtn.classList.replace("fa-moon", "fa-brightness");
       console.log("dark mode!");
     }
   });
@@ -94,6 +94,18 @@ function toggleLightModeDesktop() {
   });
 }
 toggleLightModeDesktop();
+
+// Light/Dark Mode Btn >> Mouseout Event
+function iconBtnMouseout() {
+  iconBtn.addEventListener("mouseout", () => {
+    iconBtn.classList.replace("icon-btn", "icon-btn--mouseout");
+  });
+
+  iconBtn.addEventListener("mouseover", () => {
+    iconBtn.classList.replace("icon-btn--mouseout", "icon-btn");
+  });
+}
+iconBtnMouseout();
 
 // Learn More Btn >> Large Screens
 const learnMoreBtnBigScreen = () => {
