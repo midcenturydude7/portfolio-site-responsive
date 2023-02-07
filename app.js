@@ -72,10 +72,8 @@ function toggleLightModeDesktop() {
     element.classList.toggle("light-mode");
     if (element.classList.value === "light-mode") {
       iconBtn.classList.replace("fa-brightness", "fa-moon");
-      console.log("light mode!");
     } else if (element.classList.value === "") {
       iconBtn.classList.replace("fa-moon", "fa-brightness");
-      console.log("dark mode!");
     }
   });
 
