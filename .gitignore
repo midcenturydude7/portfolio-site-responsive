@@ -16,3 +16,6 @@ stylelintrc.json
 
 # Additional css file for draft purposes
 draft.css
+
+# Ignore vscode folder
+.vscode
