@@ -1187,7 +1187,7 @@ textarea {
     opacity: 1 !important;
     font-size: 1.5rem;
     color: var(--COLOR-PRIMARY-UNIV);
-    /* border: 1px solid var(--COLOR-PRIMARY-UNIV); */
+    border: 1px solid #c0f1e5fa;
     padding: 0.125em 0.45em;
     border-radius: 50%;
     background: linear-gradient(to top, #92ebd5fa 0%, #daeffc 100%);
@@ -1202,6 +1202,7 @@ textarea {
   .nav__link--theme-button-hover {
     font-size: 1.5rem;
     padding: 0.125em 0.45em;
+    border: 1px solid #c0f1e5fa;
     border-radius: 50%;
     background: linear-gradient(to top, #d2ffd9 0%, #cadcfc 100%);
     box-shadow: 0px 8px 40px 5px rgba(213, 206, 247, 0.5);
@@ -1209,12 +1210,12 @@ textarea {
   }
 
   .icon-btn:hover {
-    transition: 3s ease-in-out;
+    transition: 2.5s ease-in-out;
     transform: rotate(360deg);
   }
 
   .icon-btn--mouseout {
-    transition: 2s ease-in-out;
+    transition: 1s ease-in-out;
     transform: rotate(-10deg);
   }
 
