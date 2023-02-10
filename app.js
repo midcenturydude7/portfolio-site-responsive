@@ -72,7 +72,7 @@ function toggleLightModeDesktop() {
     element.classList.toggle("light-mode");
     if (element.classList.value === "light-mode") {
       iconBtn.classList.replace("fa-brightness", "fa-moon");
-      navLinkThemeBtn.style.padding = "0.2em 0.55em";
+      navLinkThemeBtn.style.padding = "0.2em 0.575em";
     } else if (element.classList.value === "") {
       iconBtn.classList.replace("fa-moon", "fa-brightness");
       navLinkThemeBtn.style.padding = "0.2em 0.45em";
