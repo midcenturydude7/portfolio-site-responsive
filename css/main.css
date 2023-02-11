@@ -27,8 +27,10 @@
   --COLOR-GRAY-05: #141414;
   --COLOR-GRAY-06: #020918;
   --COLOR-GRAY-07: #20232b;
+  --COLOR-BORDER-01: #1c283d;
   --COLOR-DROP-SHADOW-01: #bdbdbd15;
   --COLOR-DROP-SHADOW-02: #bdbdbd2f;
+  --COLOR-DROP-SHADOW-03: rgba(209, 209, 209, 0.096);
   --COLOR-GRADIENT-01: linear-gradient(
     to top,
     var(--COLOR-SECONDARY),
@@ -69,8 +71,10 @@
   --COLOR-GRAY-05: #cccccc;
   --COLOR-GRAY-06: #e6e6e6;
   --COLOR-GRAY-07: #bbbbbb;
+  --COLOR-BORDER-01: #dadada;
   --COLOR-DROP-SHADOW-01: #010d2263;
   --COLOR-DROP-SHADOW-02: #010d2221;
+  --COLOR-DROP-SHADOW-03: rgba(49, 49, 49, 0.068);
   --COLOR-GRADIENT-02: linear-gradient(
     to bottom,
     var(--COLOR-PRIMARY-LIGHT),
@@ -912,6 +916,8 @@ main {
 
 .contact-right--container {
   margin-bottom: 2em;
+  border: 1px solid var(--COLOR-BORDER-01);
+  box-shadow: 0 0 25px 5px var(--COLOR-DROP-SHADOW-03);
 }
 
 .form-title {
@@ -985,7 +991,8 @@ textarea {
   color: var(--COLOR-GRAY-02);
   transform: scale(1);
   transition: transform ease-in-out 150;
-  border: 1px solid var(--COLOR-GRAY-04-05);
+  border: 1px solid var(--COLOR-BORDER-01);
+  box-shadow: inset 0 0 7px 2px var(--COLOR-DROP-SHADOW-02);
 }
 
 .form--submit-btn:hover {
