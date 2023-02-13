@@ -114,12 +114,12 @@ const learnMoreBtnBigScreen = () => {
 
   mainBtnIcon.addEventListener("mouseover", () => {
     let element = document.getElementById("main__btn-text");
-    element.classList.replace("main__btn-text", "main__btn-text--hover");
+    element?.classList.replace("main__btn-text", "main__btn-text--hover");
   });
 
   mainBtnIcon.addEventListener("mouseout", () => {
     let element = document.getElementById("main__btn-text");
-    element.classList.replace("main__btn-text--hover", "main__btn-text");
+    element?.classList.replace("main__btn-text--hover", "main__btn-text");
   });
 };
 learnMoreBtnBigScreen();
@@ -151,7 +151,7 @@ first.addEventListener(
   "click",
   (e) => {
     e.preventDefault;
-    // Border-bottom toggle with time interval delay ti simulate slide
+    // Border-bottom toggle with time interval delay to simulate slide
     setTimeout(() => {
       colOne.style.borderBottom = "4px solid var(--COLOR-GRAY-02)";
       colTwo.style.borderBottom = "none";
@@ -174,17 +174,6 @@ first.addEventListener(
   },
   false
 );
-
-// second.addEventListener("mouseover", () => {
-//   boxAnimRight.style.setProperty(
-//     "--boxShadowAfter",
-//     "5px 55px 55px 5px rgba(213, 206, 247, 0.185)"
-//   );
-// });
-
-// second.addEventListener("mouseout", () => {
-//   boxAnimRight.style.setProperty("--boxShadowAfter", "none");
-// });
 
 // What's Next
 second.addEventListener(
@@ -214,15 +203,3 @@ second.addEventListener(
   },
   false
 );
-
-// Hover event for 4px border bottom color change
-// function borderBottomChange() {
-//   colOne.addEventListener("mouseenter", () => {
-//     colOne.style.borderBottom = "4px solid var(--COLOR-SECONDARY)";
-//   });
-
-//   colOne.addEventListener("mouseleave", () => {
-//     colOne.style.borderBottom = "4px solid var(--COLOR-GRAY-02)";
-//   });
-// }
-// borderBottomChange();

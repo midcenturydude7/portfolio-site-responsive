@@ -19,3 +19,6 @@ draft.css
 
 # Ignore vscode folder
 .vscode
+
+# Secure Token 
+secureToken.js
