@@ -71,6 +71,7 @@ function toggleLightModeDesktop() {
     let element = document.body;
     element.classList.toggle("light-mode");
     if (element.classList.value === "light-mode") {
+      localStorage.setItem("light-mode-theme", "enabled");
       iconBtn.classList.replace("fa-brightness", "fa-moon");
       navLinkThemeBtn.style.padding = "0.2em 0.575em";
     } else if (element.classList.value === "") {
