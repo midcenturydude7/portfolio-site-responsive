@@ -25,6 +25,7 @@ function sendEmail() {
     Password: password,
     To: credentials,
     From: email.value,
+    Subject: email.value,
     Body: message.value,
   }).then(() => alert("Message sent successfully!"));
   console.log(message.value);
