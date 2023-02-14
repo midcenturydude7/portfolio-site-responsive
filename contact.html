@@ -99,9 +99,11 @@
             <form action="#" class="contact-form--container" id="form-contact">
               <div class="input-container">
                 <label for="name">Your name</label>
-                <input class="input-styles" type="text" id="name" name="name">
+                <input class="input-styles" type="text" id="name" name="name" required>
                 <label for="email">Email</label>
-                <input class="input-styles" type="email" id="email" name="email">
+                <input class="input-styles" type="email" id="email" name="email" required>
+                <label for="email">Subject</label>
+                <input class="input-styles" type="text" id="subject" name="subject" required>
               </div>
               <div class="textarea-container">
                 <label for="info">Go on, let me hear it&#8230</label>
@@ -130,7 +132,7 @@
   <script src="https://smtpjs.com/v3/smtp.js"></script>
   </body>
   <!-- JS FILE IMPORTS -->
-  <script src="./app.js"></script>
+  <script src="./app.js" type="module"></script>
   <script src="./email.js" type="module"></script>
 
 </html>
