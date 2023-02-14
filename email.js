@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-// import { password, credentials } from "./secureToken.js";
+import { password, credentials } from "./secureToken.js";
 
 // Contact form variables
 const username = document.getElementById("name");
@@ -21,9 +21,9 @@ submitForm();
 function sendEmail() {
   Email.send({
     Host: "smtp.elasticemail.com",
-    Username: "mgriffes@gmail.com",
-    Password: "97A8BC3C5171560F9583D4AE3DC5FA9EBA42",
-    To: "mgriffes@gmail.com",
+    Username: credentials,
+    Password: password,
+    To: credentials,
     From: email.value,
     Body: message.value,
   }).then(() => alert("Message sent successfully!"));
