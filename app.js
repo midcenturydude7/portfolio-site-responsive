@@ -50,7 +50,7 @@
 // toggleLightModeMobile();
 
 // Global DOM variables
-const mainTheme = document.body;
+let mainTheme = document.body;
 const navLinkThemeBtn = document.querySelector(".nav__link--theme-button");
 const iconBtn = document.querySelector(".icon-btn");
 let lightMode = localStorage.getItem("light-mode");
@@ -59,8 +59,10 @@ let darkMode = localStorage.getItem("dark-mode");
 // Light/Dark Mode Btn >> Large Screens
 function enableLightMode() {
   mainTheme.classList.add("light-mode-theme"); // replaces darkMode at the :root
-  navLinkThemeBtn.classList.remove("light-mode-toggle");
   mainTheme.classList.remove("dark-mode-theme");
+  navLinkThemeBtn.classList.remove("light-mode-toggle");
+  navLinkThemeBtn.classList.add("dark-mode-toggle");
+  navLinkThemeBtn.classList.remove("light-mode-toggle");
   iconBtn.classList.replace("fa-brightness", "fa-moon");
   navLinkThemeBtn.style.padding = "0.2em 0.575em";
   localStorage.setItem("light-mode", "enabled");
@@ -69,8 +71,9 @@ function enableLightMode() {
 
 function disableLightMode() {
   mainTheme.classList.remove("light-mode-theme");
-  navLinkThemeBtn.classList.add("light-mode-toggle");
   mainTheme.classList.add("dark-mode-theme");
+  navLinkThemeBtn.classList.add("light-mode-toggle");
+  navLinkThemeBtn.classList.remove("dark-mode-toggle");
   iconBtn.classList.replace("fa-moon", "fa-brightness");
   navLinkThemeBtn.style.padding = "0.2em 0.45em";
   localStorage.setItem("light-mode", "disabled");
