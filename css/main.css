@@ -6,7 +6,9 @@
   padding: 0;
 }
 
-:root {
+:root,
+.dark-mode-theme,
+.dark-mode-toggle {
   --COLOR-PRIMARY-UNIV: #050e1d;
   --COLOR-PRIMARY: #050e1d;
   --COLOR-PRIMARY-LIGHT: #03021f48;
@@ -50,7 +52,8 @@
   --COLOR-GRADIENT-04: linear-gradient(to bottom, #23232771, #050e1d);
 }
 
-.light-mode {
+.light-mode-theme,
+.light-mode-toggle {
   --COLOR-PRIMARY-UNIV: #050e1d;
   --COLOR-PRIMARY: #dadada;
   --COLOR-PRIMARY-LIGHT: #cacaca36;
