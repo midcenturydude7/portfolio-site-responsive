@@ -56,6 +56,7 @@ const navLinkThemeBtn = document.querySelector(".nav__link--theme-button");
 
 // Light/Dark Mode Btn >> Large Screens
 const currentTheme = localStorage.getItem("theme");
+// Initial state
 if (currentTheme == "light") {
   document.body.classList.add("light-mode-theme");
   iconBtn.classList.toggle("fa-moon");
@@ -71,6 +72,7 @@ navLinkThemeBtn.addEventListener("click", () => {
   }
   localStorage.setItem("theme", theme);
 
+  // State syncs followiing click event
   if (theme == "light") {
     iconBtn.classList.replace("fa-brightness", "fa-moon");
     navLinkThemeBtn.style.padding = "0.2em 0.575em";
@@ -79,8 +81,6 @@ navLinkThemeBtn.addEventListener("click", () => {
     navLinkThemeBtn.style.padding = "0.2em 0.45em";
   }
 });
-
-console.log(`The current theme is: ${currentTheme}`);
 
 // Light/Dark Mode Btn >> Mouseout Event
 function iconBtnMouseout() {
