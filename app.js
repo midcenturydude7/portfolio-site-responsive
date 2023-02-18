@@ -68,6 +68,14 @@ navLinkThemeBtn.addEventListener("click", () => {
     theme = "light";
   }
   localStorage.setItem("theme", theme);
+
+  if (theme === "light") {
+    iconBtn.classList.replace("fa-brightness", "fa-moon");
+    navLinkThemeBtn.style.padding = "0.2em 0.575em";
+  } else if (theme === "dark" || "") {
+    iconBtn.classList.replace("fa-moon", "fa-brightness");
+    navLinkThemeBtn.style.padding = "0.2em 0.45em";
+  }
 });
 
 console.log(`The current theme is: ${currentTheme}`);
