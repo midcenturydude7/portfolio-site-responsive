@@ -6,7 +6,10 @@
   padding: 0;
 }
 
-:root {
+/** 
+  ** [COLOR SCHEME] ** 
+**/
+body {
   --COLOR-PRIMARY-UNIV: #050e1d;
   --COLOR-PRIMARY: #050e1d;
   --COLOR-PRIMARY-LIGHT: #03021f48;
@@ -50,7 +53,7 @@
   --COLOR-GRADIENT-04: linear-gradient(to bottom, #23232771, #050e1d);
 }
 
-.light-mode {
+body.light-mode-theme {
   --COLOR-PRIMARY-UNIV: #050e1d;
   --COLOR-PRIMARY: #dadada;
   --COLOR-PRIMARY-LIGHT: #cacaca36;
@@ -83,9 +86,10 @@
   --COLOR-GRADIENT-04: linear-gradient(to bottom, #d4d4d4, #dadada);
 }
 
-/*===============================
-    GENERAL STYLES | TYPOGRAPHY
-  =============================== */
+/** 
+  ** [GENERAL STYLES / TYPOGRAPHY] ** 
+**/
+
 body {
   margin: 0;
   background: var(--COLOR-PRIMARY);
@@ -163,9 +167,9 @@ a {
   text-decoration: none;
 }
 
-/*======================
-    LAYOUT
-  ====================== */
+/** 
+  ** [LAYOUT] ** 
+**/
 .content-wrapper {
   display: flex;
   flex-direction: column;
@@ -195,9 +199,9 @@ a {
   display: none;
 }
 
-/*======================
-    NAVIGATION
-  ====================== */
+/** 
+  ** [NAVIGATION] ** 
+**/
 .nav {
   width: 100%;
   visibility: hidden;
@@ -302,9 +306,9 @@ a {
   visibility: hidden;
 }
 
-/*======================
-    MAIN BODY
-  ====================== */
+/** 
+  ** [MAIN CONTENT] ** 
+**/
 main {
   margin-bottom: 2.25em;
 }
@@ -383,7 +387,7 @@ main {
   visibility: hidden;
 }
 
-/* ABOUT, WORK & CONTACT */
+/** [ABOUT, WORK & CONTACT] **/
 .main-wrapper {
   display: flex;
   flex-direction: column;
@@ -396,7 +400,7 @@ main {
   text-align: center;
 }
 
-/* -- ABOUT PAGE: BOXES -- */
+/** [ABOUT PAGE: BOXES] **/
 .about-container {
   display: flex;
   flex-direction: column;
@@ -490,7 +494,7 @@ main {
   background-color: var(--COLOR-GRAY-02);
 }
 
-/* -- ABOUT PAGE: STATS/PROGRESS BARS -- */
+/** [ABOUT PAGE: STATS/PROGRESS BARS] **/
 .about-stats--container {
   margin-top: 5em;
   text-align: center;
@@ -555,7 +559,7 @@ main {
   position: relative;
 }
 
-/* -- ABOUT PAGE: SKILLS */
+/** [ABOUT PAGE: SKILLS] **/
 .about-progress--react,
 .about-progress--js_algo,
 .about-progress--css,
@@ -574,7 +578,7 @@ main {
   transition: all 0.4s ease-in-out;
 }
 
-/* -- ABOUT PAGE: ESSENTIAL SKILLS */
+/** [ABOUT PAGE: ESSENTIAL SKILLS] **/
 .about-progress--react {
   width: 50%;
 }
@@ -594,7 +598,7 @@ main {
   width: 50%;
 }
 
-/* -- ABOUT PAGE: DEVELOPING SKILLS */
+/** [ABOUT PAGE: DEVELOPING SKILLS] **/
 .about-progress--typescript {
   width: 10%;
 }
@@ -614,7 +618,7 @@ main {
   width: 50%;
 }
 
-/* -- ABOUT PAGE: TIMELINE */
+/** [ABOUT PAGE: TIMELINE] **/
 .about-timeline--container {
   margin-top: 5em;
   padding: 0 1.5em;
@@ -649,26 +653,6 @@ main {
   justify-content: center;
 }
 
-/* .tl-icon-title__container {
-  position: absolute;
-  top: 3.5em;
-  left: 33.5em;
-  font-size: 1rem;
-  color: var(--COLOR-PRIMARY);
-  background-color: var(--COLOR-SECONDARY);
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.tl-icon-title {
-  font-size: 1rem;
-  color: var(--COLOR-PRIMARY);
-} */
-
 .tl-icon {
   font-size: 1.25rem;
 }
@@ -702,7 +686,7 @@ main {
   line-height: 1.7;
 }
 
-/* -- WORK BOX -- */
+/** [WORK BOX] **/
 .work-box {
   position: relative;
   background-color: var(--COLOR-PRIMARY);
@@ -856,7 +840,7 @@ main {
   transition: all 0.4s ease-in-out;
 }
 
-/* -- CONTACT PAGE -- */
+/** [CONTACT PAGE **/
 .contact-container {
   display: flex;
   flex-direction: column;
@@ -895,11 +879,6 @@ main {
 .contact-info--item + .contact-info--item {
   margin-top: 0.7em;
 }
-
-/* .contact-info--icon {
-  display: flex;
-
-} */
 
 .contact-info--item-text,
 .icon-text {
@@ -1010,9 +989,9 @@ textarea {
   border-radius: 7px;
 }
 
-/*======================
-    FOOTER
-  ====================== */
+/** 
+  ** [FOOTER] ** 
+**/
 .footer-btn {
   visibility: visible;
   display: flex;
@@ -1075,9 +1054,9 @@ textarea {
   display: none;
 }
 
-/*======================
-    SPECIAL ELEMENTS
-  ====================== */
+/** 
+  ** [SPECIAL / ABSOLUTELY POSITIONED ELEMENTS] ** 
+**/
 .container-shape .theme-btn {
   visibility: visible;
   position: absolute;
@@ -1098,9 +1077,9 @@ textarea {
   visibility: hidden;
 }
 
-/*======================
-    MEDIA QUERIES
-  ====================== */
+/** 
+  ** [MEDIA QUERIES] ** 
+**/
 @media (max-width: 640px) {
   .nav__list--primary {
     margin: 0;
@@ -1112,7 +1091,7 @@ textarea {
     overflow: auto;
   }
 
-  /* LAYOUT */
+  /** [LAYOUT] */
   .row {
     align-items: center;
   }
