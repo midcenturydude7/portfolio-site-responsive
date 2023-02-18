@@ -58,6 +58,8 @@ const navLinkThemeBtn = document.querySelector(".nav__link--theme-button");
 const currentTheme = localStorage.getItem("theme");
 if (currentTheme == "light") {
   document.body.classList.add("light-mode-theme");
+  iconBtn.classList.toggle("fa-moon");
+  navLinkThemeBtn.style.padding = "0.2em 0.575em";
 }
 
 navLinkThemeBtn.addEventListener("click", () => {
@@ -69,48 +71,16 @@ navLinkThemeBtn.addEventListener("click", () => {
   }
   localStorage.setItem("theme", theme);
 
-  if (theme === "light") {
+  if (theme == "light") {
     iconBtn.classList.replace("fa-brightness", "fa-moon");
     navLinkThemeBtn.style.padding = "0.2em 0.575em";
-  } else if (theme === "dark" || "") {
+  } else if (theme == "dark" || "") {
     iconBtn.classList.replace("fa-moon", "fa-brightness");
     navLinkThemeBtn.style.padding = "0.2em 0.45em";
   }
 });
 
 console.log(`The current theme is: ${currentTheme}`);
-
-// function toggleLightModeDesktop() {
-//   const navLinkThemeBtn = document.querySelector(".nav__link--theme-button");
-
-//   navLinkThemeBtn.addEventListener("click", () => {
-//     let element = document.body;
-//     element.classList.toggle("light-mode");
-//     if (element.classList.value === "light-mode") {
-//       localStorage.setItem("light-mode-theme", "enabled");
-//       iconBtn.classList.replace("fa-brightness", "fa-moon");
-//       navLinkThemeBtn.style.padding = "0.2em 0.575em";
-//     } else if (element.classList.value === "") {
-//       iconBtn.classList.replace("fa-moon", "fa-brightness");
-//       navLinkThemeBtn.style.padding = "0.2em 0.45em";
-//     }
-//   });
-
-//   navLinkThemeBtn.addEventListener("mouseover", () => {
-//     navLinkThemeBtn.classList.replace(
-//       "nav__link--theme-button",
-//       "nav__link--theme-button-hover"
-//     );
-//   });
-
-//   navLinkThemeBtn.addEventListener("mouseout", () => {
-//     navLinkThemeBtn.classList.replace(
-//       "nav__link--theme-button-hover",
-//       "nav__link--theme-button"
-//     );
-//   });
-// }
-// toggleLightModeDesktop();
 
 // Light/Dark Mode Btn >> Mouseout Event
 function iconBtnMouseout() {

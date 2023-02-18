@@ -95,7 +95,7 @@ body {
   background: var(--COLOR-PRIMARY);
   font-family: "Poppins", sans-serif;
   font-size: 1.1rem;
-  transition: all 1s ease-in-out;
+  transition: all 1.75s ease-in-out;
   height: 100vh;
   overflow: visible;
 }
