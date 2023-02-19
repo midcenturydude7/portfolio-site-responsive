@@ -1215,7 +1215,7 @@ textarea {
     opacity: 1;
   }
 
-  /* MAIN CONTENT */
+  /** MAIN CONTENT **/
   .main__hero-image {
     margin: 2em 0 0 0;
     width: 50%;
@@ -1568,12 +1568,12 @@ textarea {
     margin-right: -0.77em;
   }
 
-  /* FOOTER */
+  /** FOOTER **/
   .footer-btn {
     display: none;
   }
 
-  /* -- ABOUT PAGE: BOXES, PROGRESS BARS -- */
+  /** ABOUT PAGE: BOXES, PROGRESS BARS  **/
   .about-boxes--container {
     grid-template-columns: 1fr 1fr;
   }
@@ -1594,7 +1594,7 @@ textarea {
     max-width: 15.75em;
   }
 
-  /* -- CONTACT PAGE -- */
+  /** CONTACT PAGE **/
   .contact-right--container {
     background: var(--COLOR-PRIMARY); /* fallback for old browsers */
     background: -webkit-var(
@@ -1620,9 +1620,11 @@ textarea {
   }
 }
 
-/* Big Screens */
+/** 
+  ** [MEDIA QUERIES: BIG SCREENS | 1200px] ** 
+**/
 @media (min-width: 1200px) {
-  /* GENERAL SYTLES */
+  /** GENERAL SYTLES **/
   header {
     padding: 0.25em;
     border-bottom-right-radius: 25px;
@@ -1649,7 +1651,7 @@ textarea {
     flex-direction: column;
   }
 
-  /* SPECIAL ELEMENTS */
+  /** SPECIAL ELEMENTS **/
   .container-shape {
     width: 100%;
     position: relative;
@@ -1668,13 +1670,13 @@ textarea {
     box-shadow: 5px 5px 15px 20px #000;
   }
 
-  /* NAVIGATION */
+  /** NAVIGATION **/
   .nav {
     height: auto;
     justify-content: flex-end;
   }
 
-  /* MAIN CONTENT */
+  /** MAIN CONTENT **/
   .main-hp {
     padding: 5em 0 2% 25%;
   }
@@ -1910,7 +1912,7 @@ textarea {
     margin-left: 0.15em;
   }
 
-  /* -- WORK PAGE -- */
+  /** WORK PAGE **/
   .work-box--container {
     display: flex;
     flex-direction: row;
@@ -1929,7 +1931,7 @@ textarea {
     margin-top: 0 !important;
   }
 
-  /* -- ABOUT PAGE -- */
+  /** ABOUT PAGE **/
   .about-textBoxes--container {
     flex-direction: row;
     justify-content: space-between;
@@ -1943,12 +1945,12 @@ textarea {
     background: var(--COLOR-PRIMARY); /* fallback for old browsers */
     background: -webkit-var(
       --COLOR-GRADIENT-04
-    ); /* Chrome 10-25, Safari 5.1-6 */
+    ); /** Chrome 10-25, Safari 5.1-6 **/
     background: var(
       --COLOR-GRADIENT-04
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    ); /** W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ **/
     border-radius: 7px;
-    /* border: 1px solid #adadad10; */
+    /** border: 1px solid #adadad10; **/
     padding: 2.25em;
   }
 
@@ -1966,16 +1968,16 @@ textarea {
     background: var(--COLOR-PRIMARY); /* fallback for old browsers */
     background: -webkit-var(
       --COLOR-GRADIENT-04
-    ); /* Chrome 10-25, Safari 5.1-6 */
+    ); /** Chrome 10-25, Safari 5.1-6 **/
     background: var(
       --COLOR-GRADIENT-04
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    ); /** W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ **/
     border-radius: 7px;
-    /* border: 1px solid #adadad10; */
+    /** border: 1px solid #adadad10; **/
     padding: 3em;
   }
 
-  /* -- CONTACT PAGE -- */
+  /** CONTACT PAGE **/
   .contact-form--container {
     min-width: 750px;
   }
@@ -1992,7 +1994,9 @@ textarea {
   }
 }
 
-/* Bigger Screens | Fixes Top Row */
+/** 
+  ** [MEDIA QUERIES: BIGGER SCREENS | FIXES TOP ROW | 1450px] ** 
+**/
 @media (min-width: 1450px) {
   .h-shape {
     width: 20%;
@@ -2086,7 +2090,9 @@ textarea {
   }
 }
 
-/* Huge Screens | High-res */
+/** 
+  ** [MEDIA QUERIES: HUGE SCREENS/HIGH RES | 2100px] ** 
+**/
 @media (min-width: 2100px) {
   .chevron-text {
     margin-left: 8em;
