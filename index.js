@@ -49,7 +49,7 @@ const downloadBtn = () => {
 downloadBtn();
 
 // Home Page: col--right box with text animation
-// The 411
+// TL;DR
 first.addEventListener(
   "click",
   (e) => {

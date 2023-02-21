@@ -1,58 +1,25 @@
-// LOOK FOR RESET
-// // Mobile Navigation Menu Toggle Btn
-// const mobileNavBtn = () => {
-//   const navToggleBtn = document.querySelector(".nav-toggle");
-//   const nav = document.querySelector(".nav");
-
-//   navToggleBtn.addEventListener("click", function handleMouseClick() {
-//     nav.classList.toggle("nav--visible");
-//   });
-
-//   navToggleBtn.addEventListener("mouseover", () => {
-//     let element = document.getElementById("nav-toggle");
-//     element.classList.replace("nav-toggle", "nav-toggle-hover");
-//   });
-
-//   navToggleBtn.addEventListener("mouseout", () => {
-//     let element = document.getElementById("nav-toggle");
-//     element.classList.replace("nav-toggle-hover", "nav-toggle");
-//   });
-// };
-// mobileNavBtn();
-
-// // Learn More Btn Mobile
-// const learnMoreBtnMobile = () => {
-//   const footerBtnIcon = document.querySelector(".footer__btn-icon");
-//   const footerBtnText = document.querySelector(".footer__btn-text");
-
-//   window.onload = () => {
-//     footerBtnText.style.color = "#050e1d";
-//   };
-
-//   footerBtnIcon.addEventListener("mouseover", () => {
-//     footerBtnText.style.color = "#CCC";
-//   });
-
-//   footerBtnIcon.addEventListener("mouseout", () => {
-//     footerBtnText.style.color = "#050e1d";
-//   });
-// };
-// learnMoreBtnMobile();
-
-// // Light/Dark Mode Btn >> Responsive
-// function toggleLightModeMobile() {
-//   const themeBtn = document.querySelector(".theme-btn");
-
-//   themeBtn.addEventListener("click", () => {
-//     let element = document.body;
-//     element.classList.toggle("light-mode");
-//   });
-// }
-// toggleLightModeMobile();
-
 // Global DOM variables
 const iconBtn = document.getElementById("icon-btn");
 const navLinkThemeBtn = document.querySelector(".nav__link--theme-button");
+
+// Learn More Btn Mobile
+const learnMoreBtnMobile = () => {
+  const footerBtnIcon = document.querySelector(".footer__btn-icon");
+  const footerBtnText = document.querySelector(".footer__btn-text");
+
+  window.onload = () => {
+    footerBtnText.style.color = "#050e1d";
+  };
+
+  footerBtnIcon.addEventListener("mouseover", () => {
+    footerBtnText.style.color = "#CCC";
+  });
+
+  footerBtnIcon.addEventListener("mouseout", () => {
+    footerBtnText.style.color = "#050e1d";
+  });
+};
+learnMoreBtnMobile();
 
 // Light/Dark Mode Btn >> Large Screens
 const currentTheme = localStorage.getItem("theme");
@@ -93,3 +60,27 @@ function iconBtnMouseout() {
   });
 }
 iconBtnMouseout();
+
+// Responsive Menu
+const get = (element) => document.getElementById(element);
+
+let open = get("menu-btn");
+let navBar = get("navbar-responsive");
+let navTitle = get("nav-title");
+let exit = get("exit-btn");
+
+open.addEventListener("click", () => {
+  navBar.classList.remove("navbar-responsive-close");
+  navBar.classList.add("navbar-responsive-open");
+  navTitle.style.display = "none";
+  open.style.display = "none";
+  exit.style.display = "block";
+});
+
+exit.addEventListener("click", () => {
+  navBar.classList.remove("navbar-responsive-open");
+  navBar.classList.add("navbar-responsive-close");
+  navTitle.style.display = "block";
+  open.style.display = "block";
+  exit.style.display = "none";
+});
