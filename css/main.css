@@ -305,7 +305,7 @@ a {
 }
 
 .nav__list .nav__link--theme-button {
-  visibility: hidden;
+  visibility: visible;
 }
 
 /** 
