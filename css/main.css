@@ -221,7 +221,7 @@ a {
 .nav-responsive-btn {
   display: block;
   margin-top: 0.25em;
-  z-index: 2;
+  z-index: 6;
 }
 
 .nav-responsive-btn li .icon {
@@ -290,7 +290,7 @@ a {
     var(--COLOR-ACCENT-01)
   );
   border-bottom: 1px solid var(--BORDER-COLOR-01);
-  z-index: 1;
+  z-index: 5;
 }
 
 .menu-item {
