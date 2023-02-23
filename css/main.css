@@ -32,7 +32,7 @@ body {
   --COLOR-GRAY-07: #20232b;
   --COLOR-BORDER-01: #1c283d;
   --COLOR-BORDER-02: #35496b;
-  --COLOR-BORDER-03: #050e1d25;
+  --COLOR-BORDER-03: #050e1d21;
   --COLOR-DROP-SHADOW-01: #bdbdbd15;
   --COLOR-DROP-SHADOW-02: #bdbdbd2f;
   --COLOR-DROP-SHADOW-03: rgba(209, 209, 209, 0.096);
@@ -296,28 +296,23 @@ a {
 .menu-item {
   text-align: center;
   width: 50%;
-  /* border: 1px solid transparent; */
 }
 
 .menu-item:hover {
-  box-shadow: inset 0 0 2px #afdada, inset 0 0 5px #5c7070;
+  box-shadow: inset 0 0 2px #afdada, inset 0 0 5px #5b9e9e;
   border-radius: 5px;
-  background: linear-gradient(to bottom right, #f4d3fd, #24e9cf93);
-}
-
-.menu-item:hover a {
-  color: #f5f5f5;
+  background: linear-gradient(to top, #d2ffd9 0%, #cadcfc 100%);
 }
 
 .list-selected,
 .list-selected:hover {
-  box-shadow: inset 0 0 2px #afdada, inset 0 0 5px #5c7070;
+  box-shadow: inset 0 0 2px #afdada, inset 0 0 5px #5ffcfc;
   border-radius: 5px;
-  background: linear-gradient(to bottom right, #f1e3f5, #24e9cf93);
+  background: linear-gradient(to top, #92ebd5fa 0%, #daeffc 100%);
 }
 
-.list-selected:hover a {
-  color: var(--COLOR-PRIMARY-UNIV);
+.list-selected {
+  color: #050e1da2;
 }
 
 .menu-item:first-child {
@@ -335,7 +330,7 @@ a {
 }
 
 .a-selected {
-  opacity: 0.75;
+  color: #050e1da2;
   cursor: default;
 }
 
