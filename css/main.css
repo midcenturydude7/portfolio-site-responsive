@@ -237,7 +237,12 @@ a {
 .nav-title {
   display: block;
   font-size: 1.375rem;
-  color: var(--COLOR-PRIMARY-UNIV);
+  padding: 0.425em 0.75em;
+  color: rgb(22, 90, 84);
+  box-shadow: inset 0 0 5px #c0f1e5fa, inset 0 0 8px #f5fffe;
+  border: 1px solid #c0f1e5fa;
+  border-radius: 5px;
+  background: linear-gradient(to top, #92ebd5fa 0%, #daeffc 100%);
 }
 
 .navbar-responsive {
@@ -335,16 +340,6 @@ a {
 .a-selected {
   color: #050e1da2;
   cursor: default;
-}
-
-.nav-title {
-  display: block;
-  padding: 0.425em 0.75em;
-  color: rgb(22, 90, 84);
-  box-shadow: inset 0 0 5px #c0f1e5fa, inset 0 0 8px #f5fffe;
-  border: 1px solid #c0f1e5fa;
-  border-radius: 5px;
-  background: linear-gradient(to top, #92ebd5fa 0%, #daeffc 100%);
 }
 
 .navbar {
@@ -1312,43 +1307,6 @@ textarea {
 
   .nav__list--secondary .nav__item {
     margin-top: 0;
-  }
-
-  .nav__list .nav__link--theme-button {
-    visibility: visible;
-    opacity: 1 !important;
-    font-size: 1.5rem;
-    color: var(--COLOR-PRIMARY-UNIV);
-    border: 1px solid #c0f1e5fa;
-    padding: 0.2em 0.45em;
-    border-radius: 50%;
-    background: linear-gradient(to top, #92ebd5fa 0%, #daeffc 100%);
-    box-shadow: 0px 8px 40px 5px rgba(213, 206, 247, 0.5);
-  }
-
-  .nav__link-selected {
-    color: rgb(22, 90, 84);
-    cursor: default;
-  }
-
-  .nav__link--theme-button-hover {
-    font-size: 1.5rem;
-    padding: 0.2em 0.45em;
-    border: 1px solid #c0f1e5fa;
-    border-radius: 50%;
-    background: linear-gradient(to top, #d2ffd9 0%, #cadcfc 100%);
-    box-shadow: 0px 8px 40px 5px rgba(213, 206, 247, 0.5);
-    color: var(--COLOR-PRIMARY-UNIV);
-  }
-
-  .icon-btn:hover {
-    transition: 2.5s ease-in-out;
-    transform: rotate(360deg);
-  }
-
-  .icon-btn--mouseout {
-    transition: 1s ease-in-out;
-    transform: rotate(-10deg);
   }
 
   .nav__link:hover,
