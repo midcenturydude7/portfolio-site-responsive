@@ -124,7 +124,7 @@ footer::before {
 }
 
 header {
-  padding: 2em 0;
+  padding: 1em 0;
   border-radius: 0 0 25px 25px;
 }
 
@@ -208,8 +208,8 @@ a {
 .nav {
   width: 100%;
   display: flex;
-  height: 0;
-  margin-top: -1em;
+  height: 3em;
+  /* margin-top: -1em; */
   justify-content: space-between;
 }
 
@@ -329,8 +329,6 @@ a {
 .menu-item + .menu-item {
   padding: 1em 3em;
   border-top: 1px solid #b0dbd0a9;
-
-  /* border-top: 1px solid var(--COLOR-BORDER-03); */
 }
 
 .menu-item a {
@@ -375,8 +373,8 @@ a {
 }
 
 /** NAVBAR: THEME MODE TOGGLE BTN **/
-.nav__list--secondary .nav__item {
-  margin-top: -1.2875em;
+.nav__list--secondary .nav__item--secondary {
+  margin-top: -0.9em;
 }
 
 .nav__item-hover:hover,
@@ -1305,8 +1303,8 @@ textarea {
     /* box-shadow: 0px 8px 40px 5px rgba(213, 206, 247, 0.5); */
   }
 
-  .nav__list--secondary .nav__item {
-    margin-top: 0;
+  .nav__list--secondary .nav__item--secondary {
+    margin-top: -.5em;
   }
 
   .nav__link:hover,
