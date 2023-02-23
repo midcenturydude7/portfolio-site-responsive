@@ -32,7 +32,7 @@ body {
   --COLOR-GRAY-07: #20232b;
   --COLOR-BORDER-01: #1c283d;
   --COLOR-BORDER-02: #35496b;
-  --COLOR-BORDER-03: #050e1d21;
+  --COLOR-BORDER-03: #050e1d15;
   --COLOR-DROP-SHADOW-01: #bdbdbd15;
   --COLOR-DROP-SHADOW-02: #bdbdbd2f;
   --COLOR-DROP-SHADOW-03: rgba(209, 209, 209, 0.096);
@@ -306,7 +306,8 @@ a {
 
 .list-selected,
 .list-selected:hover {
-  box-shadow: inset 0 0 2px #afdada, inset 0 0 5px #5ffcfc;
+  box-shadow: inset 0 0 2px #afdada, inset 0 0 3px #5ffcfc;
+  border: 2px solid #c0f1e5fa;
   border-radius: 5px;
   background: linear-gradient(to top, #92ebd5fa 0%, #daeffc 100%);
 }
