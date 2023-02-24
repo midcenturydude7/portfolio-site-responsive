@@ -245,6 +245,14 @@ a {
   background: linear-gradient(to top, #92ebd5fa 0%, #daeffc 100%);
 }
 
+.nav-title a {
+  color: rgb(22, 90, 84);
+}
+
+.nav-title a:hover {
+  color: var(--COLOR-PRIMARY-UNIV);
+}
+
 .navbar-responsive {
   position: fixed;
   top: -100%;
@@ -1304,7 +1312,7 @@ textarea {
   }
 
   .nav__list--secondary .nav__item--secondary {
-    margin-top: -.5em;
+    margin-top: -0.5em;
   }
 
   .nav__link:hover,
