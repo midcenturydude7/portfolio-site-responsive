@@ -45,7 +45,7 @@ navLinkThemeBtn.addEventListener("click", () => {
     navLinkThemeBtn.style.padding = "0.2em 0.575em";
   } else if (theme == "dark" || "") {
     iconBtn.classList.replace("fa-moon", "fa-brightness");
-    navLinkThemeBtn.style.padding = "0.2em 0.45em";
+    navLinkThemeBtn.style = "0.2em 0.45em";
   }
 });
 
