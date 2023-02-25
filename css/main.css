@@ -238,7 +238,7 @@ a {
   border: 1px solid #c0f1e5fa;
   border-radius: 5px;
   background: linear-gradient(to top, #d2ffd9 0%, #cadcfc 100%);
-  box-shadow: 0px 8px 40px 5px rgba(213, 206, 247, 0.75);
+  box-shadow: 0px 8px 40px 5px rgba(213, 206, 247, 0.65);
 }
 
 .nav-title,
