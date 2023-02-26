@@ -101,7 +101,16 @@
           </div>
           <div class="contact-right--container">
             <h1 class="form-title">Get in touch</h1>
-            <form action="#" class="contact-form--container" id="form-contact">
+            <form 
+              class="contact-form--container" 
+              id="form-contact" 
+              action="https://formsubmit.co/9f3d4d7c14e9d9a13df91b181217462c" 
+              method="POST">
+              <!-- HONEYPOT -->
+              <input type="text" name="_honey" style="display: none" />
+              <!-- DISABLE CAPTCHA -->
+              <input type="hidden" name="_captcha" value="false" />
+              <!-- SUCCESS PAGE -->
               <div class="input-container">
                 <label for="name">Your name</label>
                 <input class="input-styles" type="text" id="name" name="name" required>
@@ -134,10 +143,10 @@
       </div>
     </footer>
   </div>
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
   </body>
   <!-- JS FILE IMPORTS -->
   <script src="./app.js" type="module"></script>
-  <script src="./email.js" type="module"></script>
+  <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+  <!-- <script src="./email.js" type="module"></script> -->
 
 </html>
