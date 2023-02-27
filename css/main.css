@@ -476,6 +476,12 @@ main {
   margin-left: 0.0775em;
 }
 
+.main__success-text {
+  margin-top: 1em;
+  color: var(--COLOR-GRAY-02);
+  width: 20em;
+}
+
 .col--left {
   display: flex;
   flex-direction: column;
