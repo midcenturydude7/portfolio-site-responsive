@@ -494,7 +494,7 @@ main {
   align-items: center;
   order: -1;
   border: 1px solid white;
-  padding: 0 1em;
+  padding: 0 2em;
 }
 
 .col--right {
