@@ -189,7 +189,6 @@ a {
 
 .top-row {
   text-align: center;
-  width: 95%;
 }
 
 .row {
@@ -495,6 +494,7 @@ main {
   align-items: center;
   order: -1;
   border: 1px solid white;
+  padding: 0 1em;
 }
 
 .col--right {
