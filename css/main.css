@@ -488,7 +488,7 @@ main {
 }
 
 .col--middle {
-  width: 65%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
