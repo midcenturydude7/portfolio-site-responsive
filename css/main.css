@@ -1314,6 +1314,7 @@ textarea {
   .nav__item {
     margin: 0;
     border: 1px solid transparent;
+    border-radius: 5px;
     padding: 1em 1.75em 0.5em;
   }
 
@@ -1325,6 +1326,7 @@ textarea {
   .nav__item + .nav__item {
     margin-left: 1em;
     border: 1px solid transparent;
+    border-radius: 5px;
   }
 
   .nav__item-hover:hover {
