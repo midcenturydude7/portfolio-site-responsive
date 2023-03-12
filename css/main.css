@@ -997,7 +997,7 @@ main {
   transition: all 0.4s ease-in-out;
 }
 
-/** [CONTACT PAGE **/
+/** [CONTACT PAGE] **/
 .contact-container {
   display: flex;
   flex-direction: column;
@@ -1254,13 +1254,6 @@ textarea {
 /** 
   ** [MEDIA QUERIES] ** 
 **/
-/* @media (max-width: 640px) {
-  .nav__list--primary {
-    display: none;
-    margin: 0;
-  }
-} */
-
 @media (min-width: 875px) {
   body {
     overflow: auto;
@@ -2179,6 +2172,18 @@ textarea {
     width: 35%;
   }
 
+  .h-shape-inside {
+    transition: all 0.4s ease-in-out;
+    width: 20%;
+    height: 100vh;
+    background: var(--COLOR-GRADIENT-01);
+    position: fixed;
+    left: 0;
+    top: 0;
+    clip-path: polygon(0 0, 46% 0, 79% 100%, 0% 100%);
+    box-shadow: 5px 5px 15px 20px #000;
+  }
+
   .col--middle {
     width: 43%;
     padding: 1.5em 0 1.2em 0;
@@ -2265,6 +2270,9 @@ textarea {
 }
 
 @media (min-width: 2500px) {
+  .h-shape-inside {
+    width: 30%;
+  }
   .main__hero-image {
     margin: 2em 2em 0 0;
     width: 80% !important;
